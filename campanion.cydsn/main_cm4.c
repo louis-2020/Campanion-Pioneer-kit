@@ -139,8 +139,7 @@ void ShowStartupScreen(void)
     GUI_DispStringAt("Campanion", 132, 105);
     GUI_SetTextAlign(GUI_TA_HCENTER);
     GUI_DispStringAt("Your Camping Buddy", 132, 125);
-   // GUI_SetTextAlign(GUI_TA_HCENTER);
-    //GUI_DispStringAt("EINK DISPLAY DEMO", 132, 125);
+
   
     /* Send the display buffer data to display*/
     UpdateDisplay(CY_EINK_FULL_4STAGE, true);
@@ -234,14 +233,27 @@ void WaitforSwitchPressAndRelease(void)
     while(Status_SW2_Read() == 0);
 }
 
-
+/*******************************************************************************
+* Function Name: void TemperatureDisplay(void)
+********************************************************************************
+*
+* Summary: This function shows screen current temperature from the onboard
+*    	   thermistor on the e-ink display
+*
+* Parameters:
+*  None
+*
+* Return:
+*  None
+*
+*******************************************************************************/
 
 
 void TemperatureDisplay(void)
 {
 
-    UART_1_Start();
-    ADC_1_Start();
+    UART_1_Start(); 
+    ADC_1_Start(); //start the Analog to digital convertor
     Cy_SAR_StartConvert(SAR,CY_SAR_START_CONVERT_CONTINUOUS);
     
     float v1,v2;
@@ -253,14 +265,14 @@ void TemperatureDisplay(void)
 
     v1 = Cy_SAR_CountsTo_Volts(SAR,0,countReference);
     v2 = Cy_SAR_CountsTo_Volts(SAR,1,countThermistor);
-
+	/* use the formula to calculate the temperature */
     uint32 resT = Thermistor_GetResistance(countReference, countThermistor);
     float temperature = (float)Thermistor_GetTemperature(resT) / 100.0 ;
-
-    printf("V1 = %fv V2=%fv Vtot =%fv T=%fC T=%fF\r\n",v1,v2,v1+v2,temperature,9.0/5.0*temperature + 32.0);
+	
+    printf("V1 = %fv V2=%fv Vtot =%fv T=%fC T=%fF\r\n",v1,v2,v1+v2,temperature,9.0/5.0*temperature + 32.0); //output the temperature to the terminal console
      
      char c[50]; //size of the number
-     sprintf(c, "%g", temperature);
+     sprintf(c, "%g", temperature); // convert the number to a string
     
 
     
@@ -283,7 +295,7 @@ void TemperatureDisplay(void)
     /* Display labels */	
     GUI_SetFont(GUI_FONT_D64);
     GUI_SetTextAlign(GUI_TA_HCENTER);
-    GUI_DispStringAt(c, 132, 53);
+    GUI_DispStringAt(c, 132, 53); //display the current temperature
 
     GUI_SetFont(GUI_FONT_20_1);
     GUI_SetTextAlign(GUI_TA_HCENTER);
@@ -297,6 +309,21 @@ void TemperatureDisplay(void)
     
 }  
 
+/*******************************************************************************
+* Function Name: void GasSensor(void)
+********************************************************************************
+*
+* Summary: This function makes a buzzer sound if the gas reading is reported as
+*          to high
+*
+* Parameters:
+*  None
+*
+* Return:
+*  None
+*
+*******************************************************************************/
+
 void GasSensor(void)
 {
     UART_1_Start();
@@ -304,28 +331,22 @@ void GasSensor(void)
     Cy_SAR_StartConvert(SAR,CY_SAR_START_CONVERT_CONTINUOUS);
     
     float value;
-  //  int16_t value;
 
     /* Read the ADC count values */
     
     
 
     
-    //v2 = Cy_SAR_CountsTo_Volts(SAR,2,countThermistor);
 
     float reading, calc;
-    //int16_t reading;
     for (;;) {
         /* Read the ADC count values */
         value  = Cy_SAR_GetResult16(SAR,2);
         reading  = Cy_SAR_GetResult16(SAR,2);
         calc = Cy_SAR_CountsTo_Volts(SAR,2,reading);
         char c[50]; //size of the number
-        sprintf(c, "%g", calc);
-        char str[20];
-        sprintf(str, "%f", value);
-        printf("You have entered: %s", str);
-        
+        sprintf(c, "%g", calc); // convert the number into a string
+
         
         /* Set font size, foreground and background colors */
         GUI_SetColor(GUI_BLACK);
@@ -346,33 +367,46 @@ void GasSensor(void)
         /* Display labels */	
         GUI_SetFont(GUI_FONT_D32);
         GUI_SetTextAlign(GUI_TA_HCENTER);
-        GUI_DispStringAt(c, 132, 53);
+        GUI_DispStringAt(c, 132, 53); //display the current gas reading
 
         GUI_SetFont(GUI_FONT_20_1);
         GUI_SetTextAlign(GUI_TA_HCENTER);
         GUI_DispStringAt("", 132, 150);
         
-        printf("test"); 
     
         UpdateDisplay(CY_EINK_FULL_4STAGE, true);
         
         
-        if (calc > 0.3) {
-            PWM_Start();
-               CyDelay(10000);
-               PWM_Disable(); 
+        if (calc > 0.3) { // If the reading is greater than a number, start the buzzer and keep it on for 10 seconds
+            PWM_Start(); //Start the buzzer
+               CyDelay(10000); //Wait 10 seconds
+               PWM_Disable();  //Stop the buzzer
         }
         else {
             PWM_Disable();
         }
        
-        CyDelay(2000);
+        CyDelay(2000); //Wait 2 seconds inbetween every recording
          
         
       }  
 
 }
 
+/*******************************************************************************
+* Function Name: void EggTimer(void)
+********************************************************************************
+*
+* Summary: This function acts as a timer for how long to cook a boiled egg, when
+*          the timer is up, a buzzer will beep
+*
+* Parameters:
+*  None
+*
+* Return:
+*  None
+*
+*******************************************************************************/
 
 void EggTimer(void) {
     GUI_SetColor(GUI_BLACK);
@@ -392,14 +426,14 @@ void EggTimer(void) {
     GUI_DispStringAt("Timer started now", 132, 25);
     
     int i;
-    int time_left = 120;
+    int time_left = 420; //set the time in seconds for an egg to cook
     
-    while (time_left >= 0) {
+    while (time_left >= 0) { //check if the timer has finished
         
-        time_left = time_left - 20;
+        time_left = time_left - 10; //if not take 10 seconds off as you have just waited 10 seconds
         
         if (time_left <= 0) {
-            break;
+            break; //exit the loop if the timer is up
         }
         
         
@@ -431,9 +465,9 @@ void EggTimer(void) {
         
         
         
-        UpdateDisplay(CY_EINK_FULL_4STAGE, true);
+        UpdateDisplay(CY_EINK_FULL_4STAGE, true); //Update the display
         
-        CyDelay(2000);
+        CyDelay(10000); //then wait 10 seconds and then update to check if the timer has run out again
         
         
         
@@ -443,7 +477,7 @@ void EggTimer(void) {
     
     
     GUI_Clear();
-        /* Display page title */
+        /* Display 0 seconds left on the timer */
     GUI_SetFont(GUI_FONT_20_1);
     GUI_SetTextAlign(GUI_TA_HCENTER);
     GUI_DispStringAt("Egg Timer", 130, 5);
@@ -462,7 +496,7 @@ void EggTimer(void) {
     
     
     int x;
-    for (x = 0; x < 50; x = x + 1) {
+    for (x = 0; x < 50; x = x + 1) { //beep the buzzer
     PWM_Start();
     CyDelay(100);
     PWM_Disable();
@@ -472,6 +506,19 @@ void EggTimer(void) {
         
 }
 
+/*******************************************************************************
+* Function Name: void CampingActivity(void)
+********************************************************************************
+*
+* Summary: Give the user a random camping activity to do on the display
+*
+* Parameters:
+*  None
+*
+* Return:
+*  None
+*
+*******************************************************************************/
 
 void CampingActivity(void){
      UART_1_Start();
@@ -481,10 +528,10 @@ void CampingActivity(void){
     GUI_SetBkColor(GUI_WHITE);
     GUI_SetTextMode(GUI_TM_NORMAL);
     GUI_SetTextStyle(GUI_TS_NORMAL);
-    
+    /*Set up the various camping activities for program to pick one of */
     const char *activities[] = {"Card Game", "Eat a boiled egg", "scavenger hunt", "Brave the campsite showers", "Take a walk", "Play i spy"};
     
-    int choice = rand() % 7;
+    int choice = rand() % 7; //Pick a random choice from the list
     
     
     /* Clear the screen */
@@ -501,15 +548,14 @@ void CampingActivity(void){
     /* Display labels */	
     GUI_SetFont(GUI_FONT_32B_1);
     GUI_SetTextAlign(GUI_TA_HCENTER);
-    GUI_DispStringAt(c, 132, 83);
-   // printf(activities[choice]);
+    GUI_DispStringAt(c, 132, 83); //Output the random camping activity to the display
     GUI_SetFont(GUI_FONT_20_1);
     GUI_SetTextAlign(GUI_TA_HCENTER);
     GUI_DispStringAt("Have fun!", 132, 150);
     
     
     
-    UpdateDisplay(CY_EINK_FULL_4STAGE, true);
+    UpdateDisplay(CY_EINK_FULL_4STAGE, true); //update the display
 
     
 }
@@ -519,9 +565,11 @@ void CampingActivity(void){
 *
 * Summary: This is the main function.  Following functions are performed
 *			1. Initialize the EmWin library
-*			2. Display the startup screen for 3 seconds
-*			3. Display the instruction screen and wait for key press and release
-*			4. Inside a while loop scroll through the 6 demo pages on every
+*			2. Initialize the thermistor
+*			3. Display the startup screen for 3 seconds
+*			4. Display the instruction screen 
+*			5. Display the startup screen again and wait for key press and release
+*			6. Inside a while loop scroll through the 6 demo pages on every
 *				key press and release
 *
 * Parameters:
@@ -549,7 +597,7 @@ int main(void)
     ADC_1_Start();
     
     
-    
+    /*This starts the thermistor and prevents it from gettin a rediculous value such as -158 degrees */
     Cy_SAR_StartConvert(SAR,CY_SAR_START_CONVERT_CONTINUOUS);
     
     float v1,v2;
@@ -580,15 +628,7 @@ int main(void)
         /* Turn on the Green LED before page update */
         Cy_GPIO_Write(GreenLED_PORT, GreenLED_NUM, 0);
         
-        /* Using pageNumber as index, update the display with a demo screen
-            Following are the functions that are called in sequence 
-                ShowFontSizesNormal()
-                ShowFontSizesBold()
-                ShowTextModes()
-                ShowTextWrapAndOrientation()
-                Show2DGraphics1()
-                Show2DGraphics2()
-        */
+
         (*demoPageArray[pageNumber])();
         
         /* Turn off the Greed LED after page update */
