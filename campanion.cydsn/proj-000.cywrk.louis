@@ -1,0 +1,969 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWrkspcCustomData" version="4">
+<CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
+<userData>
+<dataGuid v="5f2be1a5-0687-4501-bb8c-cf21cb8211bf">
+<CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf type_name="CyDesigner.Common.ProjMgmt.GUI.CyBookmarkData" version="1">
+<indicators />
+</CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf>
+</dataGuid>
+<dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
+<TreeKeys>
+<v>Source</v>
+<v>Components</v>
+<v>Output</v>
+</TreeKeys>
+<TreeStates>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="proj-000\proj">
+<ExpandedNodeIds>
+<v>proj-000</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\TopDesign</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CE218136_EINK_CapSense_RTOS01.cydwr</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CE218136_EINK_CapSense_RTOS01.cydwr\Pins</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CE218136_EINK_CapSense_RTOS01.cydwr\Analog</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CE218136_EINK_CapSense_RTOS01.cydwr\DMA</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CE218136_EINK_CapSense_RTOS01.cydwr\Clocks</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CE218136_EINK_CapSense_RTOS01.cydwr\Interrupts</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CE218136_EINK_CapSense_RTOS01.cydwr\System</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CE218136_EINK_CapSense_RTOS01.cydwr\Directives</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM0p (Core 0)</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM0p (Core 0)\ARM GCC Generic</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM0p (Core 0)\ARM GCC Generic\cy8c6xx7_cm0plus.ld</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM0p (Core 0)\ARM IAR Generic</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM0p (Core 0)\ARM IAR Generic\cy8c6xx7_cm0plus.icf</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM0p (Core 0)\ARM MDK Generic</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM0p (Core 0)\ARM MDK Generic\cy8c6xx7_cm0plus.scat</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM0p (Core 0)\Header Files</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM0p (Core 0)\Source Files</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM0p (Core 0)\Source Files\ARM GCC Generic</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM0p (Core 0)\Source Files\ARM GCC Generic\startup_psoc6_01_cm0plus.S</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM0p (Core 0)\Source Files\ARM IAR Generic</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM0p (Core 0)\Source Files\ARM IAR Generic\startup_psoc6_01_cm0plus.s</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM0p (Core 0)\Source Files\ARM MDK Generic</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM0p (Core 0)\Source Files\ARM MDK Generic\startup_psoc6_01_cm0plus.s</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM0p (Core 0)\Source Files\main_cm0p.c</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM0p (Core 0)\Source Files\system_psoc6_cm0plus.c</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)\ARM GCC Generic</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)\ARM GCC Generic\cy8c6xx7_cm4_dual.ld</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)\ARM IAR Generic</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)\ARM IAR Generic\cy8c6xx7_cm4_dual.icf</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)\ARM MDK Generic</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)\ARM MDK Generic\cy8c6xx7_cm4_dual.scat</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)\CY EINK Library</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)\CY EINK Library\Library Files</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)\CY EINK Library\Library Files\Header Files</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)\CY EINK Library\Library Files\Header Files\cy_eink_fonts.h</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)\CY EINK Library\Library Files\Header Files\cy_eink_library.h</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)\CY EINK Library\Library Files\Source Files</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)\CY EINK Library\Library Files\Source Files\cy_eink_fonts.c</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)\CY EINK Library\Library Files\Source Files\cy_eink_library.c</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)\CY EINK Library\Pervasive Displays Driver Files</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)\CY EINK Library\Pervasive Displays Driver Files\Header Files</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)\CY EINK Library\Pervasive Displays Driver Files\Header Files\pervasive_eink_configuration.h</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)\CY EINK Library\Pervasive Displays Driver Files\Header Files\pervasive_eink_hardware_driver.h</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)\CY EINK Library\Pervasive Displays Driver Files\Source Files</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)\CY EINK Library\Pervasive Displays Driver Files\Source Files\pervasive_eink_hardware_driver.c</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)\CY EINK Library\PSoC Interface Files</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)\CY EINK Library\PSoC Interface Files\Header Files</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)\CY EINK Library\PSoC Interface Files\Header Files\cy_eink_psoc_interface.h</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)\CY EINK Library\PSoC Interface Files\Source Files</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)\CY EINK Library\PSoC Interface Files\Source Files\cy_eink_psoc_interface.c</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)\Header Files</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)\Header Files\RTOS and Task files</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)\Header Files\RTOS and Task files\display_task.h</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)\Header Files\RTOS and Task files\touch_task.h</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)\Header Files\RTOS and Task files\uart_debug.h</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)\Header Files\menu_configuration.h</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)\Header Files\screen_contents.h</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)\Header Files\temperature_eink.h</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)\Source Files</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)\Source Files\ARM GCC Generic</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)\Source Files\ARM GCC Generic\startup_psoc6_01_cm4.S</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)\Source Files\ARM IAR Generic</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)\Source Files\ARM IAR Generic\startup_psoc6_01_cm4.s</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)\Source Files\ARM MDK Generic</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)\Source Files\ARM MDK Generic\startup_psoc6_01_cm4.s</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)\Source Files\RTOS and Task files</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)\Source Files\RTOS and Task files\display_task.c</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)\Source Files\RTOS and Task files\touch_task.c</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)\Source Files\RTOS and Task files\uart_debug.c</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)\Source Files\main_cm4.c</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)\Source Files\screen_contents.c</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)\Source Files\system_psoc6_cm4.c</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CM4 (Core 1)\Source Files\temperature_eink.c</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\Shared Files</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\Shared Files\cyapicallbacks.h</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\Shared Files\stdio_user.c</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\Shared Files\stdio_user.h</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\Shared Files\system_psoc6.h</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CE218136_EINK_CapSense_RTOS.pdf</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\Generated_Source</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\Generated_Source\PSoC6</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\TopDesign</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CE218138_BLE_Thermometer_RTOS01.cydwr</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CE218138_BLE_Thermometer_RTOS01.cydwr\Pins</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CE218138_BLE_Thermometer_RTOS01.cydwr\Analog</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CE218138_BLE_Thermometer_RTOS01.cydwr\DMA</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CE218138_BLE_Thermometer_RTOS01.cydwr\Clocks</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CE218138_BLE_Thermometer_RTOS01.cydwr\Interrupts</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CE218138_BLE_Thermometer_RTOS01.cydwr\System</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CE218138_BLE_Thermometer_RTOS01.cydwr\Directives</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CM0p (Core 0)</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CM0p (Core 0)\Header Files</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CM0p (Core 0)\Source Files</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CM0p (Core 0)\Source Files\main_cm0p.c</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CM4 (Core 1)</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CM4 (Core 1)\CY EINK Library</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CM4 (Core 1)\CY EINK Library\Library Files</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CM4 (Core 1)\CY EINK Library\Library Files\Header Files</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CM4 (Core 1)\CY EINK Library\Library Files\Header Files\cy_eink_fonts.h</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CM4 (Core 1)\CY EINK Library\Library Files\Header Files\cy_eink_library.h</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CM4 (Core 1)\CY EINK Library\Library Files\Source Files</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CM4 (Core 1)\CY EINK Library\Library Files\Source Files\cy_eink_fonts.c</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CM4 (Core 1)\CY EINK Library\Library Files\Source Files\cy_eink_library.c</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CM4 (Core 1)\CY EINK Library\Pervasive Displays Driver Files</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CM4 (Core 1)\CY EINK Library\Pervasive Displays Driver Files\Header Files</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CM4 (Core 1)\CY EINK Library\Pervasive Displays Driver Files\Header Files\pervasive_eink_configuration.h</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CM4 (Core 1)\CY EINK Library\Pervasive Displays Driver Files\Header Files\pervasive_eink_hardware_driver.h</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CM4 (Core 1)\CY EINK Library\Pervasive Displays Driver Files\Source Files</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CM4 (Core 1)\CY EINK Library\Pervasive Displays Driver Files\Source Files\pervasive_eink_hardware_driver.c</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CM4 (Core 1)\CY EINK Library\PSoC Interface Files</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CM4 (Core 1)\CY EINK Library\PSoC Interface Files\Header Files</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CM4 (Core 1)\CY EINK Library\PSoC Interface Files\Header Files\cy_eink_psoc_interface.h</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CM4 (Core 1)\CY EINK Library\PSoC Interface Files\Source Files</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CM4 (Core 1)\CY EINK Library\PSoC Interface Files\Source Files\cy_eink_psoc_interface.c</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CM4 (Core 1)\CY EINK Library\PSoC Interface Files\Source Files\status_led_task.h</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CM4 (Core 1)\Header Files</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CM4 (Core 1)\Header Files\RTOS and Task Files</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CM4 (Core 1)\Header Files\RTOS and Task Files\ble_task.h</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CM4 (Core 1)\Header Files\RTOS and Task Files\display_task.h</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CM4 (Core 1)\Header Files\RTOS and Task Files\FreeRTOSConfig.h</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CM4 (Core 1)\Header Files\RTOS and Task Files\temperature_task.h</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CM4 (Core 1)\Header Files\RTOS and Task Files\uart_debug.h</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CM4 (Core 1)\Header Files\ble_thermometer_config.h</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CM4 (Core 1)\Header Files\screen_contents.h</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CM4 (Core 1)\Source Files</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CM4 (Core 1)\Source Files\RTOS and Task Files</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CM4 (Core 1)\Source Files\RTOS and Task Files\ble_task.c</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CM4 (Core 1)\Source Files\RTOS and Task Files\display_task.c</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CM4 (Core 1)\Source Files\RTOS and Task Files\status_led_task.c</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CM4 (Core 1)\Source Files\RTOS and Task Files\temperature_task.c</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CM4 (Core 1)\Source Files\RTOS and Task Files\uart_debug.c</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CM4 (Core 1)\Source Files\main_cm4.c</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CM4 (Core 1)\Source Files\screen_contents.c</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\Shared Files</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\Shared Files\cyapicallbacks.h</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\Shared Files\stdio_user.h</v>
+<v>proj-000\proj</v>
+<v>proj-000\proj\TopDesign</v>
+<v>proj-000\proj\proj.cydwr</v>
+<v>proj-000\proj\proj.cydwr\Pins</v>
+<v>proj-000\proj\proj.cydwr\Analog</v>
+<v>proj-000\proj\proj.cydwr\DMA</v>
+<v>proj-000\proj\proj.cydwr\Clocks</v>
+<v>proj-000\proj\proj.cydwr\Interrupts</v>
+<v>proj-000\proj\proj.cydwr\System</v>
+<v>proj-000\proj\proj.cydwr\Directives</v>
+<v>proj-000\proj\CM0p (Core 0)</v>
+<v>proj-000\proj\CM0p (Core 0)\ARM GCC Generic</v>
+<v>proj-000\proj\CM0p (Core 0)\ARM GCC Generic\cy8c6xx7_cm0plus.ld</v>
+<v>proj-000\proj\CM0p (Core 0)\ARM IAR Generic</v>
+<v>proj-000\proj\CM0p (Core 0)\ARM IAR Generic\cy8c6xx7_cm0plus.icf</v>
+<v>proj-000\proj\CM0p (Core 0)\ARM MDK Generic</v>
+<v>proj-000\proj\CM0p (Core 0)\ARM MDK Generic\cy8c6xx7_cm0plus.scat</v>
+<v>proj-000\proj\CM0p (Core 0)\Header Files</v>
+<v>proj-000\proj\CM0p (Core 0)\Source Files</v>
+<v>proj-000\proj\CM0p (Core 0)\Source Files\ARM GCC Generic</v>
+<v>proj-000\proj\CM0p (Core 0)\Source Files\ARM GCC Generic\startup_psoc6_01_cm0plus.S</v>
+<v>proj-000\proj\CM0p (Core 0)\Source Files\ARM IAR Generic</v>
+<v>proj-000\proj\CM0p (Core 0)\Source Files\ARM IAR Generic\startup_psoc6_01_cm0plus.s</v>
+<v>proj-000\proj\CM0p (Core 0)\Source Files\ARM MDK Generic</v>
+<v>proj-000\proj\CM0p (Core 0)\Source Files\ARM MDK Generic\startup_psoc6_01_cm0plus.s</v>
+<v>proj-000\proj\CM0p (Core 0)\Source Files\main_cm0p.c</v>
+<v>proj-000\proj\CM0p (Core 0)\Source Files\system_psoc6_cm0plus.c</v>
+<v>proj-000\proj\CM4 (Core 1)</v>
+<v>proj-000\proj\CM4 (Core 1)\ARM GCC Generic</v>
+<v>proj-000\proj\CM4 (Core 1)\ARM GCC Generic\cy8c6xx7_cm4_dual.ld</v>
+<v>proj-000\proj\CM4 (Core 1)\ARM IAR Generic</v>
+<v>proj-000\proj\CM4 (Core 1)\ARM IAR Generic\cy8c6xx7_cm4_dual.icf</v>
+<v>proj-000\proj\CM4 (Core 1)\ARM MDK Generic</v>
+<v>proj-000\proj\CM4 (Core 1)\ARM MDK Generic\cy8c6xx7_cm4_dual.scat</v>
+<v>proj-000\proj\CM4 (Core 1)\eInk Library</v>
+<v>proj-000\proj\CM4 (Core 1)\eInk Library\cy_eink_library.c</v>
+<v>proj-000\proj\CM4 (Core 1)\eInk Library\cy_eink_library.h</v>
+<v>proj-000\proj\CM4 (Core 1)\eInk Library\cy_eink_psoc_interface.c</v>
+<v>proj-000\proj\CM4 (Core 1)\eInk Library\cy_eink_psoc_interface.h</v>
+<v>proj-000\proj\CM4 (Core 1)\eInk Library\pervasive_eink_configuration.h</v>
+<v>proj-000\proj\CM4 (Core 1)\eInk Library\pervasive_eink_hardware_driver.c</v>
+<v>proj-000\proj\CM4 (Core 1)\eInk Library\pervasive_eink_hardware_driver.h</v>
+<v>proj-000\proj\CM4 (Core 1)\Header Files</v>
+<v>proj-000\proj\CM4 (Core 1)\Header Files\debug.h</v>
+<v>proj-000\proj\CM4 (Core 1)\Header Files\Thermistor.h</v>
+<v>proj-000\proj\CM4 (Core 1)\Images</v>
+<v>proj-000\proj\CM4 (Core 1)\Images\Cypress Logo Full Color_PNG_1bpp.c</v>
+<v>proj-000\proj\CM4 (Core 1)\Source Files</v>
+<v>proj-000\proj\CM4 (Core 1)\Source Files\ARM GCC Generic</v>
+<v>proj-000\proj\CM4 (Core 1)\Source Files\ARM GCC Generic\startup_psoc6_01_cm4.S</v>
+<v>proj-000\proj\CM4 (Core 1)\Source Files\ARM IAR Generic</v>
+<v>proj-000\proj\CM4 (Core 1)\Source Files\ARM IAR Generic\startup_psoc6_01_cm4.s</v>
+<v>proj-000\proj\CM4 (Core 1)\Source Files\ARM MDK Generic</v>
+<v>proj-000\proj\CM4 (Core 1)\Source Files\ARM MDK Generic\startup_psoc6_01_cm4.s</v>
+<v>proj-000\proj\CM4 (Core 1)\Source Files\main_cm4.c</v>
+<v>proj-000\proj\CM4 (Core 1)\Source Files\system_psoc6_cm4.c</v>
+<v>proj-000\proj\CM4 (Core 1)\Source Files\Thermistor.c</v>
+<v>proj-000\proj\Shared Files</v>
+<v>proj-000\proj\Shared Files\cyapicallbacks.h</v>
+<v>proj-000\proj\Shared Files\GUI_X.c</v>
+<v>proj-000\proj\Shared Files\GUIConf.c</v>
+<v>proj-000\proj\Shared Files\GUIConf.h</v>
+<v>proj-000\proj\Shared Files\LCDConf.c</v>
+<v>proj-000\proj\Shared Files\LCDConf.h</v>
+<v>proj-000\proj\Shared Files\stdio_user.c</v>
+<v>proj-000\proj\Shared Files\stdio_user.h</v>
+<v>proj-000\proj\Shared Files\system_psoc6.h</v>
+<v>proj-000\proj\Generated_Source</v>
+<v>proj-000\proj\Generated_Source\PSoC6</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\TopDesign</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\PSoC_6_MCU_Hello_World_Example01.cydwr</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\PSoC_6_MCU_Hello_World_Example01.cydwr\Pins</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\PSoC_6_MCU_Hello_World_Example01.cydwr\Analog</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\PSoC_6_MCU_Hello_World_Example01.cydwr\DMA</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\PSoC_6_MCU_Hello_World_Example01.cydwr\Clocks</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\PSoC_6_MCU_Hello_World_Example01.cydwr\Interrupts</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\PSoC_6_MCU_Hello_World_Example01.cydwr\System</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\PSoC_6_MCU_Hello_World_Example01.cydwr\Directives</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CM0p (Core 0)</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CM0p (Core 0)\ARM GCC Generic</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CM0p (Core 0)\ARM GCC Generic\cy8c6xx7_cm0plus.ld</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CM0p (Core 0)\ARM IAR Generic</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CM0p (Core 0)\ARM IAR Generic\cy8c6xx7_cm0plus.icf</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CM0p (Core 0)\ARM MDK Generic</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CM0p (Core 0)\ARM MDK Generic\cy8c6xx7_cm0plus.scat</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CM0p (Core 0)\Header Files</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CM0p (Core 0)\Header Files\system_psoc6.h</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CM0p (Core 0)\Source Files</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CM0p (Core 0)\Source Files\ARM GCC Generic</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CM0p (Core 0)\Source Files\ARM GCC Generic\startup_psoc6_01_cm0plus.S</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CM0p (Core 0)\Source Files\ARM IAR Generic</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CM0p (Core 0)\Source Files\ARM IAR Generic\startup_psoc6_01_cm0plus.s</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CM0p (Core 0)\Source Files\ARM MDK Generic</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CM0p (Core 0)\Source Files\ARM MDK Generic\startup_psoc6_01_cm0plus.s</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CM0p (Core 0)\Source Files\main_cm0p.c</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CM0p (Core 0)\Source Files\system_psoc6_cm0plus.c</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CM4 (Core 1)</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CM4 (Core 1)\ARM GCC Generic</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CM4 (Core 1)\ARM GCC Generic\cy8c6xx7_cm4_dual.ld</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CM4 (Core 1)\ARM IAR Generic</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CM4 (Core 1)\ARM IAR Generic\cy8c6xx7_cm4_dual.icf</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CM4 (Core 1)\ARM MDK Generic</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CM4 (Core 1)\ARM MDK Generic\cy8c6xx7_cm4_dual.scat</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CM4 (Core 1)\Header Files</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CM4 (Core 1)\Source Files</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CM4 (Core 1)\Source Files\ARM GCC Generic</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CM4 (Core 1)\Source Files\ARM GCC Generic\startup_psoc6_01_cm4.S</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CM4 (Core 1)\Source Files\ARM IAR Generic</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CM4 (Core 1)\Source Files\ARM IAR Generic\startup_psoc6_01_cm4.s</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CM4 (Core 1)\Source Files\ARM MDK Generic</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CM4 (Core 1)\Source Files\ARM MDK Generic\startup_psoc6_01_cm4.s</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CM4 (Core 1)\Source Files\main_cm4.c</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CM4 (Core 1)\Source Files\system_psoc6_cm4.c</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\Shared Files</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\Shared Files\cyapicallbacks.h</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\Generated_Source</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\Generated_Source\PSoC6</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\TopDesign</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\PSoC_6_MCU_Hello_World_Example02.cydwr</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\PSoC_6_MCU_Hello_World_Example02.cydwr\Pins</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\PSoC_6_MCU_Hello_World_Example02.cydwr\Analog</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\PSoC_6_MCU_Hello_World_Example02.cydwr\DMA</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\PSoC_6_MCU_Hello_World_Example02.cydwr\Clocks</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\PSoC_6_MCU_Hello_World_Example02.cydwr\Interrupts</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\PSoC_6_MCU_Hello_World_Example02.cydwr\System</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\PSoC_6_MCU_Hello_World_Example02.cydwr\Directives</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CM0p (Core 0)</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CM0p (Core 0)\ARM GCC Generic</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CM0p (Core 0)\ARM GCC Generic\cy8c6xx7_cm0plus.ld</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CM0p (Core 0)\ARM IAR Generic</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CM0p (Core 0)\ARM IAR Generic\cy8c6xx7_cm0plus.icf</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CM0p (Core 0)\ARM MDK Generic</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CM0p (Core 0)\ARM MDK Generic\cy8c6xx7_cm0plus.scat</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CM0p (Core 0)\Header Files</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CM0p (Core 0)\Header Files\system_psoc6.h</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CM0p (Core 0)\Source Files</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CM0p (Core 0)\Source Files\ARM GCC Generic</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CM0p (Core 0)\Source Files\ARM GCC Generic\startup_psoc6_01_cm0plus.S</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CM0p (Core 0)\Source Files\ARM IAR Generic</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CM0p (Core 0)\Source Files\ARM IAR Generic\startup_psoc6_01_cm0plus.s</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CM0p (Core 0)\Source Files\ARM MDK Generic</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CM0p (Core 0)\Source Files\ARM MDK Generic\startup_psoc6_01_cm0plus.s</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CM0p (Core 0)\Source Files\main_cm0p.c</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CM0p (Core 0)\Source Files\system_psoc6_cm0plus.c</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CM4 (Core 1)</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CM4 (Core 1)\ARM GCC Generic</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CM4 (Core 1)\ARM GCC Generic\cy8c6xx7_cm4_dual.ld</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CM4 (Core 1)\ARM IAR Generic</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CM4 (Core 1)\ARM IAR Generic\cy8c6xx7_cm4_dual.icf</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CM4 (Core 1)\ARM MDK Generic</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CM4 (Core 1)\ARM MDK Generic\cy8c6xx7_cm4_dual.scat</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CM4 (Core 1)\Header Files</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CM4 (Core 1)\Source Files</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CM4 (Core 1)\Source Files\ARM GCC Generic</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CM4 (Core 1)\Source Files\ARM GCC Generic\startup_psoc6_01_cm4.S</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CM4 (Core 1)\Source Files\ARM IAR Generic</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CM4 (Core 1)\Source Files\ARM IAR Generic\startup_psoc6_01_cm4.s</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CM4 (Core 1)\Source Files\ARM MDK Generic</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CM4 (Core 1)\Source Files\ARM MDK Generic\startup_psoc6_01_cm4.s</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CM4 (Core 1)\Source Files\main_cm4.c</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CM4 (Core 1)\Source Files\system_psoc6_cm4.c</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\Shared Files</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\Shared Files\cyapicallbacks.h</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\Generated_Source</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\Generated_Source\PSoC6</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS.pdf</v>
+<v>proj-000\CE221773_PSoC_6_MCU_Hello_World_Example.pdf</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>proj-000</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01</v>
+<v>proj-000\proj</v>
+<v>proj-000\proj\TopDesign</v>
+<v>proj-000\proj\proj.cydwr</v>
+<v>proj-000\proj\proj.cydwr\Pins</v>
+<v>proj-000\proj\proj.cydwr\Analog</v>
+<v>proj-000\proj\proj.cydwr\DMA</v>
+<v>proj-000\proj\proj.cydwr\Clocks</v>
+<v>proj-000\proj\proj.cydwr\Interrupts</v>
+<v>proj-000\proj\proj.cydwr\System</v>
+<v>proj-000\proj\proj.cydwr\Directives</v>
+<v>proj-000\proj\CM0p (Core 0)</v>
+<v>proj-000\proj\CM0p (Core 0)\ARM GCC Generic</v>
+<v>proj-000\proj\CM0p (Core 0)\ARM GCC Generic\cy8c6xx7_cm0plus.ld</v>
+<v>proj-000\proj\CM0p (Core 0)\ARM IAR Generic</v>
+<v>proj-000\proj\CM0p (Core 0)\ARM IAR Generic\cy8c6xx7_cm0plus.icf</v>
+<v>proj-000\proj\CM0p (Core 0)\ARM MDK Generic</v>
+<v>proj-000\proj\CM0p (Core 0)\ARM MDK Generic\cy8c6xx7_cm0plus.scat</v>
+<v>proj-000\proj\CM0p (Core 0)\Header Files</v>
+<v>proj-000\proj\CM0p (Core 0)\Source Files</v>
+<v>proj-000\proj\CM0p (Core 0)\Source Files\ARM GCC Generic</v>
+<v>proj-000\proj\CM0p (Core 0)\Source Files\ARM GCC Generic\startup_psoc6_01_cm0plus.S</v>
+<v>proj-000\proj\CM0p (Core 0)\Source Files\ARM IAR Generic</v>
+<v>proj-000\proj\CM0p (Core 0)\Source Files\ARM IAR Generic\startup_psoc6_01_cm0plus.s</v>
+<v>proj-000\proj\CM0p (Core 0)\Source Files\ARM MDK Generic</v>
+<v>proj-000\proj\CM0p (Core 0)\Source Files\ARM MDK Generic\startup_psoc6_01_cm0plus.s</v>
+<v>proj-000\proj\CM0p (Core 0)\Source Files\main_cm0p.c</v>
+<v>proj-000\proj\CM0p (Core 0)\Source Files\system_psoc6_cm0plus.c</v>
+<v>proj-000\proj\CM4 (Core 1)</v>
+<v>proj-000\proj\CM4 (Core 1)\ARM GCC Generic</v>
+<v>proj-000\proj\CM4 (Core 1)\ARM GCC Generic\cy8c6xx7_cm4_dual.ld</v>
+<v>proj-000\proj\CM4 (Core 1)\ARM IAR Generic</v>
+<v>proj-000\proj\CM4 (Core 1)\ARM IAR Generic\cy8c6xx7_cm4_dual.icf</v>
+<v>proj-000\proj\CM4 (Core 1)\ARM MDK Generic</v>
+<v>proj-000\proj\CM4 (Core 1)\ARM MDK Generic\cy8c6xx7_cm4_dual.scat</v>
+<v>proj-000\proj\CM4 (Core 1)\eInk Library</v>
+<v>proj-000\proj\CM4 (Core 1)\eInk Library\cy_eink_library.c</v>
+<v>proj-000\proj\CM4 (Core 1)\eInk Library\cy_eink_library.h</v>
+<v>proj-000\proj\CM4 (Core 1)\eInk Library\cy_eink_psoc_interface.c</v>
+<v>proj-000\proj\CM4 (Core 1)\eInk Library\cy_eink_psoc_interface.h</v>
+<v>proj-000\proj\CM4 (Core 1)\eInk Library\pervasive_eink_configuration.h</v>
+<v>proj-000\proj\CM4 (Core 1)\eInk Library\pervasive_eink_hardware_driver.c</v>
+<v>proj-000\proj\CM4 (Core 1)\eInk Library\pervasive_eink_hardware_driver.h</v>
+<v>proj-000\proj\CM4 (Core 1)\Header Files</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="proj-000">
+<ExpandedNodeIds>
+<v>proj-000</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\TopDesign</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\TopDesign\TopDesign.cysch</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\TopDesign</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\TopDesign\TopDesign.cysch</v>
+<v>proj-000\proj</v>
+<v>proj-000\proj\TopDesign</v>
+<v>proj-000\proj\TopDesign\TopDesign.cysch</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\TopDesign</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\TopDesign\TopDesign.cysch</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\TopDesign</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\TopDesign\TopDesign.cysch</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>proj-000</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\TopDesign</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\TopDesign\TopDesign.cysch</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\TopDesign</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\TopDesign\TopDesign.cysch</v>
+<v>proj-000\proj</v>
+<v>proj-000\proj\TopDesign</v>
+<v>proj-000\proj\TopDesign\TopDesign.cysch</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\TopDesign</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\TopDesign\TopDesign.cysch</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\TopDesign</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\TopDesign\TopDesign.cysch</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="proj-000">
+<ExpandedNodeIds>
+<v>proj-000</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CortexM0p</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CortexM0p\ARM_GCC_541</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CortexM0p\ARM_GCC_541\Debug</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CortexM0p\ARM_GCC_541\Debug\Listing Files</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CortexM0p\ARM_GCC_541\Debug\Listing Files\CY_EINK_SPIM.lst</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cyfitter_sysint_cfg.lst</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CortexM0p\ARM_GCC_541\Debug\Listing Files\main_cm0p.lst</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CortexM0p\ARM_GCC_541\Debug\Listing Files\startup_psoc6_01_cm0plus.lst</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CortexM0p\ARM_GCC_541\Debug\Listing Files\stdio_user.lst</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CortexM0p\ARM_GCC_541\Debug\Listing Files\system_psoc6_cm0plus.lst</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CortexM0p\ARM_GCC_541\Debug\CE218136_EINK_CapSense_RTOS01.elf</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CortexM0p\ARM_GCC_541\Debug\CE218136_EINK_CapSense_RTOS01.hex</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CortexM0p\ARM_GCC_541\Debug\CE218136_EINK_CapSense_RTOS01.map</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CortexM4</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CortexM4\ARM_GCC_541</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CortexM4\ARM_GCC_541\Debug</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CortexM4\ARM_GCC_541\Debug\CE218136_EINK_CapSense_RTOS01.elf</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CortexM4\ARM_GCC_541\Debug\CE218136_EINK_CapSense_RTOS01.hex</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CortexM4\ARM_GCC_541\Debug\CE218136_EINK_CapSense_RTOS01.map</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CE218136_EINK_CapSense_RTOS01.gpdsc</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CE218136_EINK_CapSense_RTOS01.rpt</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CE218136_EINK_CapSense_RTOS01_timing.html</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CortexM0p</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CortexM0p\ARM_GCC_541</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CortexM0p\ARM_GCC_541\Debug</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CortexM0p\ARM_GCC_541\Debug\CE218138_BLE_Thermometer_RTOS01.elf</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CortexM0p\ARM_GCC_541\Debug\CE218138_BLE_Thermometer_RTOS01.hex</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CortexM0p\ARM_GCC_541\Debug\CE218138_BLE_Thermometer_RTOS01.map</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CortexM4</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CortexM4\ARM_GCC_541</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CortexM4\ARM_GCC_541\Debug</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CortexM4\ARM_GCC_541\Debug\CE218138_BLE_Thermometer_RTOS01.elf</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CortexM4\ARM_GCC_541\Debug\CE218138_BLE_Thermometer_RTOS01.hex</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CortexM4\ARM_GCC_541\Debug\CE218138_BLE_Thermometer_RTOS01.map</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CE218138_BLE_Thermometer_RTOS01.gpdsc</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CE218138_BLE_Thermometer_RTOS01.rpt</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CE218138_BLE_Thermometer_RTOS01_timing.html</v>
+<v>proj-000\proj</v>
+<v>proj-000\proj\CortexM0p</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\ADC_1.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\ADC_1_INIT.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\ADC_1_INT.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\ADC_1_PM.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_clk.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_device.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_efuse.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\CY_EINK_SPIM.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\CY_EINK_Timer.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_flash.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_gpio.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ipc_drv.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ipc_pipe.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ipc_sema.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_lvd.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_profile.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_prot.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_sar.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_scb_common.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_scb_ezi2c.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_scb_i2c.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_scb_spi.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_scb_uart.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_sysanalog.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_sysclk.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_sysint.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_syslib.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_syslib_gcc.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_syspm.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_systick.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_tcpwm_counter.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_tcpwm_pwm.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_tcpwm_quaddec.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_trigmux.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_wdt.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\cyfitter_sysint_cfg.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\GUI_X.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\GUIConf.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\LCDConf.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\main_cm0p.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\PWM.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\retarget.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\startup_psoc6_01_cm0plus.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\Status_SW2.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\stdio_user.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\system_psoc6_cm0plus.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\Listing Files\UART_1.lst</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\proj.elf</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\proj.hex</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug\proj.map</v>
+<v>proj-000\proj\CortexM4</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\ADC_1.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\ADC_1_INIT.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\ADC_1_INT.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\ADC_1_PM.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ble_clk.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_device.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_efuse.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_eink_library.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_eink_psoc_interface.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\CY_EINK_SPIM.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\CY_EINK_Timer.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_flash.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_gpio.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ipc_drv.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ipc_pipe.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ipc_sema.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_lvd.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_profile.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_prot.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_sar.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_scb_common.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_scb_ezi2c.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_scb_i2c.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_scb_spi.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_scb_uart.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_sysanalog.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_sysclk.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_sysint.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_syslib.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_syslib_gcc.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_syspm.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_systick.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_tcpwm_counter.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_tcpwm_pwm.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_tcpwm_quaddec.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_trigmux.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_wdt.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\cyfitter_sysint_cfg.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\Cypress Logo Full Color_PNG_1bpp.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\GUI_X.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\GUIConf.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\LCDConf.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\main_cm4.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\pervasive_eink_hardware_driver.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\PWM.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\retarget.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\startup_psoc6_01_cm4.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\Status_SW2.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\stdio_user.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\system_psoc6_cm4.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\Thermistor.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\Listing Files\UART_1.lst</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\proj.elf</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\proj.hex</v>
+<v>proj-000\proj\CortexM4\ARM_GCC_541\Debug\proj.map</v>
+<v>proj-000\proj\proj.gpdsc</v>
+<v>proj-000\proj\proj.rpt</v>
+<v>proj-000\proj\proj_timing.html</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM0p</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM0p\ARM_GCC_541</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM0p\ARM_GCC_541\Debug</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM0p\ARM_GCC_541\Debug\Listing Files</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_clk.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_device.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_efuse.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_flash.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_gpio.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ipc_drv.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ipc_pipe.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ipc_sema.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_lvd.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_profile.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_prot.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_scb_common.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_scb_ezi2c.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_scb_i2c.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_scb_spi.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_scb_uart.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_sysanalog.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_sysclk.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_sysint.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_syslib.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_syslib_gcc.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_syspm.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_systick.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_tcpwm_counter.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_tcpwm_pwm.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_tcpwm_quaddec.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_trigmux.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_wdt.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cyfitter_sysint_cfg.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM0p\ARM_GCC_541\Debug\Listing Files\main_cm0p.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM0p\ARM_GCC_541\Debug\Listing Files\startup_psoc6_01_cm0plus.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM0p\ARM_GCC_541\Debug\Listing Files\system_psoc6_cm0plus.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM0p\ARM_GCC_541\Debug\Listing Files\Timer.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM0p\ARM_GCC_541\Debug\Listing Files\UART.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM0p\ARM_GCC_541\Debug\PSoC_6_MCU_Hello_World_Example01.elf</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM0p\ARM_GCC_541\Debug\PSoC_6_MCU_Hello_World_Example01.hex</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM0p\ARM_GCC_541\Debug\PSoC_6_MCU_Hello_World_Example01.map</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM4</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM4\ARM_GCC_541</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM4\ARM_GCC_541\Debug</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM4\ARM_GCC_541\Debug\Listing Files</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ble_clk.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_device.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_efuse.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_flash.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_gpio.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ipc_drv.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ipc_pipe.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ipc_sema.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_lvd.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_profile.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_prot.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_scb_common.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_scb_ezi2c.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_scb_i2c.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_scb_spi.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_scb_uart.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_sysanalog.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_sysclk.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_sysint.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_syslib.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_syslib_gcc.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_syspm.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_systick.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_tcpwm_counter.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_tcpwm_pwm.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_tcpwm_quaddec.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_trigmux.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_wdt.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM4\ARM_GCC_541\Debug\Listing Files\cyfitter_sysint_cfg.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM4\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM4\ARM_GCC_541\Debug\Listing Files\main_cm4.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM4\ARM_GCC_541\Debug\Listing Files\startup_psoc6_01_cm4.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM4\ARM_GCC_541\Debug\Listing Files\system_psoc6_cm4.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM4\ARM_GCC_541\Debug\Listing Files\Timer.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM4\ARM_GCC_541\Debug\Listing Files\UART.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM4\ARM_GCC_541\Debug\PSoC_6_MCU_Hello_World_Example01.elf</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM4\ARM_GCC_541\Debug\PSoC_6_MCU_Hello_World_Example01.hex</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\CortexM4\ARM_GCC_541\Debug\PSoC_6_MCU_Hello_World_Example01.map</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\PSoC_6_MCU_Hello_World_Example01.gpdsc</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\PSoC_6_MCU_Hello_World_Example01.rpt</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\PSoC_6_MCU_Hello_World_Example01_timing.html</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM0p</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM0p\ARM_GCC_541</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM0p\ARM_GCC_541\Debug</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM0p\ARM_GCC_541\Debug\Listing Files</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_clk.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_device.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_efuse.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_flash.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_gpio.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ipc_drv.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ipc_pipe.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ipc_sema.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_lvd.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_profile.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_prot.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_scb_common.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_scb_ezi2c.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_scb_i2c.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_scb_spi.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_scb_uart.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_sysanalog.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_sysclk.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_sysint.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_syslib.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_syslib_gcc.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_syspm.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_systick.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_tcpwm_counter.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_tcpwm_pwm.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_tcpwm_quaddec.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_trigmux.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_wdt.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM0p\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM0p\ARM_GCC_541\Debug\Listing Files\cyfitter_sysint_cfg.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM0p\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM0p\ARM_GCC_541\Debug\Listing Files\main_cm0p.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM0p\ARM_GCC_541\Debug\Listing Files\startup_psoc6_01_cm0plus.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM0p\ARM_GCC_541\Debug\Listing Files\system_psoc6_cm0plus.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM0p\ARM_GCC_541\Debug\Listing Files\Timer.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM0p\ARM_GCC_541\Debug\Listing Files\UART.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM0p\ARM_GCC_541\Debug\PSoC_6_MCU_Hello_World_Example02.elf</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM0p\ARM_GCC_541\Debug\PSoC_6_MCU_Hello_World_Example02.hex</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM0p\ARM_GCC_541\Debug\PSoC_6_MCU_Hello_World_Example02.map</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM4</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM4\ARM_GCC_541</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM4\ARM_GCC_541\Debug</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM4\ARM_GCC_541\Debug\Listing Files</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ble_clk.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_device.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_efuse.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_flash.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_gpio.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ipc_drv.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ipc_pipe.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ipc_sema.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_lvd.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_profile.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_prot.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_scb_common.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_scb_ezi2c.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_scb_i2c.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_scb_spi.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_scb_uart.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_sysanalog.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_sysclk.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_sysint.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_syslib.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_syslib_gcc.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_syspm.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_systick.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_tcpwm_counter.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_tcpwm_pwm.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_tcpwm_quaddec.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_trigmux.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_wdt.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM4\ARM_GCC_541\Debug\Listing Files\cyfitter_sysint_cfg.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM4\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM4\ARM_GCC_541\Debug\Listing Files\main_cm4.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM4\ARM_GCC_541\Debug\Listing Files\startup_psoc6_01_cm4.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM4\ARM_GCC_541\Debug\Listing Files\system_psoc6_cm4.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM4\ARM_GCC_541\Debug\Listing Files\Timer.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM4\ARM_GCC_541\Debug\Listing Files\UART.lst</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM4\ARM_GCC_541\Debug\PSoC_6_MCU_Hello_World_Example02.elf</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM4\ARM_GCC_541\Debug\PSoC_6_MCU_Hello_World_Example02.hex</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\CortexM4\ARM_GCC_541\Debug\PSoC_6_MCU_Hello_World_Example02.map</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\PSoC_6_MCU_Hello_World_Example02.gpdsc</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\PSoC_6_MCU_Hello_World_Example02.rpt</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\PSoC_6_MCU_Hello_World_Example02_timing.html</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>proj-000</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CortexM0p</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CortexM0p\ARM_GCC_541</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CortexM0p\ARM_GCC_541\Debug</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CortexM0p\ARM_GCC_541\Debug\Listing Files</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CortexM0p\ARM_GCC_541\Debug\Listing Files\CY_EINK_SPIM.lst</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cyfitter_sysint_cfg.lst</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CortexM0p\ARM_GCC_541\Debug\Listing Files\main_cm0p.lst</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CortexM0p\ARM_GCC_541\Debug\Listing Files\startup_psoc6_01_cm0plus.lst</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CortexM0p\ARM_GCC_541\Debug\Listing Files\stdio_user.lst</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CortexM0p\ARM_GCC_541\Debug\Listing Files\system_psoc6_cm0plus.lst</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CortexM0p\ARM_GCC_541\Debug\CE218136_EINK_CapSense_RTOS01.elf</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CortexM0p\ARM_GCC_541\Debug\CE218136_EINK_CapSense_RTOS01.hex</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CortexM0p\ARM_GCC_541\Debug\CE218136_EINK_CapSense_RTOS01.map</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CortexM4</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CortexM4\ARM_GCC_541</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CortexM4\ARM_GCC_541\Debug</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CortexM4\ARM_GCC_541\Debug\CE218136_EINK_CapSense_RTOS01.elf</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CortexM4\ARM_GCC_541\Debug\CE218136_EINK_CapSense_RTOS01.hex</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CortexM4\ARM_GCC_541\Debug\CE218136_EINK_CapSense_RTOS01.map</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CE218136_EINK_CapSense_RTOS01.gpdsc</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CE218136_EINK_CapSense_RTOS01.rpt</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CE218136_EINK_CapSense_RTOS01_timing.html</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CortexM0p</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CortexM0p\ARM_GCC_541</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CortexM0p\ARM_GCC_541\Debug</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CortexM0p\ARM_GCC_541\Debug\CE218138_BLE_Thermometer_RTOS01.elf</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CortexM0p\ARM_GCC_541\Debug\CE218138_BLE_Thermometer_RTOS01.hex</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CortexM0p\ARM_GCC_541\Debug\CE218138_BLE_Thermometer_RTOS01.map</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CortexM4</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CortexM4\ARM_GCC_541</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CortexM4\ARM_GCC_541\Debug</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CortexM4\ARM_GCC_541\Debug\CE218138_BLE_Thermometer_RTOS01.elf</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CortexM4\ARM_GCC_541\Debug\CE218138_BLE_Thermometer_RTOS01.hex</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CortexM4\ARM_GCC_541\Debug\CE218138_BLE_Thermometer_RTOS01.map</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CE218138_BLE_Thermometer_RTOS01.gpdsc</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CE218138_BLE_Thermometer_RTOS01.rpt</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\CE218138_BLE_Thermometer_RTOS01_timing.html</v>
+<v>proj-000\proj</v>
+<v>proj-000\proj\CortexM0p</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541</v>
+<v>proj-000\proj\CortexM0p\ARM_GCC_541\Debug</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStates>
+<TreeKeysV2>
+<v>Datasheet</v>
+</TreeKeysV2>
+<TreeStatesV2>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>proj-000</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\PSoC 6 Architecture TRM</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\PSoC 63 Family Datasheet</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\Peripheral Driver Library</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\System Reference Guides</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CapSense_v2_0.pdf</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\GPIO_PDL_v1_0</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\GPIO_PDL_v1_0\GPIO_PDL_v1_0.pdf</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\LED_v1_0</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\LED_v1_0\LED_v1_0.pdf</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\Power_v1_0</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\Power_v1_0\Power_v1_0.pdf</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\Resistor_v1_0</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\Resistor_v1_0\Resistor_v1_0.pdf</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\Scan_ADC_P6_v2_10.pdf</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\SCB_SPI_PDL_v2_0.pdf</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\Thermistor_v1_0.pdf</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\PSoC 6 Architecture TRM</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\PSoC 63 Family Datasheet</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\Peripheral Driver Library</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\System Reference Guides</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\BLE_PDL_v2_0.pdf</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\cy_gsref_v2_10.pdf</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\Gnd_v1_0.pdf</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\GPIO_PDL_v1_0</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\GPIO_PDL_v1_0\GPIO_PDL_v1_0.pdf</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\LED_v1_0</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\LED_v1_0\LED_v1_0.pdf</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\Power_v1_0</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\Power_v1_0\Power_v1_0.pdf</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\Resistor_v1_0</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\Resistor_v1_0\Resistor_v1_0.pdf</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\Scan_ADC_P6_v2_10.pdf</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\SCB_SPI_PDL_v2_0.pdf</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\SwitchSPST_v1_0.pdf</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\SysInt_PDL_v1_0.pdf</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\Thermistor_v1_0.pdf</v>
+<v>proj-000\proj</v>
+<v>proj-000\proj\PSoC 6 Architecture TRM</v>
+<v>proj-000\proj\PSoC 63 Family Datasheet</v>
+<v>proj-000\proj\Peripheral Driver Library</v>
+<v>proj-000\proj\System Reference Guides</v>
+<v>proj-000\proj\CyStatusReg_v1_90.pdf</v>
+<v>proj-000\proj\GPIO_PDL_v1_0</v>
+<v>proj-000\proj\GPIO_PDL_v1_0\GPIO_PDL_v1_0.pdf</v>
+<v>proj-000\proj\Resistor_v1_0.pdf</v>
+<v>proj-000\proj\Scan_ADC_P6_v2_10.pdf</v>
+<v>proj-000\proj\SCB_SPI_PDL_v2_0.pdf</v>
+<v>proj-000\proj\SCB_UART_PDL_v2_0.pdf</v>
+<v>proj-000\proj\SysClk_PDL_v1_0</v>
+<v>proj-000\proj\SysClk_PDL_v1_0\SysClk_PDL_v1_0.pdf</v>
+<v>proj-000\proj\TCPWM_Counter_PDL_v1_0.pdf</v>
+<v>proj-000\proj\TCPWM_PWM_PDL_v1_0.pdf</v>
+<v>proj-000\proj\Thermistor_v1_0.pdf</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\PSoC 6 Architecture TRM</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\PSoC 63 Family Datasheet</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\Peripheral Driver Library</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\System Reference Guides</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\GPIO_PDL_v1_0.pdf</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\LED_v1_0.pdf</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\Power_v1_0.pdf</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\Resistor_v1_0.pdf</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\SCB_UART_PDL_v2_0.pdf</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\SysClk_PDL_v1_0.pdf</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\SysInt_PDL_v1_0.pdf</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example01\TCPWM_Counter_PDL_v1_0.pdf</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\PSoC 6 Architecture TRM</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\PSoC 63 Family Datasheet</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\Peripheral Driver Library</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\System Reference Guides</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\GPIO_PDL_v1_0.pdf</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\LED_v1_0.pdf</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\Power_v1_0.pdf</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\Resistor_v1_0.pdf</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\SCB_UART_PDL_v2_0.pdf</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\SysClk_PDL_v1_0.pdf</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\SysInt_PDL_v1_0.pdf</v>
+<v>proj-000\PSoC_6_MCU_Hello_World_Example02\TCPWM_Counter_PDL_v1_0.pdf</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>proj-000</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\PSoC 6 Architecture TRM</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\PSoC 63 Family Datasheet</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\Peripheral Driver Library</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\System Reference Guides</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\CapSense_v2_0.pdf</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\GPIO_PDL_v1_0</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\GPIO_PDL_v1_0\GPIO_PDL_v1_0.pdf</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\LED_v1_0</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\LED_v1_0\LED_v1_0.pdf</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\Power_v1_0</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\Power_v1_0\Power_v1_0.pdf</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\Resistor_v1_0</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\Resistor_v1_0\Resistor_v1_0.pdf</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\Scan_ADC_P6_v2_10.pdf</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\SCB_SPI_PDL_v2_0.pdf</v>
+<v>proj-000\CE218136_EINK_CapSense_RTOS01\Thermistor_v1_0.pdf</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\PSoC 6 Architecture TRM</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\PSoC 63 Family Datasheet</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\Peripheral Driver Library</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\System Reference Guides</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\BLE_PDL_v2_0.pdf</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\cy_gsref_v2_10.pdf</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\Gnd_v1_0.pdf</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\GPIO_PDL_v1_0</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\GPIO_PDL_v1_0\GPIO_PDL_v1_0.pdf</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\LED_v1_0</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\LED_v1_0\LED_v1_0.pdf</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\Power_v1_0</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\Power_v1_0\Power_v1_0.pdf</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\Resistor_v1_0</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\Resistor_v1_0\Resistor_v1_0.pdf</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\Scan_ADC_P6_v2_10.pdf</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\SCB_SPI_PDL_v2_0.pdf</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\SwitchSPST_v1_0.pdf</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\SysInt_PDL_v1_0.pdf</v>
+<v>proj-000\CE218138_BLE_Thermometer_RTOS01\Thermistor_v1_0.pdf</v>
+<v>proj-000\proj</v>
+<v>proj-000\proj\PSoC 6 Architecture TRM</v>
+<v>proj-000\proj\PSoC 63 Family Datasheet</v>
+<v>proj-000\proj\Peripheral Driver Library</v>
+<v>proj-000\proj\System Reference Guides</v>
+<v>proj-000\proj\CyStatusReg_v1_90.pdf</v>
+<v>proj-000\proj\GPIO_PDL_v1_0</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStatesV2>
+</CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
+</dataGuid>
+</userData>
+</CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
+<Unloaded />
+<OpenDocs>
+<name v=".\proj.cydwr" />
+<name v=".\main_cm4.c" />
+<name v=".\PSoC_6_MCU_Hello_World_Example02.cydsn\TopDesign\TopDesign.cysch" />
+</OpenDocs>
+<OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
+
+  Actipro Docking/MDI for WinForms
+  Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
+  http://www.actiprosoftware.com
+
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="946, 697" SelectedTabbedMdiWindow="9d1d4bbb-1d4a-47e8-aebe-267ce5a02d65"><DocumentWindow Key="D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\proj.cydsn\proj.cydwr" Guid="a81f3486-8c5c-4084-a75d-5ed7a34a1a53" /><DocumentWindow Key="D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\proj.cydsn\main_cm4.c" Guid="9d1d4bbb-1d4a-47e8-aebe-267ce5a02d65" /><DocumentWindow Key="D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\proj.cydsn\PSoC_6_MCU_Hello_World_Example02.cydsn\TopDesign\TopDesign.cysch" Guid="47175898-ec87-40d3-ab77-08026cdcf1bf" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="4e66734a-724c-4a12-bf7c-47cdfa13060f" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+<config v="" />
+<AutoUpdate v="true" />
+</CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
+</CyXmlSerializer>

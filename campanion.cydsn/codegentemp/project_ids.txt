@@ -1,0 +1,41 @@
+D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\1-3-Hello World PWM.cydsn\1-3-Hello World PWM.cyprj|a82eb81d-5473-47b2-8646-13dde1c68367
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|0ec5527f-67c7-44f3-938b-f13c1a4047bf
+C:\Users\louis\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|3768d1e1-551b-4eb0-ae23-e116eb1163ee
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|02945b1a-b347-4189-97ee-cb242f1b862f
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|ea3ac0fd-1466-49aa-86e1-6c376a8fd63e
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|33034045-1489-4067-84f5-07c537d7e4ca
+D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\1-3-HelloWorldCM0p.cydsn\1-3-HelloWorldCM0p.cyprj|687d5a02-6956-4a46-9678-5c8d3eb42a37
+D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\1-3-HelloWorldCM4.cydsn\1-3-HelloWorldCM4.cyprj|ea8fd5c6-03d1-422e-aa4c-e1592a4b2950
+D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\1-4-HelloWorldFreeRTOS.cydsn\1-4-HelloWorldFreeRTOS.cyprj|08e93189-f27c-4fdf-860e-3dda98632c52
+D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\2-1-BasicUART.cydsn\2-1-BasicUART.cyprj|f69a50a0-dffa-4613-8c5e-c19fffc3f264
+D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\MainController.cydsn\MainController.cyprj|fe5b25e4-85b6-45df-ab9e-131a8a3afbbe
+D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\MC-2-1b-UART.cydsn\MC-2-1b-UART.cyprj|24a12762-3ff2-4d9f-9566-a4637a8d9002
+D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\2-2-BasicTCPWM.cydsn\2-2-BasicTCPWM.cyprj|db7b6ee2-bad1-4e9b-8837-2cf927e55362
+D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\MC-2-2b-PWM.cydsn\MC-2-2b-PWM.cyprj|14c53699-cde5-4fe6-98e7-8dbb011fd0dd
+D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\2-3-BasicI2C.cydsn\2-3-BasicI2C.cyprj|ad8aa7bf-e12c-4f09-bffc-1693e368c2b3
+D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\MC-2-3b-I2C.cydsn\MC-2-3b-I2C.cyprj|57c022c6-e879-4e37-8421-d3fae3babc79
+D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\2-4-BasicKillSwitch.cydsn\2-4-BasicKillSwitch.cyprj|bdc8f539-8618-487a-ab0b-dda72186aa37
+D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\MC-2-4b-KillSwitch.cydsn\MC-2-4b-KillSwitch.cyprj|b146df39-4f54-4e1a-8281-cc07950f9e16
+D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\2-5-BasicCapSense.cydsn\2-5-BasicCapSense.cyprj|199edc77-a396-4afa-a11f-57096f50b38a
+D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\MC-2-5b-CapSense.cydsn\MC-2-5b-CapSense.cyprj|4c7a5794-162d-4b2f-b210-f70562c5255c
+D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\2-6-ADC.cydsn\2-6-ADC.cyprj|6dfbf98f-d778-4393-a7ca-8a5a814d1a70
+D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\p4therm.cydsn\p4therm.cyprj|3256a270-c7b2-4019-99ac-594991cb1cb9
+D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\2-6-ADC_OPAMP_VREF.cydsn\2-6-ADC_OPAMP_VREF.cyprj|44e7bf62-1e90-4b0e-92c8-9a35ac8515e5
+D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\3-1-BLEFindMe.cydsn\3-1-BLEFindMe.cyprj|9bbb7f6b-4358-4874-9770-6f808f3232e1
+D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\3-2-SimpleBLEPeripheral.cydsn\3-2-SimpleBLEPeripheral.cyprj|38f5b8c0-a0e9-479b-8caf-cfe7e5eb5e4b
+D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\MC-3-2b-BLE.cydsn\MC-3-2b-BLE.cyprj|3551f33b-b461-4186-884a-f6aaa34d59f4
+D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\3-3-SimpleBLECentral.cydsn\3-3-SimpleBLECentral.cyprj|ac6d4aa4-e114-4a8f-9418-e7ead8d83370
+D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\RC-3-3b-UART.cydsn\RC-3-3b-UART.cyprj|16167050-fcc3-43f3-b2c4-060c6db09a78
+D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\RemoteControl.cydsn\RemoteControl.cyprj|6e1a9423-0db5-42b0-a0e1-5f5329c764c9
+D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\RC-3-4-CapSense.cydsn\RC-3-4-CapSense.cyprj|55f52293-9067-43b5-b1d8-487071d252ce
+D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\3-5-BasicMotionSensor.cydsn\3-5-BasicMotionSensor.cyprj|2f667951-18c0-47c9-96d1-4cc73139c4e4
+D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\RC-3-5b-Motion.cydsn\RC-3-5b-Motion.cyprj|8f2f8d41-c83b-46e6-83ec-d5be0fe38635
+D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\EmWin_EInk_Display.cydsn\EmWin_EInk_Display.cyprj|c7450b0e-4694-41d2-ba13-6659227b424c
+D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\CE220263_GPIO_Pins01.cydsn\CE220263_GPIO_Pins01.cyprj|8152d67c-2c50-433c-b397-c562c3a802ca
+D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\CE220263_GPIO_Pins02.cydsn\CE220263_GPIO_Pins02.cyprj|fccc4531-30b7-4445-9cab-a164d0c73281
+D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\CE218138_BLE_Thermometer_RTOS01.cydsn\CE218138_BLE_Thermometer_RTOS01.cyprj|1dc0c602-ad7d-4e8f-8ff0-c960d6ae70b7
+D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\Design02.cydsn\Design02.cyprj|c6a549ba-719e-4b03-8809-90db71440727
+D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\2-6-ADC_Copy_05.cydsn\2-6-ADC_Copy_05.cyprj|353df7f6-9a82-4fa2-b466-dd7e5fa51ff7
+D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\Design03.cydsn\Design03.cyprj|0995f82f-306c-4a4a-bdc3-2b89effbe09a
+D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\2-6-ADC_Copy_01.cydsn\2-6-ADC_Copy_01.cyprj|0a9016de-5193-4781-a893-d1550c6468f4
+D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\proj.cydsn\proj.cyprj|ef02d48b-6f38-4cfc-a183-d16f8e3efcc3

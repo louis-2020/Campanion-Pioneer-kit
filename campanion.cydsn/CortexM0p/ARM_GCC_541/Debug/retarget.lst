@@ -1,0 +1,3566 @@
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m0plus
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 0
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"retarget.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.syntax divided
+  20              		.global _printf_float
+  21              		.global _scanf_float
+  22              		.thumb
+  23              		.syntax unified
+  24              		.section	.text._write,"ax",%progbits
+  25              		.align	2
+  26              		.weak	_write
+  27              		.code	16
+  28              		.thumb_func
+  29              		.type	_write, %function
+  30              	_write:
+  31              	.LFB593:
+  32              		.file 1 "Generated_Source\\PSoC6\\pdl\\utilities\\retarget_io\\retarget.c"
+   1:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** /***************************************************************************//**
+   2:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** * \file retarget.c
+   3:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** * \version 1.20
+   4:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** *
+   5:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** * \brief
+   6:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** * 'Retarget' layer for target-dependent low level function.
+   7:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** *
+   8:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** ********************************************************************************
+   9:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** * \copyright
+  10:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** * Copyright 2016-2018, Cypress Semiconductor Corporation. All rights reserved.
+  11:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** * You may use this file only in accordance with the license, terms, conditions,
+  12:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** * disclaimers, and limitations in the end user license agreement accompanying
+  13:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** * the software package with which this file was provided.
+  14:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** *******************************************************************************/
+  15:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** 
+  16:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** #include <stdio.h>
+  17:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** #include "stdio_user.h"
+  18:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** 
+  19:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** #if defined(__cplusplus)
+  20:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** extern "C" {
+  21:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** #endif
+  22:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** 
+  23:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** #ifdef IO_STDOUT_ENABLE
+  24:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** 
+  25:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** #if defined(__ARMCC_VERSION) /* ARM-MDK */
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 2
+
+
+  26:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     /***************************************************************************
+  27:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     * Function Name: fputc
+  28:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     ***************************************************************************/
+  29:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     __attribute__((weak)) int fputc(int ch, FILE *f)
+  30:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     {
+  31:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         (void)f;
+  32:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     #if (STDOUT_CR_LF != 0)
+  33:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         if ((char)ch == '\n')
+  34:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         {
+  35:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****             STDIO_PutChar('\r');
+  36:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         }
+  37:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     #endif /* STDOUT_CR_LF != 0 */
+  38:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         STDIO_PutChar(ch);
+  39:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         return (ch);
+  40:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     }
+  41:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** #elif defined (__ICCARM__) /* IAR */
+  42:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     #include <yfuns.h>
+  43:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** 
+  44:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     /***************************************************************************
+  45:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     * Function Name: __write
+  46:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     ***************************************************************************/
+  47:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     __weak size_t __write(int handle, const unsigned char * buffer, size_t size)
+  48:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     {
+  49:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         size_t nChars = 0;
+  50:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         /* This template only writes to "standard out", for all other file
+  51:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         * handles it returns failure. */
+  52:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         if (handle != _LLIO_STDOUT)
+  53:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         {
+  54:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****             return (_LLIO_ERROR);
+  55:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         }
+  56:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         if (buffer != NULL)
+  57:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         {
+  58:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****             for (/* Empty */; nChars < size; ++nChars)
+  59:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****             {
+  60:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****             #if (STDOUT_CR_LF != 0)
+  61:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****                 if(*buffer == '\n')
+  62:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****                 {
+  63:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****                     STDIO_PutChar('\r');
+  64:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****                 }
+  65:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****             #endif /* STDOUT_CR_LF != 0 */
+  66:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****                 STDIO_PutChar(*buffer);
+  67:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****                 ++buffer;
+  68:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****             }
+  69:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         }
+  70:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         return (nChars);
+  71:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     }
+  72:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** #else /* (__GNUC__)  GCC */    
+  73:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     /* Add an explicit reference to the floating point printf library to allow
+  74:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     the usage of floating point conversion specifier. */
+  75:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     __asm (".global _printf_float");
+  76:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     /***************************************************************************
+  77:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     * Function Name: _write
+  78:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     ***************************************************************************/
+  79:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     __attribute__((weak)) int _write (int fd, const char *ptr, int len)
+  80:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     {
+  33              		.loc 1 80 0
+  34              		.cfi_startproc
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 3
+
+
+  35              		@ args = 0, pretend = 0, frame = 0
+  36              		@ frame_needed = 0, uses_anonymous_args = 0
+  37              	.LVL0:
+  38 0000 70B5     		push	{r4, r5, r6, lr}
+  39              		.cfi_def_cfa_offset 16
+  40              		.cfi_offset 4, -16
+  41              		.cfi_offset 5, -12
+  42              		.cfi_offset 6, -8
+  43              		.cfi_offset 14, -4
+  44 0002 0D00     		movs	r5, r1
+  45 0004 1600     		movs	r6, r2
+  46              	.LVL1:
+  81:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         int nChars = 0;
+  82:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         (void)fd;
+  83:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         if (ptr != NULL)
+  47              		.loc 1 83 0
+  48 0006 0029     		cmp	r1, #0
+  49 0008 07D1     		bne	.L5
+  81:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         int nChars = 0;
+  50              		.loc 1 81 0
+  51 000a 0024     		movs	r4, #0
+  52 000c 08E0     		b	.L3
+  53              	.LVL2:
+  54              	.L4:
+  84:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         {
+  85:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****             for (/* Empty */; nChars < len; ++nChars)
+  86:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****             {
+  87:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****             #if (STDOUT_CR_LF != 0)
+  88:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****                 if(*ptr == '\n')
+  89:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****                 {
+  90:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****                     STDIO_PutChar('\r');
+  91:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****                 }
+  92:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****             #endif /* STDOUT_CR_LF != 0 */
+  93:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****                 STDIO_PutChar((uint32_t)*ptr);
+  55              		.loc 1 93 0 discriminator 2
+  56 000e 2878     		ldrb	r0, [r5]
+  57 0010 FFF7FEFF 		bl	STDIO_PutChar
+  58              	.LVL3:
+  94:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****                 ++ptr;
+  59              		.loc 1 94 0 discriminator 2
+  60 0014 0135     		adds	r5, r5, #1
+  61              	.LVL4:
+  85:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****             {
+  62              		.loc 1 85 0 discriminator 2
+  63 0016 0134     		adds	r4, r4, #1
+  64              	.LVL5:
+  65 0018 00E0     		b	.L2
+  66              	.LVL6:
+  67              	.L5:
+  68 001a 0024     		movs	r4, #0
+  69              	.LVL7:
+  70              	.L2:
+  85:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****             {
+  71              		.loc 1 85 0 is_stmt 0 discriminator 1
+  72 001c B442     		cmp	r4, r6
+  73 001e F6DB     		blt	.L4
+  74              	.LVL8:
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 4
+
+
+  75              	.L3:
+  95:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****             }
+  96:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         }
+  97:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         return (nChars);
+  98:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     }
+  76              		.loc 1 98 0 is_stmt 1
+  77 0020 2000     		movs	r0, r4
+  78              		@ sp needed
+  79              	.LVL9:
+  80              	.LVL10:
+  81              	.LVL11:
+  82 0022 70BD     		pop	{r4, r5, r6, pc}
+  83              		.cfi_endproc
+  84              	.LFE593:
+  85              		.size	_write, .-_write
+  86              		.section	.text._read,"ax",%progbits
+  87              		.align	2
+  88              		.weak	_read
+  89              		.code	16
+  90              		.thumb_func
+  91              		.type	_read, %function
+  92              	_read:
+  93              	.LFB594:
+  99:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** #endif
+ 100:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** 
+ 101:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** #endif /* IO_STDOUT_ENABLE */
+ 102:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** 
+ 103:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** #if defined(IO_STDIN_ENABLE)
+ 104:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** 
+ 105:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** #if defined(__ARMCC_VERSION) /* ARM-MDK */
+ 106:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     /***************************************************************************
+ 107:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     * Function Name: fgetc
+ 108:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     ***************************************************************************/
+ 109:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     __attribute__((weak)) int fgetc(FILE *f) 
+ 110:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     {
+ 111:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         (void)f;
+ 112:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         return (STDIO_GetChar());
+ 113:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     }
+ 114:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** #elif defined (__ICCARM__) /* IAR */
+ 115:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     __weak size_t __read(int handle, unsigned char * buffer, size_t size)
+ 116:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     {
+ 117:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         /* This template only reads from "standard in", for all other file
+ 118:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         handles it returns failure. */
+ 119:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         if ((handle != _LLIO_STDIN) || (buffer == NULL))
+ 120:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         {
+ 121:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****             return (_LLIO_ERROR);
+ 122:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         }
+ 123:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         else
+ 124:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         {
+ 125:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****             *buffer = STDIO_GetChar();
+ 126:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****             return (1);
+ 127:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         }
+ 128:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     }
+ 129:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** #else /* (__GNUC__)  GCC */
+ 130:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     /* Add an explicit reference to the floating point scanf library to allow
+ 131:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     the usage of floating point conversion specifier. */
+ 132:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     __asm (".global _scanf_float");
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 5
+
+
+ 133:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     __attribute__((weak)) int _read (int fd, char *ptr, int len)
+ 134:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     {
+  94              		.loc 1 134 0
+  95              		.cfi_startproc
+  96              		@ args = 0, pretend = 0, frame = 0
+  97              		@ frame_needed = 0, uses_anonymous_args = 0
+  98              	.LVL12:
+  99 0000 70B5     		push	{r4, r5, r6, lr}
+ 100              		.cfi_def_cfa_offset 16
+ 101              		.cfi_offset 4, -16
+ 102              		.cfi_offset 5, -12
+ 103              		.cfi_offset 6, -8
+ 104              		.cfi_offset 14, -4
+ 105 0002 0D00     		movs	r5, r1
+ 106 0004 1600     		movs	r6, r2
+ 107              	.LVL13:
+ 135:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         int nChars = 0;
+ 136:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         (void)fd;
+ 137:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         if (ptr != NULL)
+ 108              		.loc 1 137 0
+ 109 0006 0029     		cmp	r1, #0
+ 110 0008 0CD1     		bne	.L10
+ 135:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         int nChars = 0;
+ 111              		.loc 1 135 0
+ 112 000a 0024     		movs	r4, #0
+ 113 000c 0DE0     		b	.L8
+ 114              	.LVL14:
+ 115              	.L9:
+ 138:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         {
+ 139:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****             for(/* Empty */;nChars < len;++ptr)
+ 140:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****             {
+ 141:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****                 *ptr = (char)STDIO_GetChar();
+ 116              		.loc 1 141 0
+ 117 000e FFF7FEFF 		bl	STDIO_GetChar
+ 118              	.LVL15:
+ 119 0012 C0B2     		uxtb	r0, r0
+ 120 0014 2870     		strb	r0, [r5]
+ 142:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****                 ++nChars;
+ 121              		.loc 1 142 0
+ 122 0016 0134     		adds	r4, r4, #1
+ 123              	.LVL16:
+ 143:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****                 if((*ptr == '\n') || (*ptr == '\r'))
+ 124              		.loc 1 143 0
+ 125 0018 0A28     		cmp	r0, #10
+ 126 001a 06D0     		beq	.L8
+ 127              		.loc 1 143 0 is_stmt 0 discriminator 1
+ 128 001c 0D28     		cmp	r0, #13
+ 129 001e 04D0     		beq	.L8
+ 139:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****             {
+ 130              		.loc 1 139 0 is_stmt 1
+ 131 0020 0135     		adds	r5, r5, #1
+ 132              	.LVL17:
+ 133 0022 00E0     		b	.L7
+ 134              	.LVL18:
+ 135              	.L10:
+ 136 0024 0024     		movs	r4, #0
+ 137              	.LVL19:
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 6
+
+
+ 138              	.L7:
+ 139:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****             {
+ 139              		.loc 1 139 0 is_stmt 0 discriminator 1
+ 140 0026 B442     		cmp	r4, r6
+ 141 0028 F1DB     		blt	.L9
+ 142              	.LVL20:
+ 143              	.L8:
+ 144:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****                 {
+ 145:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****                     break;
+ 146:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****                 }
+ 147:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****             }
+ 148:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         }
+ 149:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         return (nChars);
+ 150:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     }
+ 144              		.loc 1 150 0 is_stmt 1
+ 145 002a 2000     		movs	r0, r4
+ 146              		@ sp needed
+ 147              	.LVL21:
+ 148              	.LVL22:
+ 149              	.LVL23:
+ 150 002c 70BD     		pop	{r4, r5, r6, pc}
+ 151              		.cfi_endproc
+ 152              	.LFE594:
+ 153              		.size	_read, .-_read
+ 154 002e C046     		.text
+ 155              	.Letext0:
+ 156              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 157              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 158              		.file 4 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/device/cy_device.h"
+ 159              		.file 5 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/sar/cy_sar.h"
+ 160              		.file 6 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/scb/cy_scb_spi.h"
+ 161              		.file 7 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/scb/cy_scb_uart.h"
+ 162              		.file 8 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/tcpwm/cy_tcpwm_counter.h"
+ 163              		.file 9 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/tcpwm/cy_tcpwm_pwm.h"
+ 164              		.file 10 "Generated_Source\\PSoC6/ADC_1.h"
+ 165              		.file 11 "Generated_Source\\PSoC6/CY_EINK_SPIM.h"
+ 166              		.file 12 "Generated_Source\\PSoC6/CY_EINK_Timer.h"
+ 167              		.file 13 "Generated_Source\\PSoC6/UART_1.h"
+ 168              		.file 14 "Generated_Source\\PSoC6/PWM.h"
+ 169              		.file 15 "./stdio_user.h"
+ 170              		.section	.debug_info,"",%progbits
+ 171              	.Ldebug_info0:
+ 172 0000 AC0B0000 		.4byte	0xbac
+ 173 0004 0400     		.2byte	0x4
+ 174 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 175 000a 04       		.byte	0x4
+ 176 000b 01       		.uleb128 0x1
+ 177 000c 38090000 		.4byte	.LASF207
+ 178 0010 0C       		.byte	0xc
+ 179 0011 630C0000 		.4byte	.LASF208
+ 180 0015 96030000 		.4byte	.LASF209
+ 181 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 182 001d 00000000 		.4byte	0
+ 183 0021 00000000 		.4byte	.Ldebug_line0
+ 184 0025 02       		.uleb128 0x2
+ 185 0026 01       		.byte	0x1
+ 186 0027 06       		.byte	0x6
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 7
+
+
+ 187 0028 240B0000 		.4byte	.LASF0
+ 188 002c 03       		.uleb128 0x3
+ 189 002d 9D000000 		.4byte	.LASF2
+ 190 0031 02       		.byte	0x2
+ 191 0032 1D       		.byte	0x1d
+ 192 0033 37000000 		.4byte	0x37
+ 193 0037 02       		.uleb128 0x2
+ 194 0038 01       		.byte	0x1
+ 195 0039 08       		.byte	0x8
+ 196 003a 29080000 		.4byte	.LASF1
+ 197 003e 03       		.uleb128 0x3
+ 198 003f 73040000 		.4byte	.LASF3
+ 199 0043 02       		.byte	0x2
+ 200 0044 29       		.byte	0x29
+ 201 0045 49000000 		.4byte	0x49
+ 202 0049 02       		.uleb128 0x2
+ 203 004a 02       		.byte	0x2
+ 204 004b 05       		.byte	0x5
+ 205 004c 4B080000 		.4byte	.LASF4
+ 206 0050 03       		.uleb128 0x3
+ 207 0051 090A0000 		.4byte	.LASF5
+ 208 0055 02       		.byte	0x2
+ 209 0056 2B       		.byte	0x2b
+ 210 0057 5B000000 		.4byte	0x5b
+ 211 005b 02       		.uleb128 0x2
+ 212 005c 02       		.byte	0x2
+ 213 005d 07       		.byte	0x7
+ 214 005e 25040000 		.4byte	.LASF6
+ 215 0062 02       		.uleb128 0x2
+ 216 0063 04       		.byte	0x4
+ 217 0064 05       		.byte	0x5
+ 218 0065 FC020000 		.4byte	.LASF7
+ 219 0069 03       		.uleb128 0x3
+ 220 006a 4C040000 		.4byte	.LASF8
+ 221 006e 02       		.byte	0x2
+ 222 006f 41       		.byte	0x41
+ 223 0070 74000000 		.4byte	0x74
+ 224 0074 02       		.uleb128 0x2
+ 225 0075 04       		.byte	0x4
+ 226 0076 07       		.byte	0x7
+ 227 0077 18050000 		.4byte	.LASF9
+ 228 007b 02       		.uleb128 0x2
+ 229 007c 08       		.byte	0x8
+ 230 007d 05       		.byte	0x5
+ 231 007e D2010000 		.4byte	.LASF10
+ 232 0082 02       		.uleb128 0x2
+ 233 0083 08       		.byte	0x8
+ 234 0084 07       		.byte	0x7
+ 235 0085 26010000 		.4byte	.LASF11
+ 236 0089 04       		.uleb128 0x4
+ 237 008a 04       		.byte	0x4
+ 238 008b 05       		.byte	0x5
+ 239 008c 696E7400 		.ascii	"int\000"
+ 240 0090 02       		.uleb128 0x2
+ 241 0091 04       		.byte	0x4
+ 242 0092 07       		.byte	0x7
+ 243 0093 DC040000 		.4byte	.LASF12
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 8
+
+
+ 244 0097 02       		.uleb128 0x2
+ 245 0098 08       		.byte	0x8
+ 246 0099 04       		.byte	0x4
+ 247 009a D3090000 		.4byte	.LASF13
+ 248 009e 05       		.uleb128 0x5
+ 249 009f 04       		.byte	0x4
+ 250 00a0 02       		.uleb128 0x2
+ 251 00a1 04       		.byte	0x4
+ 252 00a2 07       		.byte	0x7
+ 253 00a3 E9060000 		.4byte	.LASF14
+ 254 00a7 06       		.uleb128 0x6
+ 255 00a8 04       		.byte	0x4
+ 256 00a9 AD000000 		.4byte	0xad
+ 257 00ad 02       		.uleb128 0x2
+ 258 00ae 01       		.byte	0x1
+ 259 00af 08       		.byte	0x8
+ 260 00b0 DF090000 		.4byte	.LASF15
+ 261 00b4 06       		.uleb128 0x6
+ 262 00b5 04       		.byte	0x4
+ 263 00b6 BA000000 		.4byte	0xba
+ 264 00ba 07       		.uleb128 0x7
+ 265 00bb AD000000 		.4byte	0xad
+ 266 00bf 03       		.uleb128 0x3
+ 267 00c0 320A0000 		.4byte	.LASF16
+ 268 00c4 03       		.byte	0x3
+ 269 00c5 18       		.byte	0x18
+ 270 00c6 2C000000 		.4byte	0x2c
+ 271 00ca 03       		.uleb128 0x3
+ 272 00cb C70C0000 		.4byte	.LASF17
+ 273 00cf 03       		.byte	0x3
+ 274 00d0 20       		.byte	0x20
+ 275 00d1 3E000000 		.4byte	0x3e
+ 276 00d5 03       		.uleb128 0x3
+ 277 00d6 E9040000 		.4byte	.LASF18
+ 278 00da 03       		.byte	0x3
+ 279 00db 24       		.byte	0x24
+ 280 00dc 50000000 		.4byte	0x50
+ 281 00e0 03       		.uleb128 0x3
+ 282 00e1 FA080000 		.4byte	.LASF19
+ 283 00e5 03       		.byte	0x3
+ 284 00e6 30       		.byte	0x30
+ 285 00e7 69000000 		.4byte	0x69
+ 286 00eb 08       		.uleb128 0x8
+ 287 00ec E0000000 		.4byte	0xe0
+ 288 00f0 09       		.uleb128 0x9
+ 289 00f1 B8       		.byte	0xb8
+ 290 00f2 04       		.byte	0x4
+ 291 00f3 34       		.byte	0x34
+ 292 00f4 01050000 		.4byte	0x501
+ 293 00f8 0A       		.uleb128 0xa
+ 294 00f9 FC000000 		.4byte	.LASF20
+ 295 00fd 04       		.byte	0x4
+ 296 00fe 37       		.byte	0x37
+ 297 00ff E0000000 		.4byte	0xe0
+ 298 0103 00       		.byte	0
+ 299 0104 0A       		.uleb128 0xa
+ 300 0105 AE080000 		.4byte	.LASF21
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 9
+
+
+ 301 0109 04       		.byte	0x4
+ 302 010a 38       		.byte	0x38
+ 303 010b E0000000 		.4byte	0xe0
+ 304 010f 04       		.byte	0x4
+ 305 0110 0A       		.uleb128 0xa
+ 306 0111 22030000 		.4byte	.LASF22
+ 307 0115 04       		.byte	0x4
+ 308 0116 39       		.byte	0x39
+ 309 0117 E0000000 		.4byte	0xe0
+ 310 011b 08       		.byte	0x8
+ 311 011c 0A       		.uleb128 0xa
+ 312 011d 02080000 		.4byte	.LASF23
+ 313 0121 04       		.byte	0x4
+ 314 0122 3A       		.byte	0x3a
+ 315 0123 E0000000 		.4byte	0xe0
+ 316 0127 0C       		.byte	0xc
+ 317 0128 0A       		.uleb128 0xa
+ 318 0129 6C020000 		.4byte	.LASF24
+ 319 012d 04       		.byte	0x4
+ 320 012e 3B       		.byte	0x3b
+ 321 012f E0000000 		.4byte	0xe0
+ 322 0133 10       		.byte	0x10
+ 323 0134 0A       		.uleb128 0xa
+ 324 0135 C2020000 		.4byte	.LASF25
+ 325 0139 04       		.byte	0x4
+ 326 013a 3C       		.byte	0x3c
+ 327 013b E0000000 		.4byte	0xe0
+ 328 013f 14       		.byte	0x14
+ 329 0140 0A       		.uleb128 0xa
+ 330 0141 66050000 		.4byte	.LASF26
+ 331 0145 04       		.byte	0x4
+ 332 0146 3D       		.byte	0x3d
+ 333 0147 E0000000 		.4byte	0xe0
+ 334 014b 18       		.byte	0x18
+ 335 014c 0A       		.uleb128 0xa
+ 336 014d 86000000 		.4byte	.LASF27
+ 337 0151 04       		.byte	0x4
+ 338 0152 3E       		.byte	0x3e
+ 339 0153 E0000000 		.4byte	0xe0
+ 340 0157 1C       		.byte	0x1c
+ 341 0158 0A       		.uleb128 0xa
+ 342 0159 A90C0000 		.4byte	.LASF28
+ 343 015d 04       		.byte	0x4
+ 344 015e 3F       		.byte	0x3f
+ 345 015f E0000000 		.4byte	0xe0
+ 346 0163 20       		.byte	0x20
+ 347 0164 0A       		.uleb128 0xa
+ 348 0165 81070000 		.4byte	.LASF29
+ 349 0169 04       		.byte	0x4
+ 350 016a 40       		.byte	0x40
+ 351 016b E0000000 		.4byte	0xe0
+ 352 016f 24       		.byte	0x24
+ 353 0170 0A       		.uleb128 0xa
+ 354 0171 9F060000 		.4byte	.LASF30
+ 355 0175 04       		.byte	0x4
+ 356 0176 43       		.byte	0x43
+ 357 0177 BF000000 		.4byte	0xbf
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 10
+
+
+ 358 017b 28       		.byte	0x28
+ 359 017c 0A       		.uleb128 0xa
+ 360 017d 69000000 		.4byte	.LASF31
+ 361 0181 04       		.byte	0x4
+ 362 0182 44       		.byte	0x44
+ 363 0183 BF000000 		.4byte	0xbf
+ 364 0187 29       		.byte	0x29
+ 365 0188 0A       		.uleb128 0xa
+ 366 0189 9F0C0000 		.4byte	.LASF32
+ 367 018d 04       		.byte	0x4
+ 368 018e 45       		.byte	0x45
+ 369 018f BF000000 		.4byte	0xbf
+ 370 0193 2A       		.byte	0x2a
+ 371 0194 0A       		.uleb128 0xa
+ 372 0195 73070000 		.4byte	.LASF33
+ 373 0199 04       		.byte	0x4
+ 374 019a 46       		.byte	0x46
+ 375 019b BF000000 		.4byte	0xbf
+ 376 019f 2B       		.byte	0x2b
+ 377 01a0 0A       		.uleb128 0xa
+ 378 01a1 EF050000 		.4byte	.LASF34
+ 379 01a5 04       		.byte	0x4
+ 380 01a6 47       		.byte	0x47
+ 381 01a7 BF000000 		.4byte	0xbf
+ 382 01ab 2C       		.byte	0x2c
+ 383 01ac 0A       		.uleb128 0xa
+ 384 01ad 3A0A0000 		.4byte	.LASF35
+ 385 01b1 04       		.byte	0x4
+ 386 01b2 48       		.byte	0x48
+ 387 01b3 BF000000 		.4byte	0xbf
+ 388 01b7 2D       		.byte	0x2d
+ 389 01b8 0A       		.uleb128 0xa
+ 390 01b9 75020000 		.4byte	.LASF36
+ 391 01bd 04       		.byte	0x4
+ 392 01be 49       		.byte	0x49
+ 393 01bf BF000000 		.4byte	0xbf
+ 394 01c3 2E       		.byte	0x2e
+ 395 01c4 0A       		.uleb128 0xa
+ 396 01c5 AC060000 		.4byte	.LASF37
+ 397 01c9 04       		.byte	0x4
+ 398 01ca 4A       		.byte	0x4a
+ 399 01cb BF000000 		.4byte	0xbf
+ 400 01cf 2F       		.byte	0x2f
+ 401 01d0 0A       		.uleb128 0xa
+ 402 01d1 EF090000 		.4byte	.LASF38
+ 403 01d5 04       		.byte	0x4
+ 404 01d6 4B       		.byte	0x4b
+ 405 01d7 BF000000 		.4byte	0xbf
+ 406 01db 30       		.byte	0x30
+ 407 01dc 0A       		.uleb128 0xa
+ 408 01dd 5B050000 		.4byte	.LASF39
+ 409 01e1 04       		.byte	0x4
+ 410 01e2 4E       		.byte	0x4e
+ 411 01e3 BF000000 		.4byte	0xbf
+ 412 01e7 31       		.byte	0x31
+ 413 01e8 0A       		.uleb128 0xa
+ 414 01e9 8F000000 		.4byte	.LASF40
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 11
+
+
+ 415 01ed 04       		.byte	0x4
+ 416 01ee 4F       		.byte	0x4f
+ 417 01ef BF000000 		.4byte	0xbf
+ 418 01f3 32       		.byte	0x32
+ 419 01f4 0A       		.uleb128 0xa
+ 420 01f5 D0040000 		.4byte	.LASF41
+ 421 01f9 04       		.byte	0x4
+ 422 01fa 50       		.byte	0x50
+ 423 01fb BF000000 		.4byte	0xbf
+ 424 01ff 33       		.byte	0x33
+ 425 0200 0A       		.uleb128 0xa
+ 426 0201 FD060000 		.4byte	.LASF42
+ 427 0205 04       		.byte	0x4
+ 428 0206 51       		.byte	0x51
+ 429 0207 BF000000 		.4byte	0xbf
+ 430 020b 34       		.byte	0x34
+ 431 020c 0A       		.uleb128 0xa
+ 432 020d C80A0000 		.4byte	.LASF43
+ 433 0211 04       		.byte	0x4
+ 434 0212 52       		.byte	0x52
+ 435 0213 CA000000 		.4byte	0xca
+ 436 0217 36       		.byte	0x36
+ 437 0218 0A       		.uleb128 0xa
+ 438 0219 64030000 		.4byte	.LASF44
+ 439 021d 04       		.byte	0x4
+ 440 021e 53       		.byte	0x53
+ 441 021f CA000000 		.4byte	0xca
+ 442 0223 38       		.byte	0x38
+ 443 0224 0A       		.uleb128 0xa
+ 444 0225 5B0B0000 		.4byte	.LASF45
+ 445 0229 04       		.byte	0x4
+ 446 022a 54       		.byte	0x54
+ 447 022b CA000000 		.4byte	0xca
+ 448 022f 3A       		.byte	0x3a
+ 449 0230 0A       		.uleb128 0xa
+ 450 0231 B3020000 		.4byte	.LASF46
+ 451 0235 04       		.byte	0x4
+ 452 0236 55       		.byte	0x55
+ 453 0237 BF000000 		.4byte	0xbf
+ 454 023b 3C       		.byte	0x3c
+ 455 023c 0A       		.uleb128 0xa
+ 456 023d 8B030000 		.4byte	.LASF47
+ 457 0241 04       		.byte	0x4
+ 458 0242 56       		.byte	0x56
+ 459 0243 BF000000 		.4byte	0xbf
+ 460 0247 3D       		.byte	0x3d
+ 461 0248 0A       		.uleb128 0xa
+ 462 0249 CA080000 		.4byte	.LASF48
+ 463 024d 04       		.byte	0x4
+ 464 024e 57       		.byte	0x57
+ 465 024f BF000000 		.4byte	0xbf
+ 466 0253 3E       		.byte	0x3e
+ 467 0254 0A       		.uleb128 0xa
+ 468 0255 0D010000 		.4byte	.LASF49
+ 469 0259 04       		.byte	0x4
+ 470 025a 58       		.byte	0x58
+ 471 025b BF000000 		.4byte	0xbf
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 12
+
+
+ 472 025f 3F       		.byte	0x3f
+ 473 0260 0A       		.uleb128 0xa
+ 474 0261 8C070000 		.4byte	.LASF50
+ 475 0265 04       		.byte	0x4
+ 476 0266 59       		.byte	0x59
+ 477 0267 BF000000 		.4byte	0xbf
+ 478 026b 40       		.byte	0x40
+ 479 026c 0A       		.uleb128 0xa
+ 480 026d 57040000 		.4byte	.LASF51
+ 481 0271 04       		.byte	0x4
+ 482 0272 5A       		.byte	0x5a
+ 483 0273 BF000000 		.4byte	0xbf
+ 484 0277 41       		.byte	0x41
+ 485 0278 0A       		.uleb128 0xa
+ 486 0279 6F050000 		.4byte	.LASF52
+ 487 027d 04       		.byte	0x4
+ 488 027e 5B       		.byte	0x5b
+ 489 027f BF000000 		.4byte	0xbf
+ 490 0283 42       		.byte	0x42
+ 491 0284 0A       		.uleb128 0xa
+ 492 0285 5F070000 		.4byte	.LASF53
+ 493 0289 04       		.byte	0x4
+ 494 028a 5C       		.byte	0x5c
+ 495 028b BF000000 		.4byte	0xbf
+ 496 028f 43       		.byte	0x43
+ 497 0290 0A       		.uleb128 0xa
+ 498 0291 3B030000 		.4byte	.LASF54
+ 499 0295 04       		.byte	0x4
+ 500 0296 5D       		.byte	0x5d
+ 501 0297 BF000000 		.4byte	0xbf
+ 502 029b 44       		.byte	0x44
+ 503 029c 0A       		.uleb128 0xa
+ 504 029d 00000000 		.4byte	.LASF55
+ 505 02a1 04       		.byte	0x4
+ 506 02a2 5E       		.byte	0x5e
+ 507 02a3 E0000000 		.4byte	0xe0
+ 508 02a7 48       		.byte	0x48
+ 509 02a8 0A       		.uleb128 0xa
+ 510 02a9 14030000 		.4byte	.LASF56
+ 511 02ad 04       		.byte	0x4
+ 512 02ae 5F       		.byte	0x5f
+ 513 02af E0000000 		.4byte	0xe0
+ 514 02b3 4C       		.byte	0x4c
+ 515 02b4 0A       		.uleb128 0xa
+ 516 02b5 E70C0000 		.4byte	.LASF57
+ 517 02b9 04       		.byte	0x4
+ 518 02ba 60       		.byte	0x60
+ 519 02bb BF000000 		.4byte	0xbf
+ 520 02bf 50       		.byte	0x50
+ 521 02c0 0A       		.uleb128 0xa
+ 522 02c1 8D010000 		.4byte	.LASF58
+ 523 02c5 04       		.byte	0x4
+ 524 02c6 61       		.byte	0x61
+ 525 02c7 BF000000 		.4byte	0xbf
+ 526 02cb 51       		.byte	0x51
+ 527 02cc 0A       		.uleb128 0xa
+ 528 02cd 7E0B0000 		.4byte	.LASF59
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 13
+
+
+ 529 02d1 04       		.byte	0x4
+ 530 02d2 62       		.byte	0x62
+ 531 02d3 BF000000 		.4byte	0xbf
+ 532 02d7 52       		.byte	0x52
+ 533 02d8 0A       		.uleb128 0xa
+ 534 02d9 470A0000 		.4byte	.LASF60
+ 535 02dd 04       		.byte	0x4
+ 536 02de 63       		.byte	0x63
+ 537 02df BF000000 		.4byte	0xbf
+ 538 02e3 53       		.byte	0x53
+ 539 02e4 0A       		.uleb128 0xa
+ 540 02e5 D8080000 		.4byte	.LASF61
+ 541 02e9 04       		.byte	0x4
+ 542 02ea 64       		.byte	0x64
+ 543 02eb BF000000 		.4byte	0xbf
+ 544 02ef 54       		.byte	0x54
+ 545 02f0 0A       		.uleb128 0xa
+ 546 02f1 9F010000 		.4byte	.LASF62
+ 547 02f5 04       		.byte	0x4
+ 548 02f6 65       		.byte	0x65
+ 549 02f7 BF000000 		.4byte	0xbf
+ 550 02fb 55       		.byte	0x55
+ 551 02fc 0A       		.uleb128 0xa
+ 552 02fd 04050000 		.4byte	.LASF63
+ 553 0301 04       		.byte	0x4
+ 554 0302 66       		.byte	0x66
+ 555 0303 BF000000 		.4byte	0xbf
+ 556 0307 56       		.byte	0x56
+ 557 0308 0A       		.uleb128 0xa
+ 558 0309 89080000 		.4byte	.LASF64
+ 559 030d 04       		.byte	0x4
+ 560 030e 67       		.byte	0x67
+ 561 030f BF000000 		.4byte	0xbf
+ 562 0313 57       		.byte	0x57
+ 563 0314 0A       		.uleb128 0xa
+ 564 0315 24000000 		.4byte	.LASF65
+ 565 0319 04       		.byte	0x4
+ 566 031a 68       		.byte	0x68
+ 567 031b BF000000 		.4byte	0xbf
+ 568 031f 58       		.byte	0x58
+ 569 0320 0A       		.uleb128 0xa
+ 570 0321 37080000 		.4byte	.LASF66
+ 571 0325 04       		.byte	0x4
+ 572 0326 69       		.byte	0x69
+ 573 0327 BF000000 		.4byte	0xbf
+ 574 032b 59       		.byte	0x59
+ 575 032c 0A       		.uleb128 0xa
+ 576 032d F2060000 		.4byte	.LASF67
+ 577 0331 04       		.byte	0x4
+ 578 0332 6E       		.byte	0x6e
+ 579 0333 D5000000 		.4byte	0xd5
+ 580 0337 5A       		.byte	0x5a
+ 581 0338 0A       		.uleb128 0xa
+ 582 0339 830A0000 		.4byte	.LASF68
+ 583 033d 04       		.byte	0x4
+ 584 033e 6F       		.byte	0x6f
+ 585 033f D5000000 		.4byte	0xd5
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 14
+
+
+ 586 0343 5C       		.byte	0x5c
+ 587 0344 0A       		.uleb128 0xa
+ 588 0345 77000000 		.4byte	.LASF69
+ 589 0349 04       		.byte	0x4
+ 590 034a 70       		.byte	0x70
+ 591 034b BF000000 		.4byte	0xbf
+ 592 034f 5E       		.byte	0x5e
+ 593 0350 0A       		.uleb128 0xa
+ 594 0351 DC070000 		.4byte	.LASF70
+ 595 0355 04       		.byte	0x4
+ 596 0356 71       		.byte	0x71
+ 597 0357 BF000000 		.4byte	0xbf
+ 598 035b 5F       		.byte	0x5f
+ 599 035c 0A       		.uleb128 0xa
+ 600 035d 4E070000 		.4byte	.LASF71
+ 601 0361 04       		.byte	0x4
+ 602 0362 72       		.byte	0x72
+ 603 0363 BF000000 		.4byte	0xbf
+ 604 0367 60       		.byte	0x60
+ 605 0368 0A       		.uleb128 0xa
+ 606 0369 B5070000 		.4byte	.LASF72
+ 607 036d 04       		.byte	0x4
+ 608 036e 73       		.byte	0x73
+ 609 036f E0000000 		.4byte	0xe0
+ 610 0373 64       		.byte	0x64
+ 611 0374 0A       		.uleb128 0xa
+ 612 0375 4C010000 		.4byte	.LASF73
+ 613 0379 04       		.byte	0x4
+ 614 037a 76       		.byte	0x76
+ 615 037b D5000000 		.4byte	0xd5
+ 616 037f 68       		.byte	0x68
+ 617 0380 0A       		.uleb128 0xa
+ 618 0381 F2040000 		.4byte	.LASF74
+ 619 0385 04       		.byte	0x4
+ 620 0386 77       		.byte	0x77
+ 621 0387 D5000000 		.4byte	0xd5
+ 622 038b 6A       		.byte	0x6a
+ 623 038c 0A       		.uleb128 0xa
+ 624 038d 92050000 		.4byte	.LASF75
+ 625 0391 04       		.byte	0x4
+ 626 0392 78       		.byte	0x78
+ 627 0393 D5000000 		.4byte	0xd5
+ 628 0397 6C       		.byte	0x6c
+ 629 0398 0A       		.uleb128 0xa
+ 630 0399 E2050000 		.4byte	.LASF76
+ 631 039d 04       		.byte	0x4
+ 632 039e 79       		.byte	0x79
+ 633 039f D5000000 		.4byte	0xd5
+ 634 03a3 6E       		.byte	0x6e
+ 635 03a4 0A       		.uleb128 0xa
+ 636 03a5 75080000 		.4byte	.LASF77
+ 637 03a9 04       		.byte	0x4
+ 638 03aa 7B       		.byte	0x7b
+ 639 03ab BF000000 		.4byte	0xbf
+ 640 03af 70       		.byte	0x70
+ 641 03b0 0A       		.uleb128 0xa
+ 642 03b1 15020000 		.4byte	.LASF78
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 15
+
+
+ 643 03b5 04       		.byte	0x4
+ 644 03b6 7C       		.byte	0x7c
+ 645 03b7 BF000000 		.4byte	0xbf
+ 646 03bb 71       		.byte	0x71
+ 647 03bc 0A       		.uleb128 0xa
+ 648 03bd B10C0000 		.4byte	.LASF79
+ 649 03c1 04       		.byte	0x4
+ 650 03c2 7D       		.byte	0x7d
+ 651 03c3 BF000000 		.4byte	0xbf
+ 652 03c7 72       		.byte	0x72
+ 653 03c8 0A       		.uleb128 0xa
+ 654 03c9 1B070000 		.4byte	.LASF80
+ 655 03cd 04       		.byte	0x4
+ 656 03ce 7E       		.byte	0x7e
+ 657 03cf BF000000 		.4byte	0xbf
+ 658 03d3 73       		.byte	0x73
+ 659 03d4 0A       		.uleb128 0xa
+ 660 03d5 E8080000 		.4byte	.LASF81
+ 661 03d9 04       		.byte	0x4
+ 662 03da 80       		.byte	0x80
+ 663 03db D5000000 		.4byte	0xd5
+ 664 03df 74       		.byte	0x74
+ 665 03e0 0A       		.uleb128 0xa
+ 666 03e1 1F0A0000 		.4byte	.LASF82
+ 667 03e5 04       		.byte	0x4
+ 668 03e6 81       		.byte	0x81
+ 669 03e7 D5000000 		.4byte	0xd5
+ 670 03eb 76       		.byte	0x76
+ 671 03ec 0A       		.uleb128 0xa
+ 672 03ed 76030000 		.4byte	.LASF83
+ 673 03f1 04       		.byte	0x4
+ 674 03f2 82       		.byte	0x82
+ 675 03f3 D5000000 		.4byte	0xd5
+ 676 03f7 78       		.byte	0x78
+ 677 03f8 0A       		.uleb128 0xa
+ 678 03f9 B3000000 		.4byte	.LASF84
+ 679 03fd 04       		.byte	0x4
+ 680 03fe 83       		.byte	0x83
+ 681 03ff D5000000 		.4byte	0xd5
+ 682 0403 7A       		.byte	0x7a
+ 683 0404 0A       		.uleb128 0xa
+ 684 0405 D70B0000 		.4byte	.LASF85
+ 685 0409 04       		.byte	0x4
+ 686 040a 86       		.byte	0x86
+ 687 040b BF000000 		.4byte	0xbf
+ 688 040f 7C       		.byte	0x7c
+ 689 0410 0A       		.uleb128 0xa
+ 690 0411 050B0000 		.4byte	.LASF86
+ 691 0415 04       		.byte	0x4
+ 692 0416 87       		.byte	0x87
+ 693 0417 BF000000 		.4byte	0xbf
+ 694 041b 7D       		.byte	0x7d
+ 695 041c 0A       		.uleb128 0xa
+ 696 041d 38000000 		.4byte	.LASF87
+ 697 0421 04       		.byte	0x4
+ 698 0422 88       		.byte	0x88
+ 699 0423 BF000000 		.4byte	0xbf
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 16
+
+
+ 700 0427 7E       		.byte	0x7e
+ 701 0428 0A       		.uleb128 0xa
+ 702 0429 38040000 		.4byte	.LASF88
+ 703 042d 04       		.byte	0x4
+ 704 042e 89       		.byte	0x89
+ 705 042f BF000000 		.4byte	0xbf
+ 706 0433 7F       		.byte	0x7f
+ 707 0434 0A       		.uleb128 0xa
+ 708 0435 BC040000 		.4byte	.LASF89
+ 709 0439 04       		.byte	0x4
+ 710 043a 8A       		.byte	0x8a
+ 711 043b BF000000 		.4byte	0xbf
+ 712 043f 80       		.byte	0x80
+ 713 0440 0A       		.uleb128 0xa
+ 714 0441 EE0A0000 		.4byte	.LASF90
+ 715 0445 04       		.byte	0x4
+ 716 0446 8D       		.byte	0x8d
+ 717 0447 E0000000 		.4byte	0xe0
+ 718 044b 84       		.byte	0x84
+ 719 044c 0A       		.uleb128 0xa
+ 720 044d C8000000 		.4byte	.LASF91
+ 721 0451 04       		.byte	0x4
+ 722 0452 8E       		.byte	0x8e
+ 723 0453 E0000000 		.4byte	0xe0
+ 724 0457 88       		.byte	0x88
+ 725 0458 0A       		.uleb128 0xa
+ 726 0459 C20B0000 		.4byte	.LASF92
+ 727 045d 04       		.byte	0x4
+ 728 045e 8F       		.byte	0x8f
+ 729 045f E0000000 		.4byte	0xe0
+ 730 0463 8C       		.byte	0x8c
+ 731 0464 0A       		.uleb128 0xa
+ 732 0465 B8060000 		.4byte	.LASF93
+ 733 0469 04       		.byte	0x4
+ 734 046a 90       		.byte	0x90
+ 735 046b E0000000 		.4byte	0xe0
+ 736 046f 90       		.byte	0x90
+ 737 0470 0A       		.uleb128 0xa
+ 738 0471 8C040000 		.4byte	.LASF94
+ 739 0475 04       		.byte	0x4
+ 740 0476 91       		.byte	0x91
+ 741 0477 E0000000 		.4byte	0xe0
+ 742 047b 94       		.byte	0x94
+ 743 047c 0A       		.uleb128 0xa
+ 744 047d 77060000 		.4byte	.LASF95
+ 745 0481 04       		.byte	0x4
+ 746 0482 92       		.byte	0x92
+ 747 0483 E0000000 		.4byte	0xe0
+ 748 0487 98       		.byte	0x98
+ 749 0488 0A       		.uleb128 0xa
+ 750 0489 3E0C0000 		.4byte	.LASF96
+ 751 048d 04       		.byte	0x4
+ 752 048e 93       		.byte	0x93
+ 753 048f E0000000 		.4byte	0xe0
+ 754 0493 9C       		.byte	0x9c
+ 755 0494 0A       		.uleb128 0xa
+ 756 0495 66010000 		.4byte	.LASF97
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 17
+
+
+ 757 0499 04       		.byte	0x4
+ 758 049a 94       		.byte	0x94
+ 759 049b E0000000 		.4byte	0xe0
+ 760 049f A0       		.byte	0xa0
+ 761 04a0 0A       		.uleb128 0xa
+ 762 04a1 80020000 		.4byte	.LASF98
+ 763 04a5 04       		.byte	0x4
+ 764 04a6 95       		.byte	0x95
+ 765 04a7 D5000000 		.4byte	0xd5
+ 766 04ab A4       		.byte	0xa4
+ 767 04ac 0A       		.uleb128 0xa
+ 768 04ad 17090000 		.4byte	.LASF99
+ 769 04b1 04       		.byte	0x4
+ 770 04b2 96       		.byte	0x96
+ 771 04b3 D5000000 		.4byte	0xd5
+ 772 04b7 A6       		.byte	0xa6
+ 773 04b8 0A       		.uleb128 0xa
+ 774 04b9 D0070000 		.4byte	.LASF100
+ 775 04bd 04       		.byte	0x4
+ 776 04be 97       		.byte	0x97
+ 777 04bf D5000000 		.4byte	0xd5
+ 778 04c3 A8       		.byte	0xa8
+ 779 04c4 0A       		.uleb128 0xa
+ 780 04c5 FB090000 		.4byte	.LASF101
+ 781 04c9 04       		.byte	0x4
+ 782 04ca 98       		.byte	0x98
+ 783 04cb D5000000 		.4byte	0xd5
+ 784 04cf AA       		.byte	0xaa
+ 785 04d0 0A       		.uleb128 0xa
+ 786 04d1 A1050000 		.4byte	.LASF102
+ 787 04d5 04       		.byte	0x4
+ 788 04d6 99       		.byte	0x99
+ 789 04d7 D5000000 		.4byte	0xd5
+ 790 04db AC       		.byte	0xac
+ 791 04dc 0A       		.uleb128 0xa
+ 792 04dd 32070000 		.4byte	.LASF103
+ 793 04e1 04       		.byte	0x4
+ 794 04e2 9A       		.byte	0x9a
+ 795 04e3 D5000000 		.4byte	0xd5
+ 796 04e7 AE       		.byte	0xae
+ 797 04e8 0A       		.uleb128 0xa
+ 798 04e9 AB0A0000 		.4byte	.LASF104
+ 799 04ed 04       		.byte	0x4
+ 800 04ee 9D       		.byte	0x9d
+ 801 04ef D5000000 		.4byte	0xd5
+ 802 04f3 B0       		.byte	0xb0
+ 803 04f4 0A       		.uleb128 0xa
+ 804 04f5 55000000 		.4byte	.LASF105
+ 805 04f9 04       		.byte	0x4
+ 806 04fa 9E       		.byte	0x9e
+ 807 04fb E0000000 		.4byte	0xe0
+ 808 04ff B4       		.byte	0xb4
+ 809 0500 00       		.byte	0
+ 810 0501 03       		.uleb128 0x3
+ 811 0502 0D060000 		.4byte	.LASF106
+ 812 0506 04       		.byte	0x4
+ 813 0507 9F       		.byte	0x9f
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 18
+
+
+ 814 0508 F0000000 		.4byte	0xf0
+ 815 050c 02       		.uleb128 0x2
+ 816 050d 04       		.byte	0x4
+ 817 050e 04       		.byte	0x4
+ 818 050f AF070000 		.4byte	.LASF107
+ 819 0513 02       		.uleb128 0x2
+ 820 0514 08       		.byte	0x8
+ 821 0515 04       		.byte	0x4
+ 822 0516 6F030000 		.4byte	.LASF108
+ 823 051a 02       		.uleb128 0x2
+ 824 051b 01       		.byte	0x1
+ 825 051c 02       		.byte	0x2
+ 826 051d 23080000 		.4byte	.LASF109
+ 827 0521 0B       		.uleb128 0xb
+ 828 0522 01       		.byte	0x1
+ 829 0523 37000000 		.4byte	0x37
+ 830 0527 05       		.byte	0x5
+ 831 0528 1304     		.2byte	0x413
+ 832 052a 47050000 		.4byte	0x547
+ 833 052e 0C       		.uleb128 0xc
+ 834 052f E4020000 		.4byte	.LASF110
+ 835 0533 00       		.byte	0
+ 836 0534 0C       		.uleb128 0xc
+ 837 0535 0A080000 		.4byte	.LASF111
+ 838 0539 01       		.byte	0x1
+ 839 053a 0C       		.uleb128 0xc
+ 840 053b 4C030000 		.4byte	.LASF112
+ 841 053f 02       		.byte	0x2
+ 842 0540 0C       		.uleb128 0xc
+ 843 0541 160C0000 		.4byte	.LASF113
+ 844 0545 03       		.byte	0x3
+ 845 0546 00       		.byte	0
+ 846 0547 0D       		.uleb128 0xd
+ 847 0548 3B020000 		.4byte	.LASF114
+ 848 054c 05       		.byte	0x5
+ 849 054d 1804     		.2byte	0x418
+ 850 054f 21050000 		.4byte	0x521
+ 851 0553 0E       		.uleb128 0xe
+ 852 0554 78       		.byte	0x78
+ 853 0555 05       		.byte	0x5
+ 854 0556 0205     		.2byte	0x502
+ 855 0558 20060000 		.4byte	0x620
+ 856 055c 0F       		.uleb128 0xf
+ 857 055d 590A0000 		.4byte	.LASF115
+ 858 0561 05       		.byte	0x5
+ 859 0562 0405     		.2byte	0x504
+ 860 0564 E0000000 		.4byte	0xe0
+ 861 0568 00       		.byte	0
+ 862 0569 0F       		.uleb128 0xf
+ 863 056a 8E0B0000 		.4byte	.LASF116
+ 864 056e 05       		.byte	0x5
+ 865 056f 0505     		.2byte	0x505
+ 866 0571 E0000000 		.4byte	0xe0
+ 867 0575 04       		.byte	0x4
+ 868 0576 0F       		.uleb128 0xf
+ 869 0577 18040000 		.4byte	.LASF117
+ 870 057b 05       		.byte	0x5
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 19
+
+
+ 871 057c 0605     		.2byte	0x506
+ 872 057e E0000000 		.4byte	0xe0
+ 873 0582 08       		.byte	0x8
+ 874 0583 0F       		.uleb128 0xf
+ 875 0584 0E070000 		.4byte	.LASF118
+ 876 0588 05       		.byte	0x5
+ 877 0589 0705     		.2byte	0x507
+ 878 058b E0000000 		.4byte	0xe0
+ 879 058f 0C       		.byte	0xc
+ 880 0590 0F       		.uleb128 0xf
+ 881 0591 C0050000 		.4byte	.LASF119
+ 882 0595 05       		.byte	0x5
+ 883 0596 0805     		.2byte	0x508
+ 884 0598 E0000000 		.4byte	0xe0
+ 885 059c 10       		.byte	0x10
+ 886 059d 0F       		.uleb128 0xf
+ 887 059e 4A0B0000 		.4byte	.LASF120
+ 888 05a2 05       		.byte	0x5
+ 889 05a3 0905     		.2byte	0x509
+ 890 05a5 47050000 		.4byte	0x547
+ 891 05a9 14       		.byte	0x14
+ 892 05aa 0F       		.uleb128 0xf
+ 893 05ab FB070000 		.4byte	.LASF121
+ 894 05af 05       		.byte	0x5
+ 895 05b0 0A05     		.2byte	0x50a
+ 896 05b2 E0000000 		.4byte	0xe0
+ 897 05b6 18       		.byte	0x18
+ 898 05b7 0F       		.uleb128 0xf
+ 899 05b8 1D060000 		.4byte	.LASF122
+ 900 05bc 05       		.byte	0x5
+ 901 05bd 0B05     		.2byte	0x50b
+ 902 05bf 20060000 		.4byte	0x620
+ 903 05c3 1C       		.byte	0x1c
+ 904 05c4 0F       		.uleb128 0xf
+ 905 05c5 5F080000 		.4byte	.LASF123
+ 906 05c9 05       		.byte	0x5
+ 907 05ca 0C05     		.2byte	0x50c
+ 908 05cc E0000000 		.4byte	0xe0
+ 909 05d0 5C       		.byte	0x5c
+ 910 05d1 0F       		.uleb128 0xf
+ 911 05d2 A7000000 		.4byte	.LASF124
+ 912 05d6 05       		.byte	0x5
+ 913 05d7 0D05     		.2byte	0x50d
+ 914 05d9 E0000000 		.4byte	0xe0
+ 915 05dd 60       		.byte	0x60
+ 916 05de 0F       		.uleb128 0xf
+ 917 05df 99070000 		.4byte	.LASF125
+ 918 05e3 05       		.byte	0x5
+ 919 05e4 0E05     		.2byte	0x50e
+ 920 05e6 E0000000 		.4byte	0xe0
+ 921 05ea 64       		.byte	0x64
+ 922 05eb 0F       		.uleb128 0xf
+ 923 05ec 55080000 		.4byte	.LASF126
+ 924 05f0 05       		.byte	0x5
+ 925 05f1 0F05     		.2byte	0x50f
+ 926 05f3 E0000000 		.4byte	0xe0
+ 927 05f7 68       		.byte	0x68
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 20
+
+
+ 928 05f8 0F       		.uleb128 0xf
+ 929 05f9 2B030000 		.4byte	.LASF127
+ 930 05fd 05       		.byte	0x5
+ 931 05fe 1005     		.2byte	0x510
+ 932 0600 E0000000 		.4byte	0xe0
+ 933 0604 6C       		.byte	0x6c
+ 934 0605 0F       		.uleb128 0xf
+ 935 0606 40070000 		.4byte	.LASF128
+ 936 060a 05       		.byte	0x5
+ 937 060b 1105     		.2byte	0x511
+ 938 060d 1A050000 		.4byte	0x51a
+ 939 0611 70       		.byte	0x70
+ 940 0612 0F       		.uleb128 0xf
+ 941 0613 2C090000 		.4byte	.LASF129
+ 942 0617 05       		.byte	0x5
+ 943 0618 1205     		.2byte	0x512
+ 944 061a E0000000 		.4byte	0xe0
+ 945 061e 74       		.byte	0x74
+ 946 061f 00       		.byte	0
+ 947 0620 10       		.uleb128 0x10
+ 948 0621 E0000000 		.4byte	0xe0
+ 949 0625 30060000 		.4byte	0x630
+ 950 0629 11       		.uleb128 0x11
+ 951 062a A0000000 		.4byte	0xa0
+ 952 062e 0F       		.byte	0xf
+ 953 062f 00       		.byte	0
+ 954 0630 0D       		.uleb128 0xd
+ 955 0631 BE010000 		.4byte	.LASF130
+ 956 0635 05       		.byte	0x5
+ 957 0636 1305     		.2byte	0x513
+ 958 0638 53050000 		.4byte	0x553
+ 959 063c 06       		.uleb128 0x6
+ 960 063d 04       		.byte	0x4
+ 961 063e 42060000 		.4byte	0x642
+ 962 0642 12       		.uleb128 0x12
+ 963 0643 4D060000 		.4byte	0x64d
+ 964 0647 13       		.uleb128 0x13
+ 965 0648 E0000000 		.4byte	0xe0
+ 966 064c 00       		.byte	0
+ 967 064d 0D       		.uleb128 0xd
+ 968 064e 95020000 		.4byte	.LASF131
+ 969 0652 06       		.byte	0x6
+ 970 0653 F201     		.2byte	0x1f2
+ 971 0655 3C060000 		.4byte	0x63c
+ 972 0659 14       		.uleb128 0x14
+ 973 065a FE010000 		.4byte	.LASF143
+ 974 065e 24       		.byte	0x24
+ 975 065f 06       		.byte	0x6
+ 976 0660 7402     		.2byte	0x274
+ 977 0662 DC060000 		.4byte	0x6dc
+ 978 0666 0F       		.uleb128 0xf
+ 979 0667 540B0000 		.4byte	.LASF132
+ 980 066b 06       		.byte	0x6
+ 981 066c 7702     		.2byte	0x277
+ 982 066e EB000000 		.4byte	0xeb
+ 983 0672 00       		.byte	0
+ 984 0673 0F       		.uleb128 0xf
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 21
+
+
+ 985 0674 1E0B0000 		.4byte	.LASF133
+ 986 0678 06       		.byte	0x6
+ 987 0679 7902     		.2byte	0x279
+ 988 067b 9E000000 		.4byte	0x9e
+ 989 067f 04       		.byte	0x4
+ 990 0680 0F       		.uleb128 0xf
+ 991 0681 1A000000 		.4byte	.LASF134
+ 992 0685 06       		.byte	0x6
+ 993 0686 7A02     		.2byte	0x27a
+ 994 0688 E0000000 		.4byte	0xe0
+ 995 068c 08       		.byte	0x8
+ 996 068d 0F       		.uleb128 0xf
+ 997 068e 7D040000 		.4byte	.LASF135
+ 998 0692 06       		.byte	0x6
+ 999 0693 7B02     		.2byte	0x27b
+ 1000 0695 EB000000 		.4byte	0xeb
+ 1001 0699 0C       		.byte	0xc
+ 1002 069a 0F       		.uleb128 0xf
+ 1003 069b FB050000 		.4byte	.LASF136
+ 1004 069f 06       		.byte	0x6
+ 1005 06a0 7D02     		.2byte	0x27d
+ 1006 06a2 9E000000 		.4byte	0x9e
+ 1007 06a6 10       		.byte	0x10
+ 1008 06a7 0F       		.uleb128 0xf
+ 1009 06a8 A1040000 		.4byte	.LASF137
+ 1010 06ac 06       		.byte	0x6
+ 1011 06ad 7E02     		.2byte	0x27e
+ 1012 06af E0000000 		.4byte	0xe0
+ 1013 06b3 14       		.byte	0x14
+ 1014 06b4 0F       		.uleb128 0xf
+ 1015 06b5 F80C0000 		.4byte	.LASF138
+ 1016 06b9 06       		.byte	0x6
+ 1017 06ba 7F02     		.2byte	0x27f
+ 1018 06bc EB000000 		.4byte	0xeb
+ 1019 06c0 18       		.byte	0x18
+ 1020 06c1 0F       		.uleb128 0xf
+ 1021 06c2 D9050000 		.4byte	.LASF139
+ 1022 06c6 06       		.byte	0x6
+ 1023 06c7 8502     		.2byte	0x285
+ 1024 06c9 4D060000 		.4byte	0x64d
+ 1025 06cd 1C       		.byte	0x1c
+ 1026 06ce 0F       		.uleb128 0xf
+ 1027 06cf 160B0000 		.4byte	.LASF140
+ 1028 06d3 06       		.byte	0x6
+ 1029 06d4 8802     		.2byte	0x288
+ 1030 06d6 E0000000 		.4byte	0xe0
+ 1031 06da 20       		.byte	0x20
+ 1032 06db 00       		.byte	0
+ 1033 06dc 0D       		.uleb128 0xd
+ 1034 06dd 28060000 		.4byte	.LASF141
+ 1035 06e1 06       		.byte	0x6
+ 1036 06e2 8B02     		.2byte	0x28b
+ 1037 06e4 59060000 		.4byte	0x659
+ 1038 06e8 0D       		.uleb128 0xd
+ 1039 06e9 3C050000 		.4byte	.LASF142
+ 1040 06ed 07       		.byte	0x7
+ 1041 06ee D901     		.2byte	0x1d9
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 22
+
+
+ 1042 06f0 3C060000 		.4byte	0x63c
+ 1043 06f4 14       		.uleb128 0x14
+ 1044 06f5 CF0C0000 		.4byte	.LASF144
+ 1045 06f9 38       		.byte	0x38
+ 1046 06fa 07       		.byte	0x7
+ 1047 06fb 7502     		.2byte	0x275
+ 1048 06fd B8070000 		.4byte	0x7b8
+ 1049 0701 0F       		.uleb128 0xf
+ 1050 0702 7B050000 		.4byte	.LASF145
+ 1051 0706 07       		.byte	0x7
+ 1052 0707 7802     		.2byte	0x278
+ 1053 0709 EB000000 		.4byte	0xeb
+ 1054 070d 00       		.byte	0
+ 1055 070e 0F       		.uleb128 0xf
+ 1056 070f 6A070000 		.4byte	.LASF146
+ 1057 0713 07       		.byte	0x7
+ 1058 0714 7902     		.2byte	0x279
+ 1059 0716 EB000000 		.4byte	0xeb
+ 1060 071a 04       		.byte	0x4
+ 1061 071b 0F       		.uleb128 0xf
+ 1062 071c 5C010000 		.4byte	.LASF147
+ 1063 0720 07       		.byte	0x7
+ 1064 0721 7B02     		.2byte	0x27b
+ 1065 0723 9E000000 		.4byte	0x9e
+ 1066 0727 08       		.byte	0x8
+ 1067 0728 0F       		.uleb128 0xf
+ 1068 0729 5E0A0000 		.4byte	.LASF148
+ 1069 072d 07       		.byte	0x7
+ 1070 072e 7C02     		.2byte	0x27c
+ 1071 0730 E0000000 		.4byte	0xe0
+ 1072 0734 0C       		.byte	0xc
+ 1073 0735 0F       		.uleb128 0xf
+ 1074 0736 69060000 		.4byte	.LASF149
+ 1075 073a 07       		.byte	0x7
+ 1076 073b 7D02     		.2byte	0x27d
+ 1077 073d EB000000 		.4byte	0xeb
+ 1078 0741 10       		.byte	0x10
+ 1079 0742 0F       		.uleb128 0xf
+ 1080 0743 300C0000 		.4byte	.LASF150
+ 1081 0747 07       		.byte	0x7
+ 1082 0748 7E02     		.2byte	0x27e
+ 1083 074a EB000000 		.4byte	0xeb
+ 1084 074e 14       		.byte	0x14
+ 1085 074f 0F       		.uleb128 0xf
+ 1086 0750 1E0B0000 		.4byte	.LASF133
+ 1087 0754 07       		.byte	0x7
+ 1088 0755 8002     		.2byte	0x280
+ 1089 0757 9E000000 		.4byte	0x9e
+ 1090 075b 18       		.byte	0x18
+ 1091 075c 0F       		.uleb128 0xf
+ 1092 075d 1A000000 		.4byte	.LASF134
+ 1093 0761 07       		.byte	0x7
+ 1094 0762 8102     		.2byte	0x281
+ 1095 0764 E0000000 		.4byte	0xe0
+ 1096 0768 1C       		.byte	0x1c
+ 1097 0769 0F       		.uleb128 0xf
+ 1098 076a 7D040000 		.4byte	.LASF135
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 23
+
+
+ 1099 076e 07       		.byte	0x7
+ 1100 076f 8202     		.2byte	0x282
+ 1101 0771 EB000000 		.4byte	0xeb
+ 1102 0775 20       		.byte	0x20
+ 1103 0776 0F       		.uleb128 0xf
+ 1104 0777 FB050000 		.4byte	.LASF136
+ 1105 077b 07       		.byte	0x7
+ 1106 077c 8402     		.2byte	0x284
+ 1107 077e 9E000000 		.4byte	0x9e
+ 1108 0782 24       		.byte	0x24
+ 1109 0783 0F       		.uleb128 0xf
+ 1110 0784 A1040000 		.4byte	.LASF137
+ 1111 0788 07       		.byte	0x7
+ 1112 0789 8502     		.2byte	0x285
+ 1113 078b E0000000 		.4byte	0xe0
+ 1114 078f 28       		.byte	0x28
+ 1115 0790 0F       		.uleb128 0xf
+ 1116 0791 2A020000 		.4byte	.LASF151
+ 1117 0795 07       		.byte	0x7
+ 1118 0796 8602     		.2byte	0x286
+ 1119 0798 EB000000 		.4byte	0xeb
+ 1120 079c 2C       		.byte	0x2c
+ 1121 079d 0F       		.uleb128 0xf
+ 1122 079e D9050000 		.4byte	.LASF139
+ 1123 07a2 07       		.byte	0x7
+ 1124 07a3 8B02     		.2byte	0x28b
+ 1125 07a5 E8060000 		.4byte	0x6e8
+ 1126 07a9 30       		.byte	0x30
+ 1127 07aa 0F       		.uleb128 0xf
+ 1128 07ab 160B0000 		.4byte	.LASF140
+ 1129 07af 07       		.byte	0x7
+ 1130 07b0 8E02     		.2byte	0x28e
+ 1131 07b2 E0000000 		.4byte	0xe0
+ 1132 07b6 34       		.byte	0x34
+ 1133 07b7 00       		.byte	0
+ 1134 07b8 0D       		.uleb128 0xd
+ 1135 07b9 300B0000 		.4byte	.LASF152
+ 1136 07bd 07       		.byte	0x7
+ 1137 07be 9102     		.2byte	0x291
+ 1138 07c0 F4060000 		.4byte	0x6f4
+ 1139 07c4 15       		.uleb128 0x15
+ 1140 07c5 CD060000 		.4byte	.LASF153
+ 1141 07c9 4C       		.byte	0x4c
+ 1142 07ca 08       		.byte	0x8
+ 1143 07cb 2F       		.byte	0x2f
+ 1144 07cc B5080000 		.4byte	0x8b5
+ 1145 07d0 0A       		.uleb128 0xa
+ 1146 07d1 06010000 		.4byte	.LASF154
+ 1147 07d5 08       		.byte	0x8
+ 1148 07d6 31       		.byte	0x31
+ 1149 07d7 E0000000 		.4byte	0xe0
+ 1150 07db 00       		.byte	0
+ 1151 07dc 0A       		.uleb128 0xa
+ 1152 07dd 3D010000 		.4byte	.LASF155
+ 1153 07e1 08       		.byte	0x8
+ 1154 07e2 33       		.byte	0x33
+ 1155 07e3 E0000000 		.4byte	0xe0
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 24
+
+
+ 1156 07e7 04       		.byte	0x4
+ 1157 07e8 0A       		.uleb128 0xa
+ 1158 07e9 12000000 		.4byte	.LASF156
+ 1159 07ed 08       		.byte	0x8
+ 1160 07ee 34       		.byte	0x34
+ 1161 07ef E0000000 		.4byte	0xe0
+ 1162 07f3 08       		.byte	0x8
+ 1163 07f4 0A       		.uleb128 0xa
+ 1164 07f5 DF000000 		.4byte	.LASF157
+ 1165 07f9 08       		.byte	0x8
+ 1166 07fa 35       		.byte	0x35
+ 1167 07fb E0000000 		.4byte	0xe0
+ 1168 07ff 0C       		.byte	0xc
+ 1169 0800 0A       		.uleb128 0xa
+ 1170 0801 B9080000 		.4byte	.LASF158
+ 1171 0805 08       		.byte	0x8
+ 1172 0806 37       		.byte	0x37
+ 1173 0807 E0000000 		.4byte	0xe0
+ 1174 080b 10       		.byte	0x10
+ 1175 080c 0A       		.uleb128 0xa
+ 1176 080d CA090000 		.4byte	.LASF159
+ 1177 0811 08       		.byte	0x8
+ 1178 0812 38       		.byte	0x38
+ 1179 0813 E0000000 		.4byte	0xe0
+ 1180 0817 14       		.byte	0x14
+ 1181 0818 0A       		.uleb128 0xa
+ 1182 0819 E50A0000 		.4byte	.LASF160
+ 1183 081d 08       		.byte	0x8
+ 1184 081e 39       		.byte	0x39
+ 1185 081f E0000000 		.4byte	0xe0
+ 1186 0823 18       		.byte	0x18
+ 1187 0824 0A       		.uleb128 0xa
+ 1188 0825 2A050000 		.4byte	.LASF161
+ 1189 0829 08       		.byte	0x8
+ 1190 082a 3A       		.byte	0x3a
+ 1191 082b 1A050000 		.4byte	0x51a
+ 1192 082f 1C       		.byte	0x1c
+ 1193 0830 0A       		.uleb128 0xa
+ 1194 0831 AB040000 		.4byte	.LASF162
+ 1195 0835 08       		.byte	0x8
+ 1196 0836 3C       		.byte	0x3c
+ 1197 0837 E0000000 		.4byte	0xe0
+ 1198 083b 20       		.byte	0x20
+ 1199 083c 0A       		.uleb128 0xa
+ 1200 083d 07040000 		.4byte	.LASF163
+ 1201 0841 08       		.byte	0x8
+ 1202 0842 3D       		.byte	0x3d
+ 1203 0843 E0000000 		.4byte	0xe0
+ 1204 0847 24       		.byte	0x24
+ 1205 0848 0A       		.uleb128 0xa
+ 1206 0849 19010000 		.4byte	.LASF164
+ 1207 084d 08       		.byte	0x8
+ 1208 084e 3F       		.byte	0x3f
+ 1209 084f E0000000 		.4byte	0xe0
+ 1210 0853 28       		.byte	0x28
+ 1211 0854 0A       		.uleb128 0xa
+ 1212 0855 060C0000 		.4byte	.LASF165
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 25
+
+
+ 1213 0859 08       		.byte	0x8
+ 1214 085a 40       		.byte	0x40
+ 1215 085b E0000000 		.4byte	0xe0
+ 1216 085f 2C       		.byte	0x2c
+ 1217 0860 0A       		.uleb128 0xa
+ 1218 0861 6C0A0000 		.4byte	.LASF166
+ 1219 0865 08       		.byte	0x8
+ 1220 0866 42       		.byte	0x42
+ 1221 0867 E0000000 		.4byte	0xe0
+ 1222 086b 30       		.byte	0x30
+ 1223 086c 0A       		.uleb128 0xa
+ 1224 086d B90A0000 		.4byte	.LASF167
+ 1225 0871 08       		.byte	0x8
+ 1226 0872 43       		.byte	0x43
+ 1227 0873 E0000000 		.4byte	0xe0
+ 1228 0877 34       		.byte	0x34
+ 1229 0878 0A       		.uleb128 0xa
+ 1230 0879 8D060000 		.4byte	.LASF168
+ 1231 087d 08       		.byte	0x8
+ 1232 087e 45       		.byte	0x45
+ 1233 087f E0000000 		.4byte	0xe0
+ 1234 0883 38       		.byte	0x38
+ 1235 0884 0A       		.uleb128 0xa
+ 1236 0885 EE000000 		.4byte	.LASF169
+ 1237 0889 08       		.byte	0x8
+ 1238 088a 46       		.byte	0x46
+ 1239 088b E0000000 		.4byte	0xe0
+ 1240 088f 3C       		.byte	0x3c
+ 1241 0890 0A       		.uleb128 0xa
+ 1242 0891 A10A0000 		.4byte	.LASF170
+ 1243 0895 08       		.byte	0x8
+ 1244 0896 48       		.byte	0x48
+ 1245 0897 E0000000 		.4byte	0xe0
+ 1246 089b 40       		.byte	0x40
+ 1247 089c 0A       		.uleb128 0xa
+ 1248 089d 540C0000 		.4byte	.LASF171
+ 1249 08a1 08       		.byte	0x8
+ 1250 08a2 49       		.byte	0x49
+ 1251 08a3 E0000000 		.4byte	0xe0
+ 1252 08a7 44       		.byte	0x44
+ 1253 08a8 0A       		.uleb128 0xa
+ 1254 08a9 E4090000 		.4byte	.LASF172
+ 1255 08ad 08       		.byte	0x8
+ 1256 08ae 4B       		.byte	0x4b
+ 1257 08af E0000000 		.4byte	0xe0
+ 1258 08b3 48       		.byte	0x48
+ 1259 08b4 00       		.byte	0
+ 1260 08b5 03       		.uleb128 0x3
+ 1261 08b6 E0010000 		.4byte	.LASF173
+ 1262 08ba 08       		.byte	0x8
+ 1263 08bb 4C       		.byte	0x4c
+ 1264 08bc C4070000 		.4byte	0x7c4
+ 1265 08c0 15       		.uleb128 0x15
+ 1266 08c1 CC020000 		.4byte	.LASF174
+ 1267 08c5 64       		.byte	0x64
+ 1268 08c6 09       		.byte	0x9
+ 1269 08c7 2F       		.byte	0x2f
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 26
+
+
+ 1270 08c8 F9090000 		.4byte	0x9f9
+ 1271 08cc 0A       		.uleb128 0xa
+ 1272 08cd A7070000 		.4byte	.LASF175
+ 1273 08d1 09       		.byte	0x9
+ 1274 08d2 31       		.byte	0x31
+ 1275 08d3 E0000000 		.4byte	0xe0
+ 1276 08d7 00       		.byte	0
+ 1277 08d8 0A       		.uleb128 0xa
+ 1278 08d9 3D010000 		.4byte	.LASF155
+ 1279 08dd 09       		.byte	0x9
+ 1280 08de 33       		.byte	0x33
+ 1281 08df E0000000 		.4byte	0xe0
+ 1282 08e3 04       		.byte	0x4
+ 1283 08e4 0A       		.uleb128 0xa
+ 1284 08e5 68080000 		.4byte	.LASF176
+ 1285 08e9 09       		.byte	0x9
+ 1286 08ea 34       		.byte	0x34
+ 1287 08eb E0000000 		.4byte	0xe0
+ 1288 08ef 08       		.byte	0x8
+ 1289 08f0 0A       		.uleb128 0xa
+ 1290 08f1 5A060000 		.4byte	.LASF177
+ 1291 08f5 09       		.byte	0x9
+ 1292 08f6 35       		.byte	0x35
+ 1293 08f7 E0000000 		.4byte	0xe0
+ 1294 08fb 0C       		.byte	0xc
+ 1295 08fc 0A       		.uleb128 0xa
+ 1296 08fd 12000000 		.4byte	.LASF156
+ 1297 0901 09       		.byte	0x9
+ 1298 0902 36       		.byte	0x36
+ 1299 0903 E0000000 		.4byte	0xe0
+ 1300 0907 10       		.byte	0x10
+ 1301 0908 0A       		.uleb128 0xa
+ 1302 0909 D50A0000 		.4byte	.LASF178
+ 1303 090d 09       		.byte	0x9
+ 1304 090e 37       		.byte	0x37
+ 1305 090f E0000000 		.4byte	0xe0
+ 1306 0913 14       		.byte	0x14
+ 1307 0914 0A       		.uleb128 0xa
+ 1308 0915 DD0A0000 		.4byte	.LASF179
+ 1309 0919 09       		.byte	0x9
+ 1310 091a 38       		.byte	0x38
+ 1311 091b E0000000 		.4byte	0xe0
+ 1312 091f 18       		.byte	0x18
+ 1313 0920 0A       		.uleb128 0xa
+ 1314 0921 9D080000 		.4byte	.LASF180
+ 1315 0925 09       		.byte	0x9
+ 1316 0926 39       		.byte	0x39
+ 1317 0927 1A050000 		.4byte	0x51a
+ 1318 092b 1C       		.byte	0x1c
+ 1319 092c 0A       		.uleb128 0xa
+ 1320 092d CA090000 		.4byte	.LASF159
+ 1321 0931 09       		.byte	0x9
+ 1322 0932 3A       		.byte	0x3a
+ 1323 0933 E0000000 		.4byte	0xe0
+ 1324 0937 20       		.byte	0x20
+ 1325 0938 0A       		.uleb128 0xa
+ 1326 0939 E50A0000 		.4byte	.LASF160
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 27
+
+
+ 1327 093d 09       		.byte	0x9
+ 1328 093e 3B       		.byte	0x3b
+ 1329 093f E0000000 		.4byte	0xe0
+ 1330 0943 24       		.byte	0x24
+ 1331 0944 0A       		.uleb128 0xa
+ 1332 0945 2A050000 		.4byte	.LASF161
+ 1333 0949 09       		.byte	0x9
+ 1334 094a 3C       		.byte	0x3c
+ 1335 094b 1A050000 		.4byte	0x51a
+ 1336 094f 28       		.byte	0x28
+ 1337 0950 0A       		.uleb128 0xa
+ 1338 0951 AB040000 		.4byte	.LASF162
+ 1339 0955 09       		.byte	0x9
+ 1340 0956 3E       		.byte	0x3e
+ 1341 0957 E0000000 		.4byte	0xe0
+ 1342 095b 2C       		.byte	0x2c
+ 1343 095c 0A       		.uleb128 0xa
+ 1344 095d 4D060000 		.4byte	.LASF181
+ 1345 0961 09       		.byte	0x9
+ 1346 0962 3F       		.byte	0x3f
+ 1347 0963 E0000000 		.4byte	0xe0
+ 1348 0967 30       		.byte	0x30
+ 1349 0968 0A       		.uleb128 0xa
+ 1350 0969 700B0000 		.4byte	.LASF182
+ 1351 096d 09       		.byte	0x9
+ 1352 096e 40       		.byte	0x40
+ 1353 096f E0000000 		.4byte	0xe0
+ 1354 0973 34       		.byte	0x34
+ 1355 0974 0A       		.uleb128 0xa
+ 1356 0975 F2070000 		.4byte	.LASF183
+ 1357 0979 09       		.byte	0x9
+ 1358 097a 41       		.byte	0x41
+ 1359 097b E0000000 		.4byte	0xe0
+ 1360 097f 38       		.byte	0x38
+ 1361 0980 0A       		.uleb128 0xa
+ 1362 0981 84050000 		.4byte	.LASF184
+ 1363 0985 09       		.byte	0x9
+ 1364 0986 42       		.byte	0x42
+ 1365 0987 E0000000 		.4byte	0xe0
+ 1366 098b 3C       		.byte	0x3c
+ 1367 098c 0A       		.uleb128 0xa
+ 1368 098d 7C010000 		.4byte	.LASF185
+ 1369 0991 09       		.byte	0x9
+ 1370 0992 44       		.byte	0x44
+ 1371 0993 E0000000 		.4byte	0xe0
+ 1372 0997 40       		.byte	0x40
+ 1373 0998 0A       		.uleb128 0xa
+ 1374 0999 060C0000 		.4byte	.LASF165
+ 1375 099d 09       		.byte	0x9
+ 1376 099e 45       		.byte	0x45
+ 1377 099f E0000000 		.4byte	0xe0
+ 1378 09a3 44       		.byte	0x44
+ 1379 09a4 0A       		.uleb128 0xa
+ 1380 09a5 6C0A0000 		.4byte	.LASF166
+ 1381 09a9 09       		.byte	0x9
+ 1382 09aa 47       		.byte	0x47
+ 1383 09ab E0000000 		.4byte	0xe0
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 28
+
+
+ 1384 09af 48       		.byte	0x48
+ 1385 09b0 0A       		.uleb128 0xa
+ 1386 09b1 B90A0000 		.4byte	.LASF167
+ 1387 09b5 09       		.byte	0x9
+ 1388 09b6 48       		.byte	0x48
+ 1389 09b7 E0000000 		.4byte	0xe0
+ 1390 09bb 4C       		.byte	0x4c
+ 1391 09bc 0A       		.uleb128 0xa
+ 1392 09bd 8D060000 		.4byte	.LASF168
+ 1393 09c1 09       		.byte	0x9
+ 1394 09c2 4A       		.byte	0x4a
+ 1395 09c3 E0000000 		.4byte	0xe0
+ 1396 09c7 50       		.byte	0x50
+ 1397 09c8 0A       		.uleb128 0xa
+ 1398 09c9 CB050000 		.4byte	.LASF186
+ 1399 09cd 09       		.byte	0x9
+ 1400 09ce 4B       		.byte	0x4b
+ 1401 09cf E0000000 		.4byte	0xe0
+ 1402 09d3 54       		.byte	0x54
+ 1403 09d4 0A       		.uleb128 0xa
+ 1404 09d5 4B000000 		.4byte	.LASF187
+ 1405 09d9 09       		.byte	0x9
+ 1406 09da 4D       		.byte	0x4d
+ 1407 09db E0000000 		.4byte	0xe0
+ 1408 09df 58       		.byte	0x58
+ 1409 09e0 0A       		.uleb128 0xa
+ 1410 09e1 540C0000 		.4byte	.LASF171
+ 1411 09e5 09       		.byte	0x9
+ 1412 09e6 4E       		.byte	0x4e
+ 1413 09e7 E0000000 		.4byte	0xe0
+ 1414 09eb 5C       		.byte	0x5c
+ 1415 09ec 0A       		.uleb128 0xa
+ 1416 09ed E4090000 		.4byte	.LASF172
+ 1417 09f1 09       		.byte	0x9
+ 1418 09f2 50       		.byte	0x50
+ 1419 09f3 E0000000 		.4byte	0xe0
+ 1420 09f7 60       		.byte	0x60
+ 1421 09f8 00       		.byte	0
+ 1422 09f9 03       		.uleb128 0x3
+ 1423 09fa EC0B0000 		.4byte	.LASF188
+ 1424 09fe 09       		.byte	0x9
+ 1425 09ff 51       		.byte	0x51
+ 1426 0a00 C0080000 		.4byte	0x8c0
+ 1427 0a04 09       		.uleb128 0x9
+ 1428 0a05 14       		.byte	0x14
+ 1429 0a06 0A       		.byte	0xa
+ 1430 0a07 3B       		.byte	0x3b
+ 1431 0a08 490A0000 		.4byte	0xa49
+ 1432 0a0c 0A       		.uleb128 0xa
+ 1433 0a0d 41060000 		.4byte	.LASF189
+ 1434 0a11 0A       		.byte	0xa
+ 1435 0a12 3D       		.byte	0x3d
+ 1436 0a13 E0000000 		.4byte	0xe0
+ 1437 0a17 00       		.byte	0
+ 1438 0a18 0A       		.uleb128 0xa
+ 1439 0a19 01060000 		.4byte	.LASF190
+ 1440 0a1d 0A       		.byte	0xa
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 29
+
+
+ 1441 0a1e 3E       		.byte	0x3e
+ 1442 0a1f E0000000 		.4byte	0xe0
+ 1443 0a23 04       		.byte	0x4
+ 1444 0a24 0A       		.uleb128 0xa
+ 1445 0a25 67040000 		.4byte	.LASF191
+ 1446 0a29 0A       		.byte	0xa
+ 1447 0a2a 3F       		.byte	0x3f
+ 1448 0a2b 490A0000 		.4byte	0xa49
+ 1449 0a2f 08       		.byte	0x8
+ 1450 0a30 0A       		.uleb128 0xa
+ 1451 0a31 780A0000 		.4byte	.LASF192
+ 1452 0a35 0A       		.byte	0xa
+ 1453 0a36 40       		.byte	0x40
+ 1454 0a37 E0000000 		.4byte	0xe0
+ 1455 0a3b 0C       		.byte	0xc
+ 1456 0a3c 0A       		.uleb128 0xa
+ 1457 0a3d B3010000 		.4byte	.LASF193
+ 1458 0a41 0A       		.byte	0xa
+ 1459 0a42 45       		.byte	0x45
+ 1460 0a43 E0000000 		.4byte	0xe0
+ 1461 0a47 10       		.byte	0x10
+ 1462 0a48 00       		.byte	0
+ 1463 0a49 06       		.uleb128 0x6
+ 1464 0a4a 04       		.byte	0x4
+ 1465 0a4b 4F0A0000 		.4byte	0xa4f
+ 1466 0a4f 07       		.uleb128 0x7
+ 1467 0a50 30060000 		.4byte	0x630
+ 1468 0a54 03       		.uleb128 0x3
+ 1469 0a55 990B0000 		.4byte	.LASF194
+ 1470 0a59 0A       		.byte	0xa
+ 1471 0a5a 48       		.byte	0x48
+ 1472 0a5b 040A0000 		.4byte	0xa04
+ 1473 0a5f 16       		.uleb128 0x16
+ 1474 0a60 98060000 		.4byte	.LASF195
+ 1475 0a64 01       		.byte	0x1
+ 1476 0a65 4F       		.byte	0x4f
+ 1477 0a66 89000000 		.4byte	0x89
+ 1478 0a6a 00000000 		.4byte	.LFB593
+ 1479 0a6e 24000000 		.4byte	.LFE593-.LFB593
+ 1480 0a72 01       		.uleb128 0x1
+ 1481 0a73 9C       		.byte	0x9c
+ 1482 0a74 BD0A0000 		.4byte	0xabd
+ 1483 0a78 17       		.uleb128 0x17
+ 1484 0a79 666400   		.ascii	"fd\000"
+ 1485 0a7c 01       		.byte	0x1
+ 1486 0a7d 4F       		.byte	0x4f
+ 1487 0a7e 89000000 		.4byte	0x89
+ 1488 0a82 00000000 		.4byte	.LLST0
+ 1489 0a86 17       		.uleb128 0x17
+ 1490 0a87 70747200 		.ascii	"ptr\000"
+ 1491 0a8b 01       		.byte	0x1
+ 1492 0a8c 4F       		.byte	0x4f
+ 1493 0a8d B4000000 		.4byte	0xb4
+ 1494 0a91 3A000000 		.4byte	.LLST1
+ 1495 0a95 17       		.uleb128 0x17
+ 1496 0a96 6C656E00 		.ascii	"len\000"
+ 1497 0a9a 01       		.byte	0x1
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 30
+
+
+ 1498 0a9b 4F       		.byte	0x4f
+ 1499 0a9c 89000000 		.4byte	0x89
+ 1500 0aa0 6E000000 		.4byte	.LLST2
+ 1501 0aa4 18       		.uleb128 0x18
+ 1502 0aa5 86010000 		.4byte	.LASF197
+ 1503 0aa9 01       		.byte	0x1
+ 1504 0aaa 51       		.byte	0x51
+ 1505 0aab 89000000 		.4byte	0x89
+ 1506 0aaf B0000000 		.4byte	.LLST3
+ 1507 0ab3 19       		.uleb128 0x19
+ 1508 0ab4 14000000 		.4byte	.LVL3
+ 1509 0ab8 990B0000 		.4byte	0xb99
+ 1510 0abc 00       		.byte	0
+ 1511 0abd 16       		.uleb128 0x16
+ 1512 0abe 86040000 		.4byte	.LASF196
+ 1513 0ac2 01       		.byte	0x1
+ 1514 0ac3 85       		.byte	0x85
+ 1515 0ac4 89000000 		.4byte	0x89
+ 1516 0ac8 00000000 		.4byte	.LFB594
+ 1517 0acc 2E000000 		.4byte	.LFE594-.LFB594
+ 1518 0ad0 01       		.uleb128 0x1
+ 1519 0ad1 9C       		.byte	0x9c
+ 1520 0ad2 1B0B0000 		.4byte	0xb1b
+ 1521 0ad6 17       		.uleb128 0x17
+ 1522 0ad7 666400   		.ascii	"fd\000"
+ 1523 0ada 01       		.byte	0x1
+ 1524 0adb 85       		.byte	0x85
+ 1525 0adc 89000000 		.4byte	0x89
+ 1526 0ae0 F1000000 		.4byte	.LLST4
+ 1527 0ae4 17       		.uleb128 0x17
+ 1528 0ae5 70747200 		.ascii	"ptr\000"
+ 1529 0ae9 01       		.byte	0x1
+ 1530 0aea 85       		.byte	0x85
+ 1531 0aeb A7000000 		.4byte	0xa7
+ 1532 0aef 2B010000 		.4byte	.LLST5
+ 1533 0af3 17       		.uleb128 0x17
+ 1534 0af4 6C656E00 		.ascii	"len\000"
+ 1535 0af8 01       		.byte	0x1
+ 1536 0af9 85       		.byte	0x85
+ 1537 0afa 89000000 		.4byte	0x89
+ 1538 0afe 5F010000 		.4byte	.LLST6
+ 1539 0b02 18       		.uleb128 0x18
+ 1540 0b03 86010000 		.4byte	.LASF197
+ 1541 0b07 01       		.byte	0x1
+ 1542 0b08 87       		.byte	0x87
+ 1543 0b09 89000000 		.4byte	0x89
+ 1544 0b0d A1010000 		.4byte	.LLST7
+ 1545 0b11 19       		.uleb128 0x19
+ 1546 0b12 12000000 		.4byte	.LVL15
+ 1547 0b16 A40B0000 		.4byte	0xba4
+ 1548 0b1a 00       		.byte	0
+ 1549 0b1b 1A       		.uleb128 0x1a
+ 1550 0b1c C6070000 		.4byte	.LASF198
+ 1551 0b20 04       		.byte	0x4
+ 1552 0b21 A7       		.byte	0xa7
+ 1553 0b22 260B0000 		.4byte	0xb26
+ 1554 0b26 06       		.uleb128 0x6
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 31
+
+
+ 1555 0b27 04       		.byte	0x4
+ 1556 0b28 2C0B0000 		.4byte	0xb2c
+ 1557 0b2c 07       		.uleb128 0x7
+ 1558 0b2d 01050000 		.4byte	0x501
+ 1559 0b31 1A       		.uleb128 0x1a
+ 1560 0b32 8C0A0000 		.4byte	.LASF199
+ 1561 0b36 0B       		.byte	0xb
+ 1562 0b37 5E       		.byte	0x5e
+ 1563 0b38 DC060000 		.4byte	0x6dc
+ 1564 0b3c 1A       		.uleb128 0x1a
+ 1565 0b3d AD0B0000 		.4byte	.LASF200
+ 1566 0b41 0C       		.byte	0xc
+ 1567 0b42 1F       		.byte	0x1f
+ 1568 0b43 470B0000 		.4byte	0xb47
+ 1569 0b47 07       		.uleb128 0x7
+ 1570 0b48 B5080000 		.4byte	0x8b5
+ 1571 0b4c 1A       		.uleb128 0x1a
+ 1572 0b4d 05030000 		.4byte	.LASF201
+ 1573 0b51 0D       		.byte	0xd
+ 1574 0b52 87       		.byte	0x87
+ 1575 0b53 B8070000 		.4byte	0x7b8
+ 1576 0b57 1B       		.uleb128 0x1b
+ 1577 0b58 03090000 		.4byte	.LASF202
+ 1578 0b5c 0A       		.byte	0xa
+ 1579 0b5d 6001     		.2byte	0x160
+ 1580 0b5f E0000000 		.4byte	0xe0
+ 1581 0b63 10       		.uleb128 0x10
+ 1582 0b64 730B0000 		.4byte	0xb73
+ 1583 0b68 730B0000 		.4byte	0xb73
+ 1584 0b6c 11       		.uleb128 0x11
+ 1585 0b6d A0000000 		.4byte	0xa0
+ 1586 0b71 00       		.byte	0
+ 1587 0b72 00       		.byte	0
+ 1588 0b73 07       		.uleb128 0x7
+ 1589 0b74 540A0000 		.4byte	0xa54
+ 1590 0b78 1B       		.uleb128 0x1b
+ 1591 0b79 AF050000 		.4byte	.LASF203
+ 1592 0b7d 0A       		.byte	0xa
+ 1593 0b7e 6401     		.2byte	0x164
+ 1594 0b80 840B0000 		.4byte	0xb84
+ 1595 0b84 07       		.uleb128 0x7
+ 1596 0b85 630B0000 		.4byte	0xb63
+ 1597 0b89 1A       		.uleb128 0x1a
+ 1598 0b8a 140A0000 		.4byte	.LASF204
+ 1599 0b8e 0E       		.byte	0xe
+ 1600 0b8f 1F       		.byte	0x1f
+ 1601 0b90 940B0000 		.4byte	0xb94
+ 1602 0b94 07       		.uleb128 0x7
+ 1603 0b95 F9090000 		.4byte	0x9f9
+ 1604 0b99 1C       		.uleb128 0x1c
+ 1605 0b9a F9030000 		.4byte	.LASF205
+ 1606 0b9e F9030000 		.4byte	.LASF205
+ 1607 0ba2 0F       		.byte	0xf
+ 1608 0ba3 AE       		.byte	0xae
+ 1609 0ba4 1C       		.uleb128 0x1c
+ 1610 0ba5 5E020000 		.4byte	.LASF206
+ 1611 0ba9 5E020000 		.4byte	.LASF206
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 32
+
+
+ 1612 0bad 0F       		.byte	0xf
+ 1613 0bae B2       		.byte	0xb2
+ 1614 0baf 00       		.byte	0
+ 1615              		.section	.debug_abbrev,"",%progbits
+ 1616              	.Ldebug_abbrev0:
+ 1617 0000 01       		.uleb128 0x1
+ 1618 0001 11       		.uleb128 0x11
+ 1619 0002 01       		.byte	0x1
+ 1620 0003 25       		.uleb128 0x25
+ 1621 0004 0E       		.uleb128 0xe
+ 1622 0005 13       		.uleb128 0x13
+ 1623 0006 0B       		.uleb128 0xb
+ 1624 0007 03       		.uleb128 0x3
+ 1625 0008 0E       		.uleb128 0xe
+ 1626 0009 1B       		.uleb128 0x1b
+ 1627 000a 0E       		.uleb128 0xe
+ 1628 000b 55       		.uleb128 0x55
+ 1629 000c 17       		.uleb128 0x17
+ 1630 000d 11       		.uleb128 0x11
+ 1631 000e 01       		.uleb128 0x1
+ 1632 000f 10       		.uleb128 0x10
+ 1633 0010 17       		.uleb128 0x17
+ 1634 0011 00       		.byte	0
+ 1635 0012 00       		.byte	0
+ 1636 0013 02       		.uleb128 0x2
+ 1637 0014 24       		.uleb128 0x24
+ 1638 0015 00       		.byte	0
+ 1639 0016 0B       		.uleb128 0xb
+ 1640 0017 0B       		.uleb128 0xb
+ 1641 0018 3E       		.uleb128 0x3e
+ 1642 0019 0B       		.uleb128 0xb
+ 1643 001a 03       		.uleb128 0x3
+ 1644 001b 0E       		.uleb128 0xe
+ 1645 001c 00       		.byte	0
+ 1646 001d 00       		.byte	0
+ 1647 001e 03       		.uleb128 0x3
+ 1648 001f 16       		.uleb128 0x16
+ 1649 0020 00       		.byte	0
+ 1650 0021 03       		.uleb128 0x3
+ 1651 0022 0E       		.uleb128 0xe
+ 1652 0023 3A       		.uleb128 0x3a
+ 1653 0024 0B       		.uleb128 0xb
+ 1654 0025 3B       		.uleb128 0x3b
+ 1655 0026 0B       		.uleb128 0xb
+ 1656 0027 49       		.uleb128 0x49
+ 1657 0028 13       		.uleb128 0x13
+ 1658 0029 00       		.byte	0
+ 1659 002a 00       		.byte	0
+ 1660 002b 04       		.uleb128 0x4
+ 1661 002c 24       		.uleb128 0x24
+ 1662 002d 00       		.byte	0
+ 1663 002e 0B       		.uleb128 0xb
+ 1664 002f 0B       		.uleb128 0xb
+ 1665 0030 3E       		.uleb128 0x3e
+ 1666 0031 0B       		.uleb128 0xb
+ 1667 0032 03       		.uleb128 0x3
+ 1668 0033 08       		.uleb128 0x8
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 33
+
+
+ 1669 0034 00       		.byte	0
+ 1670 0035 00       		.byte	0
+ 1671 0036 05       		.uleb128 0x5
+ 1672 0037 0F       		.uleb128 0xf
+ 1673 0038 00       		.byte	0
+ 1674 0039 0B       		.uleb128 0xb
+ 1675 003a 0B       		.uleb128 0xb
+ 1676 003b 00       		.byte	0
+ 1677 003c 00       		.byte	0
+ 1678 003d 06       		.uleb128 0x6
+ 1679 003e 0F       		.uleb128 0xf
+ 1680 003f 00       		.byte	0
+ 1681 0040 0B       		.uleb128 0xb
+ 1682 0041 0B       		.uleb128 0xb
+ 1683 0042 49       		.uleb128 0x49
+ 1684 0043 13       		.uleb128 0x13
+ 1685 0044 00       		.byte	0
+ 1686 0045 00       		.byte	0
+ 1687 0046 07       		.uleb128 0x7
+ 1688 0047 26       		.uleb128 0x26
+ 1689 0048 00       		.byte	0
+ 1690 0049 49       		.uleb128 0x49
+ 1691 004a 13       		.uleb128 0x13
+ 1692 004b 00       		.byte	0
+ 1693 004c 00       		.byte	0
+ 1694 004d 08       		.uleb128 0x8
+ 1695 004e 35       		.uleb128 0x35
+ 1696 004f 00       		.byte	0
+ 1697 0050 49       		.uleb128 0x49
+ 1698 0051 13       		.uleb128 0x13
+ 1699 0052 00       		.byte	0
+ 1700 0053 00       		.byte	0
+ 1701 0054 09       		.uleb128 0x9
+ 1702 0055 13       		.uleb128 0x13
+ 1703 0056 01       		.byte	0x1
+ 1704 0057 0B       		.uleb128 0xb
+ 1705 0058 0B       		.uleb128 0xb
+ 1706 0059 3A       		.uleb128 0x3a
+ 1707 005a 0B       		.uleb128 0xb
+ 1708 005b 3B       		.uleb128 0x3b
+ 1709 005c 0B       		.uleb128 0xb
+ 1710 005d 01       		.uleb128 0x1
+ 1711 005e 13       		.uleb128 0x13
+ 1712 005f 00       		.byte	0
+ 1713 0060 00       		.byte	0
+ 1714 0061 0A       		.uleb128 0xa
+ 1715 0062 0D       		.uleb128 0xd
+ 1716 0063 00       		.byte	0
+ 1717 0064 03       		.uleb128 0x3
+ 1718 0065 0E       		.uleb128 0xe
+ 1719 0066 3A       		.uleb128 0x3a
+ 1720 0067 0B       		.uleb128 0xb
+ 1721 0068 3B       		.uleb128 0x3b
+ 1722 0069 0B       		.uleb128 0xb
+ 1723 006a 49       		.uleb128 0x49
+ 1724 006b 13       		.uleb128 0x13
+ 1725 006c 38       		.uleb128 0x38
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 34
+
+
+ 1726 006d 0B       		.uleb128 0xb
+ 1727 006e 00       		.byte	0
+ 1728 006f 00       		.byte	0
+ 1729 0070 0B       		.uleb128 0xb
+ 1730 0071 04       		.uleb128 0x4
+ 1731 0072 01       		.byte	0x1
+ 1732 0073 0B       		.uleb128 0xb
+ 1733 0074 0B       		.uleb128 0xb
+ 1734 0075 49       		.uleb128 0x49
+ 1735 0076 13       		.uleb128 0x13
+ 1736 0077 3A       		.uleb128 0x3a
+ 1737 0078 0B       		.uleb128 0xb
+ 1738 0079 3B       		.uleb128 0x3b
+ 1739 007a 05       		.uleb128 0x5
+ 1740 007b 01       		.uleb128 0x1
+ 1741 007c 13       		.uleb128 0x13
+ 1742 007d 00       		.byte	0
+ 1743 007e 00       		.byte	0
+ 1744 007f 0C       		.uleb128 0xc
+ 1745 0080 28       		.uleb128 0x28
+ 1746 0081 00       		.byte	0
+ 1747 0082 03       		.uleb128 0x3
+ 1748 0083 0E       		.uleb128 0xe
+ 1749 0084 1C       		.uleb128 0x1c
+ 1750 0085 0B       		.uleb128 0xb
+ 1751 0086 00       		.byte	0
+ 1752 0087 00       		.byte	0
+ 1753 0088 0D       		.uleb128 0xd
+ 1754 0089 16       		.uleb128 0x16
+ 1755 008a 00       		.byte	0
+ 1756 008b 03       		.uleb128 0x3
+ 1757 008c 0E       		.uleb128 0xe
+ 1758 008d 3A       		.uleb128 0x3a
+ 1759 008e 0B       		.uleb128 0xb
+ 1760 008f 3B       		.uleb128 0x3b
+ 1761 0090 05       		.uleb128 0x5
+ 1762 0091 49       		.uleb128 0x49
+ 1763 0092 13       		.uleb128 0x13
+ 1764 0093 00       		.byte	0
+ 1765 0094 00       		.byte	0
+ 1766 0095 0E       		.uleb128 0xe
+ 1767 0096 13       		.uleb128 0x13
+ 1768 0097 01       		.byte	0x1
+ 1769 0098 0B       		.uleb128 0xb
+ 1770 0099 0B       		.uleb128 0xb
+ 1771 009a 3A       		.uleb128 0x3a
+ 1772 009b 0B       		.uleb128 0xb
+ 1773 009c 3B       		.uleb128 0x3b
+ 1774 009d 05       		.uleb128 0x5
+ 1775 009e 01       		.uleb128 0x1
+ 1776 009f 13       		.uleb128 0x13
+ 1777 00a0 00       		.byte	0
+ 1778 00a1 00       		.byte	0
+ 1779 00a2 0F       		.uleb128 0xf
+ 1780 00a3 0D       		.uleb128 0xd
+ 1781 00a4 00       		.byte	0
+ 1782 00a5 03       		.uleb128 0x3
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 35
+
+
+ 1783 00a6 0E       		.uleb128 0xe
+ 1784 00a7 3A       		.uleb128 0x3a
+ 1785 00a8 0B       		.uleb128 0xb
+ 1786 00a9 3B       		.uleb128 0x3b
+ 1787 00aa 05       		.uleb128 0x5
+ 1788 00ab 49       		.uleb128 0x49
+ 1789 00ac 13       		.uleb128 0x13
+ 1790 00ad 38       		.uleb128 0x38
+ 1791 00ae 0B       		.uleb128 0xb
+ 1792 00af 00       		.byte	0
+ 1793 00b0 00       		.byte	0
+ 1794 00b1 10       		.uleb128 0x10
+ 1795 00b2 01       		.uleb128 0x1
+ 1796 00b3 01       		.byte	0x1
+ 1797 00b4 49       		.uleb128 0x49
+ 1798 00b5 13       		.uleb128 0x13
+ 1799 00b6 01       		.uleb128 0x1
+ 1800 00b7 13       		.uleb128 0x13
+ 1801 00b8 00       		.byte	0
+ 1802 00b9 00       		.byte	0
+ 1803 00ba 11       		.uleb128 0x11
+ 1804 00bb 21       		.uleb128 0x21
+ 1805 00bc 00       		.byte	0
+ 1806 00bd 49       		.uleb128 0x49
+ 1807 00be 13       		.uleb128 0x13
+ 1808 00bf 2F       		.uleb128 0x2f
+ 1809 00c0 0B       		.uleb128 0xb
+ 1810 00c1 00       		.byte	0
+ 1811 00c2 00       		.byte	0
+ 1812 00c3 12       		.uleb128 0x12
+ 1813 00c4 15       		.uleb128 0x15
+ 1814 00c5 01       		.byte	0x1
+ 1815 00c6 27       		.uleb128 0x27
+ 1816 00c7 19       		.uleb128 0x19
+ 1817 00c8 01       		.uleb128 0x1
+ 1818 00c9 13       		.uleb128 0x13
+ 1819 00ca 00       		.byte	0
+ 1820 00cb 00       		.byte	0
+ 1821 00cc 13       		.uleb128 0x13
+ 1822 00cd 05       		.uleb128 0x5
+ 1823 00ce 00       		.byte	0
+ 1824 00cf 49       		.uleb128 0x49
+ 1825 00d0 13       		.uleb128 0x13
+ 1826 00d1 00       		.byte	0
+ 1827 00d2 00       		.byte	0
+ 1828 00d3 14       		.uleb128 0x14
+ 1829 00d4 13       		.uleb128 0x13
+ 1830 00d5 01       		.byte	0x1
+ 1831 00d6 03       		.uleb128 0x3
+ 1832 00d7 0E       		.uleb128 0xe
+ 1833 00d8 0B       		.uleb128 0xb
+ 1834 00d9 0B       		.uleb128 0xb
+ 1835 00da 3A       		.uleb128 0x3a
+ 1836 00db 0B       		.uleb128 0xb
+ 1837 00dc 3B       		.uleb128 0x3b
+ 1838 00dd 05       		.uleb128 0x5
+ 1839 00de 01       		.uleb128 0x1
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 36
+
+
+ 1840 00df 13       		.uleb128 0x13
+ 1841 00e0 00       		.byte	0
+ 1842 00e1 00       		.byte	0
+ 1843 00e2 15       		.uleb128 0x15
+ 1844 00e3 13       		.uleb128 0x13
+ 1845 00e4 01       		.byte	0x1
+ 1846 00e5 03       		.uleb128 0x3
+ 1847 00e6 0E       		.uleb128 0xe
+ 1848 00e7 0B       		.uleb128 0xb
+ 1849 00e8 0B       		.uleb128 0xb
+ 1850 00e9 3A       		.uleb128 0x3a
+ 1851 00ea 0B       		.uleb128 0xb
+ 1852 00eb 3B       		.uleb128 0x3b
+ 1853 00ec 0B       		.uleb128 0xb
+ 1854 00ed 01       		.uleb128 0x1
+ 1855 00ee 13       		.uleb128 0x13
+ 1856 00ef 00       		.byte	0
+ 1857 00f0 00       		.byte	0
+ 1858 00f1 16       		.uleb128 0x16
+ 1859 00f2 2E       		.uleb128 0x2e
+ 1860 00f3 01       		.byte	0x1
+ 1861 00f4 3F       		.uleb128 0x3f
+ 1862 00f5 19       		.uleb128 0x19
+ 1863 00f6 03       		.uleb128 0x3
+ 1864 00f7 0E       		.uleb128 0xe
+ 1865 00f8 3A       		.uleb128 0x3a
+ 1866 00f9 0B       		.uleb128 0xb
+ 1867 00fa 3B       		.uleb128 0x3b
+ 1868 00fb 0B       		.uleb128 0xb
+ 1869 00fc 27       		.uleb128 0x27
+ 1870 00fd 19       		.uleb128 0x19
+ 1871 00fe 49       		.uleb128 0x49
+ 1872 00ff 13       		.uleb128 0x13
+ 1873 0100 11       		.uleb128 0x11
+ 1874 0101 01       		.uleb128 0x1
+ 1875 0102 12       		.uleb128 0x12
+ 1876 0103 06       		.uleb128 0x6
+ 1877 0104 40       		.uleb128 0x40
+ 1878 0105 18       		.uleb128 0x18
+ 1879 0106 9742     		.uleb128 0x2117
+ 1880 0108 19       		.uleb128 0x19
+ 1881 0109 01       		.uleb128 0x1
+ 1882 010a 13       		.uleb128 0x13
+ 1883 010b 00       		.byte	0
+ 1884 010c 00       		.byte	0
+ 1885 010d 17       		.uleb128 0x17
+ 1886 010e 05       		.uleb128 0x5
+ 1887 010f 00       		.byte	0
+ 1888 0110 03       		.uleb128 0x3
+ 1889 0111 08       		.uleb128 0x8
+ 1890 0112 3A       		.uleb128 0x3a
+ 1891 0113 0B       		.uleb128 0xb
+ 1892 0114 3B       		.uleb128 0x3b
+ 1893 0115 0B       		.uleb128 0xb
+ 1894 0116 49       		.uleb128 0x49
+ 1895 0117 13       		.uleb128 0x13
+ 1896 0118 02       		.uleb128 0x2
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 37
+
+
+ 1897 0119 17       		.uleb128 0x17
+ 1898 011a 00       		.byte	0
+ 1899 011b 00       		.byte	0
+ 1900 011c 18       		.uleb128 0x18
+ 1901 011d 34       		.uleb128 0x34
+ 1902 011e 00       		.byte	0
+ 1903 011f 03       		.uleb128 0x3
+ 1904 0120 0E       		.uleb128 0xe
+ 1905 0121 3A       		.uleb128 0x3a
+ 1906 0122 0B       		.uleb128 0xb
+ 1907 0123 3B       		.uleb128 0x3b
+ 1908 0124 0B       		.uleb128 0xb
+ 1909 0125 49       		.uleb128 0x49
+ 1910 0126 13       		.uleb128 0x13
+ 1911 0127 02       		.uleb128 0x2
+ 1912 0128 17       		.uleb128 0x17
+ 1913 0129 00       		.byte	0
+ 1914 012a 00       		.byte	0
+ 1915 012b 19       		.uleb128 0x19
+ 1916 012c 898201   		.uleb128 0x4109
+ 1917 012f 00       		.byte	0
+ 1918 0130 11       		.uleb128 0x11
+ 1919 0131 01       		.uleb128 0x1
+ 1920 0132 31       		.uleb128 0x31
+ 1921 0133 13       		.uleb128 0x13
+ 1922 0134 00       		.byte	0
+ 1923 0135 00       		.byte	0
+ 1924 0136 1A       		.uleb128 0x1a
+ 1925 0137 34       		.uleb128 0x34
+ 1926 0138 00       		.byte	0
+ 1927 0139 03       		.uleb128 0x3
+ 1928 013a 0E       		.uleb128 0xe
+ 1929 013b 3A       		.uleb128 0x3a
+ 1930 013c 0B       		.uleb128 0xb
+ 1931 013d 3B       		.uleb128 0x3b
+ 1932 013e 0B       		.uleb128 0xb
+ 1933 013f 49       		.uleb128 0x49
+ 1934 0140 13       		.uleb128 0x13
+ 1935 0141 3F       		.uleb128 0x3f
+ 1936 0142 19       		.uleb128 0x19
+ 1937 0143 3C       		.uleb128 0x3c
+ 1938 0144 19       		.uleb128 0x19
+ 1939 0145 00       		.byte	0
+ 1940 0146 00       		.byte	0
+ 1941 0147 1B       		.uleb128 0x1b
+ 1942 0148 34       		.uleb128 0x34
+ 1943 0149 00       		.byte	0
+ 1944 014a 03       		.uleb128 0x3
+ 1945 014b 0E       		.uleb128 0xe
+ 1946 014c 3A       		.uleb128 0x3a
+ 1947 014d 0B       		.uleb128 0xb
+ 1948 014e 3B       		.uleb128 0x3b
+ 1949 014f 05       		.uleb128 0x5
+ 1950 0150 49       		.uleb128 0x49
+ 1951 0151 13       		.uleb128 0x13
+ 1952 0152 3F       		.uleb128 0x3f
+ 1953 0153 19       		.uleb128 0x19
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 38
+
+
+ 1954 0154 3C       		.uleb128 0x3c
+ 1955 0155 19       		.uleb128 0x19
+ 1956 0156 00       		.byte	0
+ 1957 0157 00       		.byte	0
+ 1958 0158 1C       		.uleb128 0x1c
+ 1959 0159 2E       		.uleb128 0x2e
+ 1960 015a 00       		.byte	0
+ 1961 015b 3F       		.uleb128 0x3f
+ 1962 015c 19       		.uleb128 0x19
+ 1963 015d 3C       		.uleb128 0x3c
+ 1964 015e 19       		.uleb128 0x19
+ 1965 015f 6E       		.uleb128 0x6e
+ 1966 0160 0E       		.uleb128 0xe
+ 1967 0161 03       		.uleb128 0x3
+ 1968 0162 0E       		.uleb128 0xe
+ 1969 0163 3A       		.uleb128 0x3a
+ 1970 0164 0B       		.uleb128 0xb
+ 1971 0165 3B       		.uleb128 0x3b
+ 1972 0166 0B       		.uleb128 0xb
+ 1973 0167 00       		.byte	0
+ 1974 0168 00       		.byte	0
+ 1975 0169 00       		.byte	0
+ 1976              		.section	.debug_loc,"",%progbits
+ 1977              	.Ldebug_loc0:
+ 1978              	.LLST0:
+ 1979 0000 00000000 		.4byte	.LVL0
+ 1980 0004 0E000000 		.4byte	.LVL2
+ 1981 0008 0100     		.2byte	0x1
+ 1982 000a 50       		.byte	0x50
+ 1983 000b 0E000000 		.4byte	.LVL2
+ 1984 000f 1A000000 		.4byte	.LVL6
+ 1985 0013 0400     		.2byte	0x4
+ 1986 0015 F3       		.byte	0xf3
+ 1987 0016 01       		.uleb128 0x1
+ 1988 0017 50       		.byte	0x50
+ 1989 0018 9F       		.byte	0x9f
+ 1990 0019 1A000000 		.4byte	.LVL6
+ 1991 001d 1C000000 		.4byte	.LVL7
+ 1992 0021 0100     		.2byte	0x1
+ 1993 0023 50       		.byte	0x50
+ 1994 0024 1C000000 		.4byte	.LVL7
+ 1995 0028 24000000 		.4byte	.LFE593
+ 1996 002c 0400     		.2byte	0x4
+ 1997 002e F3       		.byte	0xf3
+ 1998 002f 01       		.uleb128 0x1
+ 1999 0030 50       		.byte	0x50
+ 2000 0031 9F       		.byte	0x9f
+ 2001 0032 00000000 		.4byte	0
+ 2002 0036 00000000 		.4byte	0
+ 2003              	.LLST1:
+ 2004 003a 00000000 		.4byte	.LVL0
+ 2005 003e 0E000000 		.4byte	.LVL2
+ 2006 0042 0100     		.2byte	0x1
+ 2007 0044 51       		.byte	0x51
+ 2008 0045 0E000000 		.4byte	.LVL2
+ 2009 0049 1A000000 		.4byte	.LVL6
+ 2010 004d 0100     		.2byte	0x1
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 39
+
+
+ 2011 004f 55       		.byte	0x55
+ 2012 0050 1A000000 		.4byte	.LVL6
+ 2013 0054 1C000000 		.4byte	.LVL7
+ 2014 0058 0100     		.2byte	0x1
+ 2015 005a 51       		.byte	0x51
+ 2016 005b 1C000000 		.4byte	.LVL7
+ 2017 005f 22000000 		.4byte	.LVL10
+ 2018 0063 0100     		.2byte	0x1
+ 2019 0065 55       		.byte	0x55
+ 2020 0066 00000000 		.4byte	0
+ 2021 006a 00000000 		.4byte	0
+ 2022              	.LLST2:
+ 2023 006e 00000000 		.4byte	.LVL0
+ 2024 0072 0E000000 		.4byte	.LVL2
+ 2025 0076 0100     		.2byte	0x1
+ 2026 0078 52       		.byte	0x52
+ 2027 0079 0E000000 		.4byte	.LVL2
+ 2028 007d 1A000000 		.4byte	.LVL6
+ 2029 0081 0100     		.2byte	0x1
+ 2030 0083 56       		.byte	0x56
+ 2031 0084 1A000000 		.4byte	.LVL6
+ 2032 0088 1C000000 		.4byte	.LVL7
+ 2033 008c 0100     		.2byte	0x1
+ 2034 008e 52       		.byte	0x52
+ 2035 008f 1C000000 		.4byte	.LVL7
+ 2036 0093 22000000 		.4byte	.LVL11
+ 2037 0097 0100     		.2byte	0x1
+ 2038 0099 56       		.byte	0x56
+ 2039 009a 22000000 		.4byte	.LVL11
+ 2040 009e 24000000 		.4byte	.LFE593
+ 2041 00a2 0400     		.2byte	0x4
+ 2042 00a4 F3       		.byte	0xf3
+ 2043 00a5 01       		.uleb128 0x1
+ 2044 00a6 52       		.byte	0x52
+ 2045 00a7 9F       		.byte	0x9f
+ 2046 00a8 00000000 		.4byte	0
+ 2047 00ac 00000000 		.4byte	0
+ 2048              	.LLST3:
+ 2049 00b0 06000000 		.4byte	.LVL1
+ 2050 00b4 0E000000 		.4byte	.LVL2
+ 2051 00b8 0200     		.2byte	0x2
+ 2052 00ba 30       		.byte	0x30
+ 2053 00bb 9F       		.byte	0x9f
+ 2054 00bc 0E000000 		.4byte	.LVL2
+ 2055 00c0 1A000000 		.4byte	.LVL6
+ 2056 00c4 0100     		.2byte	0x1
+ 2057 00c6 54       		.byte	0x54
+ 2058 00c7 1A000000 		.4byte	.LVL6
+ 2059 00cb 1C000000 		.4byte	.LVL7
+ 2060 00cf 0200     		.2byte	0x2
+ 2061 00d1 30       		.byte	0x30
+ 2062 00d2 9F       		.byte	0x9f
+ 2063 00d3 1C000000 		.4byte	.LVL7
+ 2064 00d7 22000000 		.4byte	.LVL9
+ 2065 00db 0100     		.2byte	0x1
+ 2066 00dd 54       		.byte	0x54
+ 2067 00de 22000000 		.4byte	.LVL9
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 40
+
+
+ 2068 00e2 24000000 		.4byte	.LFE593
+ 2069 00e6 0100     		.2byte	0x1
+ 2070 00e8 50       		.byte	0x50
+ 2071 00e9 00000000 		.4byte	0
+ 2072 00ed 00000000 		.4byte	0
+ 2073              	.LLST4:
+ 2074 00f1 00000000 		.4byte	.LVL12
+ 2075 00f5 0E000000 		.4byte	.LVL14
+ 2076 00f9 0100     		.2byte	0x1
+ 2077 00fb 50       		.byte	0x50
+ 2078 00fc 0E000000 		.4byte	.LVL14
+ 2079 0100 24000000 		.4byte	.LVL18
+ 2080 0104 0400     		.2byte	0x4
+ 2081 0106 F3       		.byte	0xf3
+ 2082 0107 01       		.uleb128 0x1
+ 2083 0108 50       		.byte	0x50
+ 2084 0109 9F       		.byte	0x9f
+ 2085 010a 24000000 		.4byte	.LVL18
+ 2086 010e 26000000 		.4byte	.LVL19
+ 2087 0112 0100     		.2byte	0x1
+ 2088 0114 50       		.byte	0x50
+ 2089 0115 26000000 		.4byte	.LVL19
+ 2090 0119 2E000000 		.4byte	.LFE594
+ 2091 011d 0400     		.2byte	0x4
+ 2092 011f F3       		.byte	0xf3
+ 2093 0120 01       		.uleb128 0x1
+ 2094 0121 50       		.byte	0x50
+ 2095 0122 9F       		.byte	0x9f
+ 2096 0123 00000000 		.4byte	0
+ 2097 0127 00000000 		.4byte	0
+ 2098              	.LLST5:
+ 2099 012b 00000000 		.4byte	.LVL12
+ 2100 012f 0E000000 		.4byte	.LVL14
+ 2101 0133 0100     		.2byte	0x1
+ 2102 0135 51       		.byte	0x51
+ 2103 0136 0E000000 		.4byte	.LVL14
+ 2104 013a 24000000 		.4byte	.LVL18
+ 2105 013e 0100     		.2byte	0x1
+ 2106 0140 55       		.byte	0x55
+ 2107 0141 24000000 		.4byte	.LVL18
+ 2108 0145 26000000 		.4byte	.LVL19
+ 2109 0149 0100     		.2byte	0x1
+ 2110 014b 51       		.byte	0x51
+ 2111 014c 26000000 		.4byte	.LVL19
+ 2112 0150 2C000000 		.4byte	.LVL22
+ 2113 0154 0100     		.2byte	0x1
+ 2114 0156 55       		.byte	0x55
+ 2115 0157 00000000 		.4byte	0
+ 2116 015b 00000000 		.4byte	0
+ 2117              	.LLST6:
+ 2118 015f 00000000 		.4byte	.LVL12
+ 2119 0163 0E000000 		.4byte	.LVL14
+ 2120 0167 0100     		.2byte	0x1
+ 2121 0169 52       		.byte	0x52
+ 2122 016a 0E000000 		.4byte	.LVL14
+ 2123 016e 24000000 		.4byte	.LVL18
+ 2124 0172 0100     		.2byte	0x1
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 41
+
+
+ 2125 0174 56       		.byte	0x56
+ 2126 0175 24000000 		.4byte	.LVL18
+ 2127 0179 26000000 		.4byte	.LVL19
+ 2128 017d 0100     		.2byte	0x1
+ 2129 017f 52       		.byte	0x52
+ 2130 0180 26000000 		.4byte	.LVL19
+ 2131 0184 2C000000 		.4byte	.LVL23
+ 2132 0188 0100     		.2byte	0x1
+ 2133 018a 56       		.byte	0x56
+ 2134 018b 2C000000 		.4byte	.LVL23
+ 2135 018f 2E000000 		.4byte	.LFE594
+ 2136 0193 0400     		.2byte	0x4
+ 2137 0195 F3       		.byte	0xf3
+ 2138 0196 01       		.uleb128 0x1
+ 2139 0197 52       		.byte	0x52
+ 2140 0198 9F       		.byte	0x9f
+ 2141 0199 00000000 		.4byte	0
+ 2142 019d 00000000 		.4byte	0
+ 2143              	.LLST7:
+ 2144 01a1 06000000 		.4byte	.LVL13
+ 2145 01a5 0E000000 		.4byte	.LVL14
+ 2146 01a9 0200     		.2byte	0x2
+ 2147 01ab 30       		.byte	0x30
+ 2148 01ac 9F       		.byte	0x9f
+ 2149 01ad 0E000000 		.4byte	.LVL14
+ 2150 01b1 24000000 		.4byte	.LVL18
+ 2151 01b5 0100     		.2byte	0x1
+ 2152 01b7 54       		.byte	0x54
+ 2153 01b8 24000000 		.4byte	.LVL18
+ 2154 01bc 26000000 		.4byte	.LVL19
+ 2155 01c0 0200     		.2byte	0x2
+ 2156 01c2 30       		.byte	0x30
+ 2157 01c3 9F       		.byte	0x9f
+ 2158 01c4 26000000 		.4byte	.LVL19
+ 2159 01c8 2C000000 		.4byte	.LVL21
+ 2160 01cc 0100     		.2byte	0x1
+ 2161 01ce 54       		.byte	0x54
+ 2162 01cf 2C000000 		.4byte	.LVL21
+ 2163 01d3 2E000000 		.4byte	.LFE594
+ 2164 01d7 0100     		.2byte	0x1
+ 2165 01d9 50       		.byte	0x50
+ 2166 01da 00000000 		.4byte	0
+ 2167 01de 00000000 		.4byte	0
+ 2168              		.section	.debug_aranges,"",%progbits
+ 2169 0000 24000000 		.4byte	0x24
+ 2170 0004 0200     		.2byte	0x2
+ 2171 0006 00000000 		.4byte	.Ldebug_info0
+ 2172 000a 04       		.byte	0x4
+ 2173 000b 00       		.byte	0
+ 2174 000c 0000     		.2byte	0
+ 2175 000e 0000     		.2byte	0
+ 2176 0010 00000000 		.4byte	.LFB593
+ 2177 0014 24000000 		.4byte	.LFE593-.LFB593
+ 2178 0018 00000000 		.4byte	.LFB594
+ 2179 001c 2E000000 		.4byte	.LFE594-.LFB594
+ 2180 0020 00000000 		.4byte	0
+ 2181 0024 00000000 		.4byte	0
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 42
+
+
+ 2182              		.section	.debug_ranges,"",%progbits
+ 2183              	.Ldebug_ranges0:
+ 2184 0000 00000000 		.4byte	.LFB593
+ 2185 0004 24000000 		.4byte	.LFE593
+ 2186 0008 00000000 		.4byte	.LFB594
+ 2187 000c 2E000000 		.4byte	.LFE594
+ 2188 0010 00000000 		.4byte	0
+ 2189 0014 00000000 		.4byte	0
+ 2190              		.section	.debug_line,"",%progbits
+ 2191              	.Ldebug_line0:
+ 2192 0000 4A030000 		.section	.debug_str,"MS",%progbits,1
+ 2192      0200EE02 
+ 2192      00000201 
+ 2192      FB0E0D00 
+ 2192      01010101 
+ 2193              	.LASF55:
+ 2194 0000 70726F74 		.ascii	"protBusMasterMask\000"
+ 2194      4275734D 
+ 2194      61737465 
+ 2194      724D6173 
+ 2194      6B00
+ 2195              	.LASF156:
+ 2196 0012 72756E4D 		.ascii	"runMode\000"
+ 2196      6F646500 
+ 2197              	.LASF134:
+ 2198 001a 72784275 		.ascii	"rxBufSize\000"
+ 2198      6653697A 
+ 2198      6500
+ 2199              	.LASF65:
+ 2200 0024 666C6173 		.ascii	"flashCtlMainWs3Freq\000"
+ 2200      6843746C 
+ 2200      4D61696E 
+ 2200      57733346 
+ 2200      72657100 
+ 2201              	.LASF87:
+ 2202 0038 6770696F 		.ascii	"gpioPrtCfgInOffset\000"
+ 2202      50727443 
+ 2202      6667496E 
+ 2202      4F666673 
+ 2202      657400
+ 2203              	.LASF187:
+ 2204 004b 6B696C6C 		.ascii	"killInput\000"
+ 2204      496E7075 
+ 2204      7400
+ 2205              	.LASF105:
+ 2206 0055 6970634C 		.ascii	"ipcLockStatusOffset\000"
+ 2206      6F636B53 
+ 2206      74617475 
+ 2206      734F6666 
+ 2206      73657400 
+ 2207              	.LASF31:
+ 2208 0069 63727970 		.ascii	"cryptoVersion\000"
+ 2208      746F5665 
+ 2208      7273696F 
+ 2208      6E00
+ 2209              	.LASF69:
+ 2210 0077 64774368 		.ascii	"dwChCtlPrioPos\000"
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 43
+
+
+ 2210      43746C50 
+ 2210      72696F50 
+ 2210      6F7300
+ 2211              	.LASF27:
+ 2212 0086 70617373 		.ascii	"passBase\000"
+ 2212      42617365 
+ 2212      00
+ 2213              	.LASF40:
+ 2214 008f 63707573 		.ascii	"cpussIpcIrqNr\000"
+ 2214      73497063 
+ 2214      4972714E 
+ 2214      7200
+ 2215              	.LASF2:
+ 2216 009d 5F5F7569 		.ascii	"__uint8_t\000"
+ 2216      6E74385F 
+ 2216      7400
+ 2217              	.LASF124:
+ 2218 00a7 73617449 		.ascii	"satIntrMask\000"
+ 2218      6E74724D 
+ 2218      61736B00 
+ 2219              	.LASF84:
+ 2220 00b3 70657269 		.ascii	"periDiv24_5CtlOffset\000"
+ 2220      44697632 
+ 2220      345F3543 
+ 2220      746C4F66 
+ 2220      66736574 
+ 2221              	.LASF91:
+ 2222 00c8 63707573 		.ascii	"cpussCm4ClockCtlOffset\000"
+ 2222      73436D34 
+ 2222      436C6F63 
+ 2222      6B43746C 
+ 2222      4F666673 
+ 2223              	.LASF157:
+ 2224 00df 636F756E 		.ascii	"countDirection\000"
+ 2224      74446972 
+ 2224      65637469 
+ 2224      6F6E00
+ 2225              	.LASF169:
+ 2226 00ee 73746F70 		.ascii	"stopInputMode\000"
+ 2226      496E7075 
+ 2226      744D6F64 
+ 2226      6500
+ 2227              	.LASF20:
+ 2228 00fc 63707573 		.ascii	"cpussBase\000"
+ 2228      73426173 
+ 2228      6500
+ 2229              	.LASF154:
+ 2230 0106 70657269 		.ascii	"period\000"
+ 2230      6F6400
+ 2231              	.LASF49:
+ 2232 010d 70657269 		.ascii	"periClockNr\000"
+ 2232      436C6F63 
+ 2232      6B4E7200 
+ 2233              	.LASF164:
+ 2234 0119 63617074 		.ascii	"captureInput\000"
+ 2234      75726549 
+ 2234      6E707574 
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 44
+
+
+ 2234      00
+ 2235              	.LASF11:
+ 2236 0126 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 2236      206C6F6E 
+ 2236      6720756E 
+ 2236      7369676E 
+ 2236      65642069 
+ 2237              	.LASF155:
+ 2238 013d 636C6F63 		.ascii	"clockPrescaler\000"
+ 2238      6B507265 
+ 2238      7363616C 
+ 2238      657200
+ 2239              	.LASF73:
+ 2240 014c 70657269 		.ascii	"periTrCmdOffset\000"
+ 2240      5472436D 
+ 2240      644F6666 
+ 2240      73657400 
+ 2241              	.LASF147:
+ 2242 015c 72785269 		.ascii	"rxRingBuf\000"
+ 2242      6E674275 
+ 2242      6600
+ 2243              	.LASF97:
+ 2244 0166 63707573 		.ascii	"cpussSysTickCtlOffset\000"
+ 2244      73537973 
+ 2244      5469636B 
+ 2244      43746C4F 
+ 2244      66667365 
+ 2245              	.LASF185:
+ 2246 017c 73776170 		.ascii	"swapInput\000"
+ 2246      496E7075 
+ 2246      7400
+ 2247              	.LASF197:
+ 2248 0186 6E436861 		.ascii	"nChars\000"
+ 2248      727300
+ 2249              	.LASF58:
+ 2250 018d 666C6173 		.ascii	"flashPipeRequired\000"
+ 2250      68506970 
+ 2250      65526571 
+ 2250      75697265 
+ 2250      6400
+ 2251              	.LASF62:
+ 2252 019f 666C6173 		.ascii	"flashCtlMainWs0Freq\000"
+ 2252      6843746C 
+ 2252      4D61696E 
+ 2252      57733046 
+ 2252      72657100 
+ 2253              	.LASF193:
+ 2254 01b3 636C6B44 		.ascii	"clkDivider\000"
+ 2254      69766964 
+ 2254      657200
+ 2255              	.LASF130:
+ 2256 01be 63795F73 		.ascii	"cy_stc_sar_config_t\000"
+ 2256      74635F73 
+ 2256      61725F63 
+ 2256      6F6E6669 
+ 2256      675F7400 
+ 2257              	.LASF10:
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 45
+
+
+ 2258 01d2 6C6F6E67 		.ascii	"long long int\000"
+ 2258      206C6F6E 
+ 2258      6720696E 
+ 2258      7400
+ 2259              	.LASF173:
+ 2260 01e0 63795F73 		.ascii	"cy_stc_tcpwm_counter_config_t\000"
+ 2260      74635F74 
+ 2260      6370776D 
+ 2260      5F636F75 
+ 2260      6E746572 
+ 2261              	.LASF143:
+ 2262 01fe 63795F73 		.ascii	"cy_stc_scb_spi_context\000"
+ 2262      74635F73 
+ 2262      63625F73 
+ 2262      70695F63 
+ 2262      6F6E7465 
+ 2263              	.LASF78:
+ 2264 0215 70657269 		.ascii	"periDivCmdTypeSelPos\000"
+ 2264      44697643 
+ 2264      6D645479 
+ 2264      70655365 
+ 2264      6C506F73 
+ 2265              	.LASF151:
+ 2266 022a 74784C65 		.ascii	"txLeftToTransmit\000"
+ 2266      6674546F 
+ 2266      5472616E 
+ 2266      736D6974 
+ 2266      00
+ 2267              	.LASF114:
+ 2268 023b 63795F65 		.ascii	"cy_en_sar_range_detect_condition_t\000"
+ 2268      6E5F7361 
+ 2268      725F7261 
+ 2268      6E67655F 
+ 2268      64657465 
+ 2269              	.LASF206:
+ 2270 025e 53544449 		.ascii	"STDIO_GetChar\000"
+ 2270      4F5F4765 
+ 2270      74436861 
+ 2270      7200
+ 2271              	.LASF24:
+ 2272 026c 70726F74 		.ascii	"protBase\000"
+ 2272      42617365 
+ 2272      00
+ 2273              	.LASF36:
+ 2274 0275 69706356 		.ascii	"ipcVersion\000"
+ 2274      65727369 
+ 2274      6F6E00
+ 2275              	.LASF98:
+ 2276 0280 63707573 		.ascii	"cpussCm0NmiCtlOffset\000"
+ 2276      73436D30 
+ 2276      4E6D6943 
+ 2276      746C4F66 
+ 2276      66736574 
+ 2277              	.LASF131:
+ 2278 0295 63795F63 		.ascii	"cy_cb_scb_spi_handle_events_t\000"
+ 2278      625F7363 
+ 2278      625F7370 
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 46
+
+
+ 2278      695F6861 
+ 2278      6E646C65 
+ 2279              	.LASF46:
+ 2280 02b3 73727373 		.ascii	"srssNumClkpath\000"
+ 2280      4E756D43 
+ 2280      6C6B7061 
+ 2280      746800
+ 2281              	.LASF25:
+ 2282 02c2 6873696F 		.ascii	"hsiomBase\000"
+ 2282      6D426173 
+ 2282      6500
+ 2283              	.LASF174:
+ 2284 02cc 63795F73 		.ascii	"cy_stc_tcpwm_pwm_config\000"
+ 2284      74635F74 
+ 2284      6370776D 
+ 2284      5F70776D 
+ 2284      5F636F6E 
+ 2285              	.LASF110:
+ 2286 02e4 43595F53 		.ascii	"CY_SAR_RANGE_COND_BELOW\000"
+ 2286      41525F52 
+ 2286      414E4745 
+ 2286      5F434F4E 
+ 2286      445F4245 
+ 2287              	.LASF7:
+ 2288 02fc 6C6F6E67 		.ascii	"long int\000"
+ 2288      20696E74 
+ 2288      00
+ 2289              	.LASF201:
+ 2290 0305 55415254 		.ascii	"UART_1_context\000"
+ 2290      5F315F63 
+ 2290      6F6E7465 
+ 2290      787400
+ 2291              	.LASF56:
+ 2292 0314 63727970 		.ascii	"cryptoMemSize\000"
+ 2292      746F4D65 
+ 2292      6D53697A 
+ 2292      6500
+ 2293              	.LASF22:
+ 2294 0322 70657269 		.ascii	"periBase\000"
+ 2294      42617365 
+ 2294      00
+ 2295              	.LASF127:
+ 2296 032b 6D757853 		.ascii	"muxSwitchSqCtrl\000"
+ 2296      77697463 
+ 2296      68537143 
+ 2296      74726C00 
+ 2297              	.LASF54:
+ 2298 033b 73797350 		.ascii	"sysPmSimoPresent\000"
+ 2298      6D53696D 
+ 2298      6F507265 
+ 2298      73656E74 
+ 2298      00
+ 2299              	.LASF112:
+ 2300 034c 43595F53 		.ascii	"CY_SAR_RANGE_COND_ABOVE\000"
+ 2300      41525F52 
+ 2300      414E4745 
+ 2300      5F434F4E 
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 47
+
+
+ 2300      445F4142 
+ 2301              	.LASF44:
+ 2302 0364 63707573 		.ascii	"cpussFmIrq\000"
+ 2302      73466D49 
+ 2302      727100
+ 2303              	.LASF108:
+ 2304 036f 646F7562 		.ascii	"double\000"
+ 2304      6C6500
+ 2305              	.LASF83:
+ 2306 0376 70657269 		.ascii	"periDiv16_5CtlOffset\000"
+ 2306      44697631 
+ 2306      365F3543 
+ 2306      746C4F66 
+ 2306      66736574 
+ 2307              	.LASF47:
+ 2308 038b 73727373 		.ascii	"srssNumPll\000"
+ 2308      4E756D50 
+ 2308      6C6C00
+ 2309              	.LASF209:
+ 2310 0396 443A5C44 		.ascii	"D:\\DOWNLOADS\\PSoC6-101-Video-Projects-master\\PSo"
+ 2310      4F574E4C 
+ 2310      4F414453 
+ 2310      5C50536F 
+ 2310      43362D31 
+ 2311 03c6 43362D31 		.ascii	"C6-101-Video-Projects-master\\PSoC 6_101\\proj.cyds"
+ 2311      30312D56 
+ 2311      6964656F 
+ 2311      2D50726F 
+ 2311      6A656374 
+ 2312 03f7 6E00     		.ascii	"n\000"
+ 2313              	.LASF205:
+ 2314 03f9 53544449 		.ascii	"STDIO_PutChar\000"
+ 2314      4F5F5075 
+ 2314      74436861 
+ 2314      7200
+ 2315              	.LASF163:
+ 2316 0407 63617074 		.ascii	"captureInputMode\000"
+ 2316      75726549 
+ 2316      6E707574 
+ 2316      4D6F6465 
+ 2316      00
+ 2317              	.LASF117:
+ 2318 0418 73616D70 		.ascii	"sampleTime01\000"
+ 2318      6C655469 
+ 2318      6D653031 
+ 2318      00
+ 2319              	.LASF6:
+ 2320 0425 73686F72 		.ascii	"short unsigned int\000"
+ 2320      7420756E 
+ 2320      7369676E 
+ 2320      65642069 
+ 2320      6E7400
+ 2321              	.LASF88:
+ 2322 0438 6770696F 		.ascii	"gpioPrtCfgOutOffset\000"
+ 2322      50727443 
+ 2322      66674F75 
+ 2322      744F6666 
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 48
+
+
+ 2322      73657400 
+ 2323              	.LASF8:
+ 2324 044c 5F5F7569 		.ascii	"__uint32_t\000"
+ 2324      6E743332 
+ 2324      5F7400
+ 2325              	.LASF51:
+ 2326 0457 70617373 		.ascii	"passSarChannels\000"
+ 2326      53617243 
+ 2326      68616E6E 
+ 2326      656C7300 
+ 2327              	.LASF191:
+ 2328 0467 6877436F 		.ascii	"hwConfigStc\000"
+ 2328      6E666967 
+ 2328      53746300 
+ 2329              	.LASF3:
+ 2330 0473 5F5F696E 		.ascii	"__int16_t\000"
+ 2330      7431365F 
+ 2330      7400
+ 2331              	.LASF135:
+ 2332 047d 72784275 		.ascii	"rxBufIdx\000"
+ 2332      66496478 
+ 2332      00
+ 2333              	.LASF196:
+ 2334 0486 5F726561 		.ascii	"_read\000"
+ 2334      6400
+ 2335              	.LASF94:
+ 2336 048c 63707573 		.ascii	"cpussCm4PwrCtlOffset\000"
+ 2336      73436D34 
+ 2336      50777243 
+ 2336      746C4F66 
+ 2336      66736574 
+ 2337              	.LASF137:
+ 2338 04a1 74784275 		.ascii	"txBufSize\000"
+ 2338      6653697A 
+ 2338      6500
+ 2339              	.LASF162:
+ 2340 04ab 696E7465 		.ascii	"interruptSources\000"
+ 2340      72727570 
+ 2340      74536F75 
+ 2340      72636573 
+ 2340      00
+ 2341              	.LASF89:
+ 2342 04bc 6770696F 		.ascii	"gpioPrtCfgSioOffset\000"
+ 2342      50727443 
+ 2342      66675369 
+ 2342      6F4F6666 
+ 2342      73657400 
+ 2343              	.LASF41:
+ 2344 04d0 63707573 		.ascii	"cpussDwChNr\000"
+ 2344      73447743 
+ 2344      684E7200 
+ 2345              	.LASF12:
+ 2346 04dc 756E7369 		.ascii	"unsigned int\000"
+ 2346      676E6564 
+ 2346      20696E74 
+ 2346      00
+ 2347              	.LASF18:
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 49
+
+
+ 2348 04e9 75696E74 		.ascii	"uint16_t\000"
+ 2348      31365F74 
+ 2348      00
+ 2349              	.LASF74:
+ 2350 04f2 70657269 		.ascii	"periTrCmdGrSelMsk\000"
+ 2350      5472436D 
+ 2350      64477253 
+ 2350      656C4D73 
+ 2350      6B00
+ 2351              	.LASF63:
+ 2352 0504 666C6173 		.ascii	"flashCtlMainWs1Freq\000"
+ 2352      6843746C 
+ 2352      4D61696E 
+ 2352      57733146 
+ 2352      72657100 
+ 2353              	.LASF9:
+ 2354 0518 6C6F6E67 		.ascii	"long unsigned int\000"
+ 2354      20756E73 
+ 2354      69676E65 
+ 2354      6420696E 
+ 2354      7400
+ 2355              	.LASF161:
+ 2356 052a 656E6162 		.ascii	"enableCompareSwap\000"
+ 2356      6C65436F 
+ 2356      6D706172 
+ 2356      65537761 
+ 2356      7000
+ 2357              	.LASF142:
+ 2358 053c 63795F63 		.ascii	"cy_cb_scb_uart_handle_events_t\000"
+ 2358      625F7363 
+ 2358      625F7561 
+ 2358      72745F68 
+ 2358      616E646C 
+ 2359              	.LASF39:
+ 2360 055b 63707573 		.ascii	"cpussIpcNr\000"
+ 2360      73497063 
+ 2360      4E7200
+ 2361              	.LASF26:
+ 2362 0566 6770696F 		.ascii	"gpioBase\000"
+ 2362      42617365 
+ 2362      00
+ 2363              	.LASF52:
+ 2364 056f 65704D6F 		.ascii	"epMonitorNr\000"
+ 2364      6E69746F 
+ 2364      724E7200 
+ 2365              	.LASF145:
+ 2366 057b 74785374 		.ascii	"txStatus\000"
+ 2366      61747573 
+ 2366      00
+ 2367              	.LASF184:
+ 2368 0584 73776170 		.ascii	"swapInputMode\000"
+ 2368      496E7075 
+ 2368      744D6F64 
+ 2368      6500
+ 2369              	.LASF75:
+ 2370 0592 70657269 		.ascii	"periTrGrOffset\000"
+ 2370      54724772 
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 50
+
+
+ 2370      4F666673 
+ 2370      657400
+ 2371              	.LASF102:
+ 2372 05a1 63707573 		.ascii	"cpussRam1Ctl0\000"
+ 2372      7352616D 
+ 2372      3143746C 
+ 2372      3000
+ 2373              	.LASF203:
+ 2374 05af 4144435F 		.ascii	"ADC_1_allConfigs\000"
+ 2374      315F616C 
+ 2374      6C436F6E 
+ 2374      66696773 
+ 2374      00
+ 2375              	.LASF119:
+ 2376 05c0 72616E67 		.ascii	"rangeThres\000"
+ 2376      65546872 
+ 2376      657300
+ 2377              	.LASF186:
+ 2378 05cb 6B696C6C 		.ascii	"killInputMode\000"
+ 2378      496E7075 
+ 2378      744D6F64 
+ 2378      6500
+ 2379              	.LASF139:
+ 2380 05d9 63624576 		.ascii	"cbEvents\000"
+ 2380      656E7473 
+ 2380      00
+ 2381              	.LASF76:
+ 2382 05e2 70657269 		.ascii	"periTrGrSize\000"
+ 2382      54724772 
+ 2382      53697A65 
+ 2382      00
+ 2383              	.LASF34:
+ 2384 05ef 6770696F 		.ascii	"gpioVersion\000"
+ 2384      56657273 
+ 2384      696F6E00 
+ 2385              	.LASF136:
+ 2386 05fb 74784275 		.ascii	"txBuf\000"
+ 2386      6600
+ 2387              	.LASF190:
+ 2388 0601 6E756D43 		.ascii	"numChannels\000"
+ 2388      68616E6E 
+ 2388      656C7300 
+ 2389              	.LASF106:
+ 2390 060d 63795F73 		.ascii	"cy_stc_device_t\000"
+ 2390      74635F64 
+ 2390      65766963 
+ 2390      655F7400 
+ 2391              	.LASF122:
+ 2392 061d 6368616E 		.ascii	"chanConfig\000"
+ 2392      436F6E66 
+ 2392      696700
+ 2393              	.LASF141:
+ 2394 0628 63795F73 		.ascii	"cy_stc_scb_spi_context_t\000"
+ 2394      74635F73 
+ 2394      63625F73 
+ 2394      70695F63 
+ 2394      6F6E7465 
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 51
+
+
+ 2395              	.LASF189:
+ 2396 0641 6368616E 		.ascii	"channelBase\000"
+ 2396      6E656C42 
+ 2396      61736500 
+ 2397              	.LASF181:
+ 2398 064d 696E7665 		.ascii	"invertPWMOut\000"
+ 2398      72745057 
+ 2398      4D4F7574 
+ 2398      00
+ 2399              	.LASF177:
+ 2400 065a 64656164 		.ascii	"deadTimeClocks\000"
+ 2400      54696D65 
+ 2400      436C6F63 
+ 2400      6B7300
+ 2401              	.LASF149:
+ 2402 0669 72785269 		.ascii	"rxRingBufHead\000"
+ 2402      6E674275 
+ 2402      66486561 
+ 2402      6400
+ 2403              	.LASF95:
+ 2404 0677 63707573 		.ascii	"cpussTrimRamCtlOffset\000"
+ 2404      73547269 
+ 2404      6D52616D 
+ 2404      43746C4F 
+ 2404      66667365 
+ 2405              	.LASF168:
+ 2406 068d 73746172 		.ascii	"startInput\000"
+ 2406      74496E70 
+ 2406      757400
+ 2407              	.LASF195:
+ 2408 0698 5F777269 		.ascii	"_write\000"
+ 2408      746500
+ 2409              	.LASF30:
+ 2410 069f 63707573 		.ascii	"cpussVersion\000"
+ 2410      73566572 
+ 2410      73696F6E 
+ 2410      00
+ 2411              	.LASF37:
+ 2412 06ac 70657269 		.ascii	"periVersion\000"
+ 2412      56657273 
+ 2412      696F6E00 
+ 2413              	.LASF93:
+ 2414 06b8 63707573 		.ascii	"cpussCm0StatusOffset\000"
+ 2414      73436D30 
+ 2414      53746174 
+ 2414      75734F66 
+ 2414      66736574 
+ 2415              	.LASF153:
+ 2416 06cd 63795F73 		.ascii	"cy_stc_tcpwm_counter_config\000"
+ 2416      74635F74 
+ 2416      6370776D 
+ 2416      5F636F75 
+ 2416      6E746572 
+ 2417              	.LASF14:
+ 2418 06e9 73697A65 		.ascii	"sizetype\000"
+ 2418      74797065 
+ 2418      00
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 52
+
+
+ 2419              	.LASF67:
+ 2420 06f2 64774368 		.ascii	"dwChOffset\000"
+ 2420      4F666673 
+ 2420      657400
+ 2421              	.LASF42:
+ 2422 06fd 63707573 		.ascii	"cpussFlashPaSize\000"
+ 2422      73466C61 
+ 2422      73685061 
+ 2422      53697A65 
+ 2422      00
+ 2423              	.LASF118:
+ 2424 070e 73616D70 		.ascii	"sampleTime23\000"
+ 2424      6C655469 
+ 2424      6D653233 
+ 2424      00
+ 2425              	.LASF80:
+ 2426 071b 70657269 		.ascii	"periDivCmdPaTypeSelPos\000"
+ 2426      44697643 
+ 2426      6D645061 
+ 2426      54797065 
+ 2426      53656C50 
+ 2427              	.LASF103:
+ 2428 0732 63707573 		.ascii	"cpussRam2Ctl0\000"
+ 2428      7352616D 
+ 2428      3243746C 
+ 2428      3000
+ 2429              	.LASF128:
+ 2430 0740 636F6E66 		.ascii	"configRouting\000"
+ 2430      6967526F 
+ 2430      7574696E 
+ 2430      6700
+ 2431              	.LASF71:
+ 2432 074e 64775374 		.ascii	"dwStatusChIdxPos\000"
+ 2432      61747573 
+ 2432      43684964 
+ 2432      78506F73 
+ 2432      00
+ 2433              	.LASF53:
+ 2434 075f 75646250 		.ascii	"udbPresent\000"
+ 2434      72657365 
+ 2434      6E7400
+ 2435              	.LASF146:
+ 2436 076a 72785374 		.ascii	"rxStatus\000"
+ 2436      61747573 
+ 2436      00
+ 2437              	.LASF33:
+ 2438 0773 666C6173 		.ascii	"flashcVersion\000"
+ 2438      68635665 
+ 2438      7273696F 
+ 2438      6E00
+ 2439              	.LASF29:
+ 2440 0781 63727970 		.ascii	"cryptoBase\000"
+ 2440      746F4261 
+ 2440      736500
+ 2441              	.LASF50:
+ 2442 078c 736D6966 		.ascii	"smifDeviceNr\000"
+ 2442      44657669 
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 53
+
+
+ 2442      63654E72 
+ 2442      00
+ 2443              	.LASF125:
+ 2444 0799 72616E67 		.ascii	"rangeIntrMask\000"
+ 2444      65496E74 
+ 2444      724D6173 
+ 2444      6B00
+ 2445              	.LASF175:
+ 2446 07a7 70776D4D 		.ascii	"pwmMode\000"
+ 2446      6F646500 
+ 2447              	.LASF107:
+ 2448 07af 666C6F61 		.ascii	"float\000"
+ 2448      7400
+ 2449              	.LASF72:
+ 2450 07b5 64775374 		.ascii	"dwStatusChIdxMsk\000"
+ 2450      61747573 
+ 2450      43684964 
+ 2450      784D736B 
+ 2450      00
+ 2451              	.LASF198:
+ 2452 07c6 63795F64 		.ascii	"cy_device\000"
+ 2452      65766963 
+ 2452      6500
+ 2453              	.LASF100:
+ 2454 07d0 63707573 		.ascii	"cpussRomCtl\000"
+ 2454      73526F6D 
+ 2454      43746C00 
+ 2455              	.LASF70:
+ 2456 07dc 64774368 		.ascii	"dwChCtlPreemptablePos\000"
+ 2456      43746C50 
+ 2456      7265656D 
+ 2456      70746162 
+ 2456      6C65506F 
+ 2457              	.LASF183:
+ 2458 07f2 6B696C6C 		.ascii	"killMode\000"
+ 2458      4D6F6465 
+ 2458      00
+ 2459              	.LASF121:
+ 2460 07fb 6368616E 		.ascii	"chanEn\000"
+ 2460      456E00
+ 2461              	.LASF23:
+ 2462 0802 75646242 		.ascii	"udbBase\000"
+ 2462      61736500 
+ 2463              	.LASF111:
+ 2464 080a 43595F53 		.ascii	"CY_SAR_RANGE_COND_INSIDE\000"
+ 2464      41525F52 
+ 2464      414E4745 
+ 2464      5F434F4E 
+ 2464      445F494E 
+ 2465              	.LASF109:
+ 2466 0823 5F426F6F 		.ascii	"_Bool\000"
+ 2466      6C00
+ 2467              	.LASF1:
+ 2468 0829 756E7369 		.ascii	"unsigned char\000"
+ 2468      676E6564 
+ 2468      20636861 
+ 2468      7200
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 54
+
+
+ 2469              	.LASF66:
+ 2470 0837 666C6173 		.ascii	"flashCtlMainWs4Freq\000"
+ 2470      6843746C 
+ 2470      4D61696E 
+ 2470      57733446 
+ 2470      72657100 
+ 2471              	.LASF4:
+ 2472 084b 73686F72 		.ascii	"short int\000"
+ 2472      7420696E 
+ 2472      7400
+ 2473              	.LASF126:
+ 2474 0855 6D757853 		.ascii	"muxSwitch\000"
+ 2474      77697463 
+ 2474      6800
+ 2475              	.LASF123:
+ 2476 085f 696E7472 		.ascii	"intrMask\000"
+ 2476      4D61736B 
+ 2476      00
+ 2477              	.LASF176:
+ 2478 0868 70776D41 		.ascii	"pwmAlignment\000"
+ 2478      6C69676E 
+ 2478      6D656E74 
+ 2478      00
+ 2479              	.LASF77:
+ 2480 0875 70657269 		.ascii	"periDivCmdDivSelMsk\000"
+ 2480      44697643 
+ 2480      6D644469 
+ 2480      7653656C 
+ 2480      4D736B00 
+ 2481              	.LASF64:
+ 2482 0889 666C6173 		.ascii	"flashCtlMainWs2Freq\000"
+ 2482      6843746C 
+ 2482      4D61696E 
+ 2482      57733246 
+ 2482      72657100 
+ 2483              	.LASF180:
+ 2484 089d 656E6162 		.ascii	"enablePeriodSwap\000"
+ 2484      6C655065 
+ 2484      72696F64 
+ 2484      53776170 
+ 2484      00
+ 2485              	.LASF21:
+ 2486 08ae 666C6173 		.ascii	"flashcBase\000"
+ 2486      68634261 
+ 2486      736500
+ 2487              	.LASF158:
+ 2488 08b9 636F6D70 		.ascii	"compareOrCapture\000"
+ 2488      6172654F 
+ 2488      72436170 
+ 2488      74757265 
+ 2488      00
+ 2489              	.LASF48:
+ 2490 08ca 73727373 		.ascii	"srssNumHfroot\000"
+ 2490      4E756D48 
+ 2490      66726F6F 
+ 2490      7400
+ 2491              	.LASF61:
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 55
+
+
+ 2492 08d8 666C6173 		.ascii	"flashEraseDelay\000"
+ 2492      68457261 
+ 2492      73654465 
+ 2492      6C617900 
+ 2493              	.LASF81:
+ 2494 08e8 70657269 		.ascii	"periDiv8CtlOffset\000"
+ 2494      44697638 
+ 2494      43746C4F 
+ 2494      66667365 
+ 2494      7400
+ 2495              	.LASF19:
+ 2496 08fa 75696E74 		.ascii	"uint32_t\000"
+ 2496      33325F74 
+ 2496      00
+ 2497              	.LASF202:
+ 2498 0903 4144435F 		.ascii	"ADC_1_currentConfig\000"
+ 2498      315F6375 
+ 2498      7272656E 
+ 2498      74436F6E 
+ 2498      66696700 
+ 2499              	.LASF99:
+ 2500 0917 63707573 		.ascii	"cpussCm4NmiCtlOffset\000"
+ 2500      73436D34 
+ 2500      4E6D6943 
+ 2500      746C4F66 
+ 2500      66736574 
+ 2501              	.LASF129:
+ 2502 092c 76726566 		.ascii	"vrefMvValue\000"
+ 2502      4D765661 
+ 2502      6C756500 
+ 2503              	.LASF207:
+ 2504 0938 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 2504      43313120 
+ 2504      352E342E 
+ 2504      31203230 
+ 2504      31363036 
+ 2505 096b 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0plus -mthumb -"
+ 2505      20726576 
+ 2505      6973696F 
+ 2505      6E203233 
+ 2505      37373135 
+ 2506 099e 67202D4F 		.ascii	"g -Og -ffunction-sections -ffat-lto-objects\000"
+ 2506      67202D66 
+ 2506      66756E63 
+ 2506      74696F6E 
+ 2506      2D736563 
+ 2507              	.LASF159:
+ 2508 09ca 636F6D70 		.ascii	"compare0\000"
+ 2508      61726530 
+ 2508      00
+ 2509              	.LASF13:
+ 2510 09d3 6C6F6E67 		.ascii	"long double\000"
+ 2510      20646F75 
+ 2510      626C6500 
+ 2511              	.LASF15:
+ 2512 09df 63686172 		.ascii	"char\000"
+ 2512      00
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 56
+
+
+ 2513              	.LASF172:
+ 2514 09e4 636F756E 		.ascii	"countInput\000"
+ 2514      74496E70 
+ 2514      757400
+ 2515              	.LASF38:
+ 2516 09ef 70726F74 		.ascii	"protVersion\000"
+ 2516      56657273 
+ 2516      696F6E00 
+ 2517              	.LASF101:
+ 2518 09fb 63707573 		.ascii	"cpussRam0Ctl0\000"
+ 2518      7352616D 
+ 2518      3043746C 
+ 2518      3000
+ 2519              	.LASF5:
+ 2520 0a09 5F5F7569 		.ascii	"__uint16_t\000"
+ 2520      6E743136 
+ 2520      5F7400
+ 2521              	.LASF204:
+ 2522 0a14 50574D5F 		.ascii	"PWM_config\000"
+ 2522      636F6E66 
+ 2522      696700
+ 2523              	.LASF82:
+ 2524 0a1f 70657269 		.ascii	"periDiv16CtlOffset\000"
+ 2524      44697631 
+ 2524      3643746C 
+ 2524      4F666673 
+ 2524      657400
+ 2525              	.LASF16:
+ 2526 0a32 75696E74 		.ascii	"uint8_t\000"
+ 2526      385F7400 
+ 2527              	.LASF35:
+ 2528 0a3a 6873696F 		.ascii	"hsiomVersion\000"
+ 2528      6D566572 
+ 2528      73696F6E 
+ 2528      00
+ 2529              	.LASF60:
+ 2530 0a47 666C6173 		.ascii	"flashProgramDelay\000"
+ 2530      6850726F 
+ 2530      6772616D 
+ 2530      44656C61 
+ 2530      7900
+ 2531              	.LASF115:
+ 2532 0a59 6374726C 		.ascii	"ctrl\000"
+ 2532      00
+ 2533              	.LASF148:
+ 2534 0a5e 72785269 		.ascii	"rxRingBufSize\000"
+ 2534      6E674275 
+ 2534      6653697A 
+ 2534      6500
+ 2535              	.LASF166:
+ 2536 0a6c 72656C6F 		.ascii	"reloadInput\000"
+ 2536      6164496E 
+ 2536      70757400 
+ 2537              	.LASF192:
+ 2538 0a78 6D697363 		.ascii	"miscConfig\000"
+ 2538      436F6E66 
+ 2538      696700
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 57
+
+
+ 2539              	.LASF68:
+ 2540 0a83 64774368 		.ascii	"dwChSize\000"
+ 2540      53697A65 
+ 2540      00
+ 2541              	.LASF199:
+ 2542 0a8c 43595F45 		.ascii	"CY_EINK_SPIM_context\000"
+ 2542      494E4B5F 
+ 2542      5350494D 
+ 2542      5F636F6E 
+ 2542      74657874 
+ 2543              	.LASF170:
+ 2544 0aa1 73746F70 		.ascii	"stopInput\000"
+ 2544      496E7075 
+ 2544      7400
+ 2545              	.LASF104:
+ 2546 0aab 69706353 		.ascii	"ipcStructSize\000"
+ 2546      74727563 
+ 2546      7453697A 
+ 2546      6500
+ 2547              	.LASF167:
+ 2548 0ab9 73746172 		.ascii	"startInputMode\000"
+ 2548      74496E70 
+ 2548      75744D6F 
+ 2548      646500
+ 2549              	.LASF43:
+ 2550 0ac8 63707573 		.ascii	"cpussIpc0Irq\000"
+ 2550      73497063 
+ 2550      30497271 
+ 2550      00
+ 2551              	.LASF178:
+ 2552 0ad5 70657269 		.ascii	"period0\000"
+ 2552      6F643000 
+ 2553              	.LASF179:
+ 2554 0add 70657269 		.ascii	"period1\000"
+ 2554      6F643100 
+ 2555              	.LASF160:
+ 2556 0ae5 636F6D70 		.ascii	"compare1\000"
+ 2556      61726531 
+ 2556      00
+ 2557              	.LASF90:
+ 2558 0aee 63707573 		.ascii	"cpussCm0ClockCtlOffset\000"
+ 2558      73436D30 
+ 2558      436C6F63 
+ 2558      6B43746C 
+ 2558      4F666673 
+ 2559              	.LASF86:
+ 2560 0b05 6770696F 		.ascii	"gpioPrtCfgOffset\000"
+ 2560      50727443 
+ 2560      66674F66 
+ 2560      66736574 
+ 2560      00
+ 2561              	.LASF140:
+ 2562 0b16 696E6974 		.ascii	"initKey\000"
+ 2562      4B657900 
+ 2563              	.LASF133:
+ 2564 0b1e 72784275 		.ascii	"rxBuf\000"
+ 2564      6600
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 58
+
+
+ 2565              	.LASF0:
+ 2566 0b24 7369676E 		.ascii	"signed char\000"
+ 2566      65642063 
+ 2566      68617200 
+ 2567              	.LASF152:
+ 2568 0b30 63795F73 		.ascii	"cy_stc_scb_uart_context_t\000"
+ 2568      74635F73 
+ 2568      63625F75 
+ 2568      6172745F 
+ 2568      636F6E74 
+ 2569              	.LASF120:
+ 2570 0b4a 72616E67 		.ascii	"rangeCond\000"
+ 2570      65436F6E 
+ 2570      6400
+ 2571              	.LASF132:
+ 2572 0b54 73746174 		.ascii	"status\000"
+ 2572      757300
+ 2573              	.LASF45:
+ 2574 0b5b 63707573 		.ascii	"cpussNotConnectedIrq\000"
+ 2574      734E6F74 
+ 2574      436F6E6E 
+ 2574      65637465 
+ 2574      64497271 
+ 2575              	.LASF182:
+ 2576 0b70 696E7665 		.ascii	"invertPWMOutN\000"
+ 2576      72745057 
+ 2576      4D4F7574 
+ 2576      4E00
+ 2577              	.LASF59:
+ 2578 0b7e 666C6173 		.ascii	"flashWriteDelay\000"
+ 2578      68577269 
+ 2578      74654465 
+ 2578      6C617900 
+ 2579              	.LASF116:
+ 2580 0b8e 73616D70 		.ascii	"sampleCtrl\000"
+ 2580      6C654374 
+ 2580      726C00
+ 2581              	.LASF194:
+ 2582 0b99 4144435F 		.ascii	"ADC_1_CONFIG_STRUCT\000"
+ 2582      315F434F 
+ 2582      4E464947 
+ 2582      5F535452 
+ 2582      55435400 
+ 2583              	.LASF200:
+ 2584 0bad 43595F45 		.ascii	"CY_EINK_Timer_config\000"
+ 2584      494E4B5F 
+ 2584      54696D65 
+ 2584      725F636F 
+ 2584      6E666967 
+ 2585              	.LASF92:
+ 2586 0bc2 63707573 		.ascii	"cpussCm4StatusOffset\000"
+ 2586      73436D34 
+ 2586      53746174 
+ 2586      75734F66 
+ 2586      66736574 
+ 2587              	.LASF85:
+ 2588 0bd7 6770696F 		.ascii	"gpioPrtIntrCfgOffset\000"
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 59
+
+
+ 2588      50727449 
+ 2588      6E747243 
+ 2588      66674F66 
+ 2588      66736574 
+ 2589              	.LASF188:
+ 2590 0bec 63795F73 		.ascii	"cy_stc_tcpwm_pwm_config_t\000"
+ 2590      74635F74 
+ 2590      6370776D 
+ 2590      5F70776D 
+ 2590      5F636F6E 
+ 2591              	.LASF165:
+ 2592 0c06 72656C6F 		.ascii	"reloadInputMode\000"
+ 2592      6164496E 
+ 2592      7075744D 
+ 2592      6F646500 
+ 2593              	.LASF113:
+ 2594 0c16 43595F53 		.ascii	"CY_SAR_RANGE_COND_OUTSIDE\000"
+ 2594      41525F52 
+ 2594      414E4745 
+ 2594      5F434F4E 
+ 2594      445F4F55 
+ 2595              	.LASF150:
+ 2596 0c30 72785269 		.ascii	"rxRingBufTail\000"
+ 2596      6E674275 
+ 2596      66546169 
+ 2596      6C00
+ 2597              	.LASF96:
+ 2598 0c3e 63707573 		.ascii	"cpussTrimRomCtlOffset\000"
+ 2598      73547269 
+ 2598      6D526F6D 
+ 2598      43746C4F 
+ 2598      66667365 
+ 2599              	.LASF171:
+ 2600 0c54 636F756E 		.ascii	"countInputMode\000"
+ 2600      74496E70 
+ 2600      75744D6F 
+ 2600      646500
+ 2601              	.LASF208:
+ 2602 0c63 47656E65 		.ascii	"Generated_Source\\PSoC6\\pdl\\utilities\\retarget_i"
+ 2602      72617465 
+ 2602      645F536F 
+ 2602      75726365 
+ 2602      5C50536F 
+ 2603 0c92 6F5C7265 		.ascii	"o\\retarget.c\000"
+ 2603      74617267 
+ 2603      65742E63 
+ 2603      00
+ 2604              	.LASF32:
+ 2605 0c9f 64775665 		.ascii	"dwVersion\000"
+ 2605      7273696F 
+ 2605      6E00
+ 2606              	.LASF28:
+ 2607 0ca9 69706342 		.ascii	"ipcBase\000"
+ 2607      61736500 
+ 2608              	.LASF79:
+ 2609 0cb1 70657269 		.ascii	"periDivCmdPaDivSelPos\000"
+ 2609      44697643 
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccSRzUlX.s 			page 60
+
+
+ 2609      6D645061 
+ 2609      44697653 
+ 2609      656C506F 
+ 2610              	.LASF17:
+ 2611 0cc7 696E7431 		.ascii	"int16_t\000"
+ 2611      365F7400 
+ 2612              	.LASF144:
+ 2613 0ccf 63795F73 		.ascii	"cy_stc_scb_uart_context\000"
+ 2613      74635F73 
+ 2613      63625F75 
+ 2613      6172745F 
+ 2613      636F6E74 
+ 2614              	.LASF57:
+ 2615 0ce7 666C6173 		.ascii	"flashRwwRequired\000"
+ 2615      68527777 
+ 2615      52657175 
+ 2615      69726564 
+ 2615      00
+ 2616              	.LASF138:
+ 2617 0cf8 74784275 		.ascii	"txBufIdx\000"
+ 2617      66496478 
+ 2617      00
+ 2618              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

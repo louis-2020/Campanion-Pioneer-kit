@@ -1,0 +1,1023 @@
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccYzcSme.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m4
+   3              		.eabi_attribute 27, 1
+   4              		.fpu fpv4-sp-d16
+   5              		.eabi_attribute 20, 1
+   6              		.eabi_attribute 21, 1
+   7              		.eabi_attribute 23, 3
+   8              		.eabi_attribute 24, 1
+   9              		.eabi_attribute 25, 1
+  10              		.eabi_attribute 26, 1
+  11              		.eabi_attribute 30, 1
+  12              		.eabi_attribute 34, 1
+  13              		.eabi_attribute 18, 4
+  14              		.thumb
+  15              		.syntax unified
+  16              		.file	"Status_SW1.c"
+  17              		.text
+  18              	.Ltext0:
+  19              		.cfi_sections	.debug_frame
+  20              		.section	.text.Status_SW1_Read,"ax",%progbits
+  21              		.align	2
+  22              		.global	Status_SW1_Read
+  23              		.thumb
+  24              		.thumb_func
+  25              		.type	Status_SW1_Read, %function
+  26              	Status_SW1_Read:
+  27              	.LFB132:
+  28              		.file 1 "Generated_Source\\PSoC6\\Status_SW1.c"
+   1:Generated_Source\PSoC6/Status_SW1.c **** /*******************************************************************************
+   2:Generated_Source\PSoC6/Status_SW1.c **** * File Name: Status_SW1.c  
+   3:Generated_Source\PSoC6/Status_SW1.c **** * Version 1.90
+   4:Generated_Source\PSoC6/Status_SW1.c **** *
+   5:Generated_Source\PSoC6/Status_SW1.c **** * Description:
+   6:Generated_Source\PSoC6/Status_SW1.c **** *  This file contains API to enable firmware to read the value of a Status 
+   7:Generated_Source\PSoC6/Status_SW1.c **** *  Register.
+   8:Generated_Source\PSoC6/Status_SW1.c **** *
+   9:Generated_Source\PSoC6/Status_SW1.c **** * Note:
+  10:Generated_Source\PSoC6/Status_SW1.c **** *
+  11:Generated_Source\PSoC6/Status_SW1.c **** ********************************************************************************
+  12:Generated_Source\PSoC6/Status_SW1.c **** * Copyright 2008-2015, Cypress Semiconductor Corporation.  All rights reserved.
+  13:Generated_Source\PSoC6/Status_SW1.c **** * You may use this file only in accordance with the license, terms, conditions, 
+  14:Generated_Source\PSoC6/Status_SW1.c **** * disclaimers, and limitations in the end user license agreement accompanying 
+  15:Generated_Source\PSoC6/Status_SW1.c **** * the software package with which this file was provided.
+  16:Generated_Source\PSoC6/Status_SW1.c **** *******************************************************************************/
+  17:Generated_Source\PSoC6/Status_SW1.c **** 
+  18:Generated_Source\PSoC6/Status_SW1.c **** #include "Status_SW1.h"
+  19:Generated_Source\PSoC6/Status_SW1.c **** 
+  20:Generated_Source\PSoC6/Status_SW1.c **** #if !defined(Status_SW1_sts_sts_reg__REMOVED) /* Check for removal by optimization */
+  21:Generated_Source\PSoC6/Status_SW1.c **** 
+  22:Generated_Source\PSoC6/Status_SW1.c **** 
+  23:Generated_Source\PSoC6/Status_SW1.c **** /*******************************************************************************
+  24:Generated_Source\PSoC6/Status_SW1.c **** * Function Name: Status_SW1_Read
+  25:Generated_Source\PSoC6/Status_SW1.c **** ********************************************************************************
+  26:Generated_Source\PSoC6/Status_SW1.c **** *
+  27:Generated_Source\PSoC6/Status_SW1.c **** * Summary:
+  28:Generated_Source\PSoC6/Status_SW1.c **** *  Reads the current value assigned to the Status Register.
+  29:Generated_Source\PSoC6/Status_SW1.c **** *
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccYzcSme.s 			page 2
+
+
+  30:Generated_Source\PSoC6/Status_SW1.c **** * Parameters:
+  31:Generated_Source\PSoC6/Status_SW1.c **** *  None.
+  32:Generated_Source\PSoC6/Status_SW1.c **** *
+  33:Generated_Source\PSoC6/Status_SW1.c **** * Return:
+  34:Generated_Source\PSoC6/Status_SW1.c **** *  The current value in the Status Register.
+  35:Generated_Source\PSoC6/Status_SW1.c **** *
+  36:Generated_Source\PSoC6/Status_SW1.c **** *******************************************************************************/
+  37:Generated_Source\PSoC6/Status_SW1.c **** uint8 Status_SW1_Read(void) 
+  38:Generated_Source\PSoC6/Status_SW1.c **** { 
+  29              		.loc 1 38 0
+  30              		.cfi_startproc
+  31              		@ args = 0, pretend = 0, frame = 0
+  32              		@ frame_needed = 0, uses_anonymous_args = 0
+  33              		@ link register save eliminated.
+  39:Generated_Source\PSoC6/Status_SW1.c ****     return Status_SW1_Status;
+  34              		.loc 1 39 0
+  35 0000 014B     		ldr	r3, .L2
+  36 0002 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
+  40:Generated_Source\PSoC6/Status_SW1.c **** }
+  37              		.loc 1 40 0
+  38 0004 7047     		bx	lr
+  39              	.L3:
+  40 0006 00BF     		.align	2
+  41              	.L2:
+  42 0008 0C163440 		.word	1077155340
+  43              		.cfi_endproc
+  44              	.LFE132:
+  45              		.size	Status_SW1_Read, .-Status_SW1_Read
+  46              		.section	.text.Status_SW1_InterruptEnable,"ax",%progbits
+  47              		.align	2
+  48              		.global	Status_SW1_InterruptEnable
+  49              		.thumb
+  50              		.thumb_func
+  51              		.type	Status_SW1_InterruptEnable, %function
+  52              	Status_SW1_InterruptEnable:
+  53              	.LFB133:
+  41:Generated_Source\PSoC6/Status_SW1.c **** 
+  42:Generated_Source\PSoC6/Status_SW1.c **** 
+  43:Generated_Source\PSoC6/Status_SW1.c **** /*******************************************************************************
+  44:Generated_Source\PSoC6/Status_SW1.c **** * Function Name: Status_SW1_InterruptEnable
+  45:Generated_Source\PSoC6/Status_SW1.c **** ********************************************************************************
+  46:Generated_Source\PSoC6/Status_SW1.c **** *
+  47:Generated_Source\PSoC6/Status_SW1.c **** * Summary:
+  48:Generated_Source\PSoC6/Status_SW1.c **** *  Enables the Status Register interrupt.
+  49:Generated_Source\PSoC6/Status_SW1.c **** *
+  50:Generated_Source\PSoC6/Status_SW1.c **** * Parameters:
+  51:Generated_Source\PSoC6/Status_SW1.c **** *  None.
+  52:Generated_Source\PSoC6/Status_SW1.c **** *
+  53:Generated_Source\PSoC6/Status_SW1.c **** * Return:
+  54:Generated_Source\PSoC6/Status_SW1.c **** *  None.
+  55:Generated_Source\PSoC6/Status_SW1.c **** *
+  56:Generated_Source\PSoC6/Status_SW1.c **** *******************************************************************************/
+  57:Generated_Source\PSoC6/Status_SW1.c **** void Status_SW1_InterruptEnable(void) 
+  58:Generated_Source\PSoC6/Status_SW1.c **** {
+  54              		.loc 1 58 0
+  55              		.cfi_startproc
+  56              		@ args = 0, pretend = 0, frame = 0
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccYzcSme.s 			page 3
+
+
+  57              		@ frame_needed = 0, uses_anonymous_args = 0
+  58 0000 08B5     		push	{r3, lr}
+  59              		.cfi_def_cfa_offset 8
+  60              		.cfi_offset 3, -8
+  61              		.cfi_offset 14, -4
+  59:Generated_Source\PSoC6/Status_SW1.c ****     uint8 interruptState;
+  60:Generated_Source\PSoC6/Status_SW1.c ****     interruptState = CyEnterCriticalSection();
+  62              		.loc 1 60 0
+  63 0002 FFF7FEFF 		bl	Cy_SysLib_EnterCriticalSection
+  64              	.LVL0:
+  61:Generated_Source\PSoC6/Status_SW1.c ****     Status_SW1_Status_Aux_Ctrl |= Status_SW1_STATUS_INTR_ENBL;
+  65              		.loc 1 61 0
+  66 0006 044A     		ldr	r2, .L6
+  67 0008 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+  68 000a 43F01003 		orr	r3, r3, #16
+  69 000e 1370     		strb	r3, [r2]
+  62:Generated_Source\PSoC6/Status_SW1.c ****     CyExitCriticalSection(interruptState);
+  70              		.loc 1 62 0
+  71 0010 C0B2     		uxtb	r0, r0
+  72 0012 FFF7FEFF 		bl	Cy_SysLib_ExitCriticalSection
+  73              	.LVL1:
+  74 0016 08BD     		pop	{r3, pc}
+  75              	.L7:
+  76              		.align	2
+  77              	.L6:
+  78 0018 0C193440 		.word	1077156108
+  79              		.cfi_endproc
+  80              	.LFE133:
+  81              		.size	Status_SW1_InterruptEnable, .-Status_SW1_InterruptEnable
+  82              		.section	.text.Status_SW1_InterruptDisable,"ax",%progbits
+  83              		.align	2
+  84              		.global	Status_SW1_InterruptDisable
+  85              		.thumb
+  86              		.thumb_func
+  87              		.type	Status_SW1_InterruptDisable, %function
+  88              	Status_SW1_InterruptDisable:
+  89              	.LFB134:
+  63:Generated_Source\PSoC6/Status_SW1.c **** }
+  64:Generated_Source\PSoC6/Status_SW1.c **** 
+  65:Generated_Source\PSoC6/Status_SW1.c **** 
+  66:Generated_Source\PSoC6/Status_SW1.c **** /*******************************************************************************
+  67:Generated_Source\PSoC6/Status_SW1.c **** * Function Name: Status_SW1_InterruptDisable
+  68:Generated_Source\PSoC6/Status_SW1.c **** ********************************************************************************
+  69:Generated_Source\PSoC6/Status_SW1.c **** *
+  70:Generated_Source\PSoC6/Status_SW1.c **** * Summary:
+  71:Generated_Source\PSoC6/Status_SW1.c **** *  Disables the Status Register interrupt.
+  72:Generated_Source\PSoC6/Status_SW1.c **** *
+  73:Generated_Source\PSoC6/Status_SW1.c **** * Parameters:
+  74:Generated_Source\PSoC6/Status_SW1.c **** *  None.
+  75:Generated_Source\PSoC6/Status_SW1.c **** *
+  76:Generated_Source\PSoC6/Status_SW1.c **** * Return:
+  77:Generated_Source\PSoC6/Status_SW1.c **** *  None.
+  78:Generated_Source\PSoC6/Status_SW1.c **** *
+  79:Generated_Source\PSoC6/Status_SW1.c **** *******************************************************************************/
+  80:Generated_Source\PSoC6/Status_SW1.c **** void Status_SW1_InterruptDisable(void) 
+  81:Generated_Source\PSoC6/Status_SW1.c **** {
+  90              		.loc 1 81 0
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccYzcSme.s 			page 4
+
+
+  91              		.cfi_startproc
+  92              		@ args = 0, pretend = 0, frame = 0
+  93              		@ frame_needed = 0, uses_anonymous_args = 0
+  94 0000 08B5     		push	{r3, lr}
+  95              		.cfi_def_cfa_offset 8
+  96              		.cfi_offset 3, -8
+  97              		.cfi_offset 14, -4
+  82:Generated_Source\PSoC6/Status_SW1.c ****     uint8 interruptState;
+  83:Generated_Source\PSoC6/Status_SW1.c ****     interruptState = CyEnterCriticalSection();
+  98              		.loc 1 83 0
+  99 0002 FFF7FEFF 		bl	Cy_SysLib_EnterCriticalSection
+ 100              	.LVL2:
+  84:Generated_Source\PSoC6/Status_SW1.c ****     Status_SW1_Status_Aux_Ctrl &= (uint8)(~Status_SW1_STATUS_INTR_ENBL);
+ 101              		.loc 1 84 0
+ 102 0006 044A     		ldr	r2, .L10
+ 103 0008 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+ 104 000a 03F0EF03 		and	r3, r3, #239
+ 105 000e 1370     		strb	r3, [r2]
+  85:Generated_Source\PSoC6/Status_SW1.c ****     CyExitCriticalSection(interruptState);
+ 106              		.loc 1 85 0
+ 107 0010 C0B2     		uxtb	r0, r0
+ 108 0012 FFF7FEFF 		bl	Cy_SysLib_ExitCriticalSection
+ 109              	.LVL3:
+ 110 0016 08BD     		pop	{r3, pc}
+ 111              	.L11:
+ 112              		.align	2
+ 113              	.L10:
+ 114 0018 0C193440 		.word	1077156108
+ 115              		.cfi_endproc
+ 116              	.LFE134:
+ 117              		.size	Status_SW1_InterruptDisable, .-Status_SW1_InterruptDisable
+ 118              		.section	.text.Status_SW1_WriteMask,"ax",%progbits
+ 119              		.align	2
+ 120              		.global	Status_SW1_WriteMask
+ 121              		.thumb
+ 122              		.thumb_func
+ 123              		.type	Status_SW1_WriteMask, %function
+ 124              	Status_SW1_WriteMask:
+ 125              	.LFB135:
+  86:Generated_Source\PSoC6/Status_SW1.c **** }
+  87:Generated_Source\PSoC6/Status_SW1.c **** 
+  88:Generated_Source\PSoC6/Status_SW1.c **** 
+  89:Generated_Source\PSoC6/Status_SW1.c **** /*******************************************************************************
+  90:Generated_Source\PSoC6/Status_SW1.c **** * Function Name: Status_SW1_WriteMask
+  91:Generated_Source\PSoC6/Status_SW1.c **** ********************************************************************************
+  92:Generated_Source\PSoC6/Status_SW1.c **** *
+  93:Generated_Source\PSoC6/Status_SW1.c **** * Summary:
+  94:Generated_Source\PSoC6/Status_SW1.c **** *  Writes the current mask value assigned to the Status Register.
+  95:Generated_Source\PSoC6/Status_SW1.c **** *
+  96:Generated_Source\PSoC6/Status_SW1.c **** * Parameters:
+  97:Generated_Source\PSoC6/Status_SW1.c **** *  mask:  Value to write into the mask register.
+  98:Generated_Source\PSoC6/Status_SW1.c **** *
+  99:Generated_Source\PSoC6/Status_SW1.c **** * Return:
+ 100:Generated_Source\PSoC6/Status_SW1.c **** *  None.
+ 101:Generated_Source\PSoC6/Status_SW1.c **** *
+ 102:Generated_Source\PSoC6/Status_SW1.c **** *******************************************************************************/
+ 103:Generated_Source\PSoC6/Status_SW1.c **** void Status_SW1_WriteMask(uint8 mask) 
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccYzcSme.s 			page 5
+
+
+ 104:Generated_Source\PSoC6/Status_SW1.c **** {
+ 126              		.loc 1 104 0
+ 127              		.cfi_startproc
+ 128              		@ args = 0, pretend = 0, frame = 0
+ 129              		@ frame_needed = 0, uses_anonymous_args = 0
+ 130              		@ link register save eliminated.
+ 131              	.LVL4:
+ 105:Generated_Source\PSoC6/Status_SW1.c ****     #if(Status_SW1_INPUTS < 8u)
+ 106:Generated_Source\PSoC6/Status_SW1.c ****     	mask &= ((uint8)(1u << Status_SW1_INPUTS) - 1u);
+ 132              		.loc 1 106 0
+ 133 0000 00F00100 		and	r0, r0, #1
+ 134              	.LVL5:
+ 107:Generated_Source\PSoC6/Status_SW1.c **** 	#endif /* End Status_SW1_INPUTS < 8u */
+ 108:Generated_Source\PSoC6/Status_SW1.c ****     Status_SW1_Status_Mask = mask;
+ 135              		.loc 1 108 0
+ 136 0004 014B     		ldr	r3, .L13
+ 137 0006 1870     		strb	r0, [r3]
+ 138 0008 7047     		bx	lr
+ 139              	.L14:
+ 140 000a 00BF     		.align	2
+ 141              	.L13:
+ 142 000c 0C183440 		.word	1077155852
+ 143              		.cfi_endproc
+ 144              	.LFE135:
+ 145              		.size	Status_SW1_WriteMask, .-Status_SW1_WriteMask
+ 146              		.section	.text.Status_SW1_ReadMask,"ax",%progbits
+ 147              		.align	2
+ 148              		.global	Status_SW1_ReadMask
+ 149              		.thumb
+ 150              		.thumb_func
+ 151              		.type	Status_SW1_ReadMask, %function
+ 152              	Status_SW1_ReadMask:
+ 153              	.LFB136:
+ 109:Generated_Source\PSoC6/Status_SW1.c **** }
+ 110:Generated_Source\PSoC6/Status_SW1.c **** 
+ 111:Generated_Source\PSoC6/Status_SW1.c **** 
+ 112:Generated_Source\PSoC6/Status_SW1.c **** /*******************************************************************************
+ 113:Generated_Source\PSoC6/Status_SW1.c **** * Function Name: Status_SW1_ReadMask
+ 114:Generated_Source\PSoC6/Status_SW1.c **** ********************************************************************************
+ 115:Generated_Source\PSoC6/Status_SW1.c **** *
+ 116:Generated_Source\PSoC6/Status_SW1.c **** * Summary:
+ 117:Generated_Source\PSoC6/Status_SW1.c **** *  Reads the current interrupt mask assigned to the Status Register.
+ 118:Generated_Source\PSoC6/Status_SW1.c **** *
+ 119:Generated_Source\PSoC6/Status_SW1.c **** * Parameters:
+ 120:Generated_Source\PSoC6/Status_SW1.c **** *  None.
+ 121:Generated_Source\PSoC6/Status_SW1.c **** *
+ 122:Generated_Source\PSoC6/Status_SW1.c **** * Return:
+ 123:Generated_Source\PSoC6/Status_SW1.c **** *  The value of the interrupt mask of the Status Register.
+ 124:Generated_Source\PSoC6/Status_SW1.c **** *
+ 125:Generated_Source\PSoC6/Status_SW1.c **** *******************************************************************************/
+ 126:Generated_Source\PSoC6/Status_SW1.c **** uint8 Status_SW1_ReadMask(void) 
+ 127:Generated_Source\PSoC6/Status_SW1.c **** {
+ 154              		.loc 1 127 0
+ 155              		.cfi_startproc
+ 156              		@ args = 0, pretend = 0, frame = 0
+ 157              		@ frame_needed = 0, uses_anonymous_args = 0
+ 158              		@ link register save eliminated.
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccYzcSme.s 			page 6
+
+
+ 128:Generated_Source\PSoC6/Status_SW1.c ****     return Status_SW1_Status_Mask;
+ 159              		.loc 1 128 0
+ 160 0000 014B     		ldr	r3, .L16
+ 161 0002 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
+ 129:Generated_Source\PSoC6/Status_SW1.c **** }
+ 162              		.loc 1 129 0
+ 163 0004 7047     		bx	lr
+ 164              	.L17:
+ 165 0006 00BF     		.align	2
+ 166              	.L16:
+ 167 0008 0C183440 		.word	1077155852
+ 168              		.cfi_endproc
+ 169              	.LFE136:
+ 170              		.size	Status_SW1_ReadMask, .-Status_SW1_ReadMask
+ 171              		.text
+ 172              	.Letext0:
+ 173              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 174              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 175              		.file 4 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/syslib/cy_syslib.h"
+ 176              		.file 5 "Generated_Source\\PSoC6\\pdl\\cmsis/include/core_cm4.h"
+ 177              		.section	.debug_info,"",%progbits
+ 178              	.Ldebug_info0:
+ 179 0000 D0010000 		.4byte	0x1d0
+ 180 0004 0400     		.2byte	0x4
+ 181 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 182 000a 04       		.byte	0x4
+ 183 000b 01       		.uleb128 0x1
+ 184 000c CB010000 		.4byte	.LASF30
+ 185 0010 0C       		.byte	0xc
+ 186 0011 A1020000 		.4byte	.LASF31
+ 187 0015 3A010000 		.4byte	.LASF32
+ 188 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 189 001d 00000000 		.4byte	0
+ 190 0021 00000000 		.4byte	.Ldebug_line0
+ 191 0025 02       		.uleb128 0x2
+ 192 0026 02       		.byte	0x2
+ 193 0027 05       		.byte	0x5
+ 194 0028 C1010000 		.4byte	.LASF0
+ 195 002c 02       		.uleb128 0x2
+ 196 002d 01       		.byte	0x1
+ 197 002e 06       		.byte	0x6
+ 198 002f C5020000 		.4byte	.LASF1
+ 199 0033 03       		.uleb128 0x3
+ 200 0034 00000000 		.4byte	.LASF4
+ 201 0038 02       		.byte	0x2
+ 202 0039 1D       		.byte	0x1d
+ 203 003a 3E000000 		.4byte	0x3e
+ 204 003e 02       		.uleb128 0x2
+ 205 003f 01       		.byte	0x1
+ 206 0040 08       		.byte	0x8
+ 207 0041 58000000 		.4byte	.LASF2
+ 208 0045 02       		.uleb128 0x2
+ 209 0046 02       		.byte	0x2
+ 210 0047 07       		.byte	0x7
+ 211 0048 32000000 		.4byte	.LASF3
+ 212 004c 03       		.uleb128 0x3
+ 213 004d 0A000000 		.4byte	.LASF5
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccYzcSme.s 			page 7
+
+
+ 214 0051 02       		.byte	0x2
+ 215 0052 3F       		.byte	0x3f
+ 216 0053 57000000 		.4byte	0x57
+ 217 0057 02       		.uleb128 0x2
+ 218 0058 04       		.byte	0x4
+ 219 0059 05       		.byte	0x5
+ 220 005a 87020000 		.4byte	.LASF6
+ 221 005e 03       		.uleb128 0x3
+ 222 005f BA000000 		.4byte	.LASF7
+ 223 0063 02       		.byte	0x2
+ 224 0064 41       		.byte	0x41
+ 225 0065 69000000 		.4byte	0x69
+ 226 0069 02       		.uleb128 0x2
+ 227 006a 04       		.byte	0x4
+ 228 006b 07       		.byte	0x7
+ 229 006c 7A000000 		.4byte	.LASF8
+ 230 0070 02       		.uleb128 0x2
+ 231 0071 08       		.byte	0x8
+ 232 0072 05       		.byte	0x5
+ 233 0073 AE010000 		.4byte	.LASF9
+ 234 0077 02       		.uleb128 0x2
+ 235 0078 08       		.byte	0x8
+ 236 0079 07       		.byte	0x7
+ 237 007a 1B010000 		.4byte	.LASF10
+ 238 007e 04       		.uleb128 0x4
+ 239 007f 04       		.byte	0x4
+ 240 0080 05       		.byte	0x5
+ 241 0081 696E7400 		.ascii	"int\000"
+ 242 0085 02       		.uleb128 0x2
+ 243 0086 04       		.byte	0x4
+ 244 0087 07       		.byte	0x7
+ 245 0088 45000000 		.4byte	.LASF11
+ 246 008c 03       		.uleb128 0x3
+ 247 008d 32010000 		.4byte	.LASF12
+ 248 0091 03       		.byte	0x3
+ 249 0092 18       		.byte	0x18
+ 250 0093 33000000 		.4byte	0x33
+ 251 0097 03       		.uleb128 0x3
+ 252 0098 9D010000 		.4byte	.LASF13
+ 253 009c 03       		.byte	0x3
+ 254 009d 2C       		.byte	0x2c
+ 255 009e 4C000000 		.4byte	0x4c
+ 256 00a2 03       		.uleb128 0x3
+ 257 00a3 7E020000 		.4byte	.LASF14
+ 258 00a7 03       		.byte	0x3
+ 259 00a8 30       		.byte	0x30
+ 260 00a9 5E000000 		.4byte	0x5e
+ 261 00ad 02       		.uleb128 0x2
+ 262 00ae 04       		.byte	0x4
+ 263 00af 07       		.byte	0x7
+ 264 00b0 A5010000 		.4byte	.LASF15
+ 265 00b4 05       		.uleb128 0x5
+ 266 00b5 8C000000 		.4byte	0x8c
+ 267 00b9 02       		.uleb128 0x2
+ 268 00ba 08       		.byte	0x8
+ 269 00bb 04       		.byte	0x4
+ 270 00bc 95020000 		.4byte	.LASF16
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccYzcSme.s 			page 8
+
+
+ 271 00c0 02       		.uleb128 0x2
+ 272 00c1 01       		.byte	0x1
+ 273 00c2 08       		.byte	0x8
+ 274 00c3 90020000 		.4byte	.LASF17
+ 275 00c7 02       		.uleb128 0x2
+ 276 00c8 04       		.byte	0x4
+ 277 00c9 04       		.byte	0x4
+ 278 00ca 52000000 		.4byte	.LASF18
+ 279 00ce 02       		.uleb128 0x2
+ 280 00cf 08       		.byte	0x8
+ 281 00d0 04       		.byte	0x4
+ 282 00d1 B3000000 		.4byte	.LASF19
+ 283 00d5 06       		.uleb128 0x6
+ 284 00d6 8C000000 		.4byte	.LASF20
+ 285 00da 04       		.byte	0x4
+ 286 00db EA03     		.2byte	0x3ea
+ 287 00dd 8C000000 		.4byte	0x8c
+ 288 00e1 06       		.uleb128 0x6
+ 289 00e2 66000000 		.4byte	.LASF21
+ 290 00e6 04       		.byte	0x4
+ 291 00e7 F603     		.2byte	0x3f6
+ 292 00e9 B4000000 		.4byte	0xb4
+ 293 00ed 07       		.uleb128 0x7
+ 294 00ee E6020000 		.4byte	.LASF26
+ 295 00f2 01       		.byte	0x1
+ 296 00f3 25       		.byte	0x25
+ 297 00f4 D5000000 		.4byte	0xd5
+ 298 00f8 00000000 		.4byte	.LFB132
+ 299 00fc 0C000000 		.4byte	.LFE132-.LFB132
+ 300 0100 01       		.uleb128 0x1
+ 301 0101 9C       		.byte	0x9c
+ 302 0102 08       		.uleb128 0x8
+ 303 0103 00010000 		.4byte	.LASF22
+ 304 0107 01       		.byte	0x1
+ 305 0108 39       		.byte	0x39
+ 306 0109 00000000 		.4byte	.LFB133
+ 307 010d 1C000000 		.4byte	.LFE133-.LFB133
+ 308 0111 01       		.uleb128 0x1
+ 309 0112 9C       		.byte	0x9c
+ 310 0113 39010000 		.4byte	0x139
+ 311 0117 09       		.uleb128 0x9
+ 312 0118 6B000000 		.4byte	.LASF24
+ 313 011c 01       		.byte	0x1
+ 314 011d 3B       		.byte	0x3b
+ 315 011e D5000000 		.4byte	0xd5
+ 316 0122 00000000 		.4byte	.LLST0
+ 317 0126 0A       		.uleb128 0xa
+ 318 0127 06000000 		.4byte	.LVL0
+ 319 012b BB010000 		.4byte	0x1bb
+ 320 012f 0A       		.uleb128 0xa
+ 321 0130 16000000 		.4byte	.LVL1
+ 322 0134 C7010000 		.4byte	0x1c7
+ 323 0138 00       		.byte	0
+ 324 0139 08       		.uleb128 0x8
+ 325 013a C5000000 		.4byte	.LASF23
+ 326 013e 01       		.byte	0x1
+ 327 013f 50       		.byte	0x50
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccYzcSme.s 			page 9
+
+
+ 328 0140 00000000 		.4byte	.LFB134
+ 329 0144 1C000000 		.4byte	.LFE134-.LFB134
+ 330 0148 01       		.uleb128 0x1
+ 331 0149 9C       		.byte	0x9c
+ 332 014a 70010000 		.4byte	0x170
+ 333 014e 09       		.uleb128 0x9
+ 334 014f 6B000000 		.4byte	.LASF24
+ 335 0153 01       		.byte	0x1
+ 336 0154 52       		.byte	0x52
+ 337 0155 D5000000 		.4byte	0xd5
+ 338 0159 13000000 		.4byte	.LLST1
+ 339 015d 0A       		.uleb128 0xa
+ 340 015e 06000000 		.4byte	.LVL2
+ 341 0162 BB010000 		.4byte	0x1bb
+ 342 0166 0A       		.uleb128 0xa
+ 343 0167 16000000 		.4byte	.LVL3
+ 344 016b C7010000 		.4byte	0x1c7
+ 345 016f 00       		.byte	0
+ 346 0170 08       		.uleb128 0x8
+ 347 0171 D1020000 		.4byte	.LASF25
+ 348 0175 01       		.byte	0x1
+ 349 0176 67       		.byte	0x67
+ 350 0177 00000000 		.4byte	.LFB135
+ 351 017b 10000000 		.4byte	.LFE135-.LFB135
+ 352 017f 01       		.uleb128 0x1
+ 353 0180 9C       		.byte	0x9c
+ 354 0181 95010000 		.4byte	0x195
+ 355 0185 0B       		.uleb128 0xb
+ 356 0186 BC010000 		.4byte	.LASF33
+ 357 018a 01       		.byte	0x1
+ 358 018b 67       		.byte	0x67
+ 359 018c D5000000 		.4byte	0xd5
+ 360 0190 26000000 		.4byte	.LLST2
+ 361 0194 00       		.byte	0
+ 362 0195 07       		.uleb128 0x7
+ 363 0196 9F000000 		.4byte	.LASF27
+ 364 019a 01       		.byte	0x1
+ 365 019b 7E       		.byte	0x7e
+ 366 019c D5000000 		.4byte	0xd5
+ 367 01a0 00000000 		.4byte	.LFB136
+ 368 01a4 0C000000 		.4byte	.LFE136-.LFB136
+ 369 01a8 01       		.uleb128 0x1
+ 370 01a9 9C       		.byte	0x9c
+ 371 01aa 0C       		.uleb128 0xc
+ 372 01ab 92000000 		.4byte	.LASF34
+ 373 01af 05       		.byte	0x5
+ 374 01b0 F907     		.2byte	0x7f9
+ 375 01b2 B6010000 		.4byte	0x1b6
+ 376 01b6 05       		.uleb128 0x5
+ 377 01b7 97000000 		.4byte	0x97
+ 378 01bb 0D       		.uleb128 0xd
+ 379 01bc E1000000 		.4byte	.LASF28
+ 380 01c0 E1000000 		.4byte	.LASF28
+ 381 01c4 04       		.byte	0x4
+ 382 01c5 B203     		.2byte	0x3b2
+ 383 01c7 0D       		.uleb128 0xd
+ 384 01c8 14000000 		.4byte	.LASF29
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccYzcSme.s 			page 10
+
+
+ 385 01cc 14000000 		.4byte	.LASF29
+ 386 01d0 04       		.byte	0x4
+ 387 01d1 C103     		.2byte	0x3c1
+ 388 01d3 00       		.byte	0
+ 389              		.section	.debug_abbrev,"",%progbits
+ 390              	.Ldebug_abbrev0:
+ 391 0000 01       		.uleb128 0x1
+ 392 0001 11       		.uleb128 0x11
+ 393 0002 01       		.byte	0x1
+ 394 0003 25       		.uleb128 0x25
+ 395 0004 0E       		.uleb128 0xe
+ 396 0005 13       		.uleb128 0x13
+ 397 0006 0B       		.uleb128 0xb
+ 398 0007 03       		.uleb128 0x3
+ 399 0008 0E       		.uleb128 0xe
+ 400 0009 1B       		.uleb128 0x1b
+ 401 000a 0E       		.uleb128 0xe
+ 402 000b 55       		.uleb128 0x55
+ 403 000c 17       		.uleb128 0x17
+ 404 000d 11       		.uleb128 0x11
+ 405 000e 01       		.uleb128 0x1
+ 406 000f 10       		.uleb128 0x10
+ 407 0010 17       		.uleb128 0x17
+ 408 0011 00       		.byte	0
+ 409 0012 00       		.byte	0
+ 410 0013 02       		.uleb128 0x2
+ 411 0014 24       		.uleb128 0x24
+ 412 0015 00       		.byte	0
+ 413 0016 0B       		.uleb128 0xb
+ 414 0017 0B       		.uleb128 0xb
+ 415 0018 3E       		.uleb128 0x3e
+ 416 0019 0B       		.uleb128 0xb
+ 417 001a 03       		.uleb128 0x3
+ 418 001b 0E       		.uleb128 0xe
+ 419 001c 00       		.byte	0
+ 420 001d 00       		.byte	0
+ 421 001e 03       		.uleb128 0x3
+ 422 001f 16       		.uleb128 0x16
+ 423 0020 00       		.byte	0
+ 424 0021 03       		.uleb128 0x3
+ 425 0022 0E       		.uleb128 0xe
+ 426 0023 3A       		.uleb128 0x3a
+ 427 0024 0B       		.uleb128 0xb
+ 428 0025 3B       		.uleb128 0x3b
+ 429 0026 0B       		.uleb128 0xb
+ 430 0027 49       		.uleb128 0x49
+ 431 0028 13       		.uleb128 0x13
+ 432 0029 00       		.byte	0
+ 433 002a 00       		.byte	0
+ 434 002b 04       		.uleb128 0x4
+ 435 002c 24       		.uleb128 0x24
+ 436 002d 00       		.byte	0
+ 437 002e 0B       		.uleb128 0xb
+ 438 002f 0B       		.uleb128 0xb
+ 439 0030 3E       		.uleb128 0x3e
+ 440 0031 0B       		.uleb128 0xb
+ 441 0032 03       		.uleb128 0x3
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccYzcSme.s 			page 11
+
+
+ 442 0033 08       		.uleb128 0x8
+ 443 0034 00       		.byte	0
+ 444 0035 00       		.byte	0
+ 445 0036 05       		.uleb128 0x5
+ 446 0037 35       		.uleb128 0x35
+ 447 0038 00       		.byte	0
+ 448 0039 49       		.uleb128 0x49
+ 449 003a 13       		.uleb128 0x13
+ 450 003b 00       		.byte	0
+ 451 003c 00       		.byte	0
+ 452 003d 06       		.uleb128 0x6
+ 453 003e 16       		.uleb128 0x16
+ 454 003f 00       		.byte	0
+ 455 0040 03       		.uleb128 0x3
+ 456 0041 0E       		.uleb128 0xe
+ 457 0042 3A       		.uleb128 0x3a
+ 458 0043 0B       		.uleb128 0xb
+ 459 0044 3B       		.uleb128 0x3b
+ 460 0045 05       		.uleb128 0x5
+ 461 0046 49       		.uleb128 0x49
+ 462 0047 13       		.uleb128 0x13
+ 463 0048 00       		.byte	0
+ 464 0049 00       		.byte	0
+ 465 004a 07       		.uleb128 0x7
+ 466 004b 2E       		.uleb128 0x2e
+ 467 004c 00       		.byte	0
+ 468 004d 3F       		.uleb128 0x3f
+ 469 004e 19       		.uleb128 0x19
+ 470 004f 03       		.uleb128 0x3
+ 471 0050 0E       		.uleb128 0xe
+ 472 0051 3A       		.uleb128 0x3a
+ 473 0052 0B       		.uleb128 0xb
+ 474 0053 3B       		.uleb128 0x3b
+ 475 0054 0B       		.uleb128 0xb
+ 476 0055 27       		.uleb128 0x27
+ 477 0056 19       		.uleb128 0x19
+ 478 0057 49       		.uleb128 0x49
+ 479 0058 13       		.uleb128 0x13
+ 480 0059 11       		.uleb128 0x11
+ 481 005a 01       		.uleb128 0x1
+ 482 005b 12       		.uleb128 0x12
+ 483 005c 06       		.uleb128 0x6
+ 484 005d 40       		.uleb128 0x40
+ 485 005e 18       		.uleb128 0x18
+ 486 005f 9742     		.uleb128 0x2117
+ 487 0061 19       		.uleb128 0x19
+ 488 0062 00       		.byte	0
+ 489 0063 00       		.byte	0
+ 490 0064 08       		.uleb128 0x8
+ 491 0065 2E       		.uleb128 0x2e
+ 492 0066 01       		.byte	0x1
+ 493 0067 3F       		.uleb128 0x3f
+ 494 0068 19       		.uleb128 0x19
+ 495 0069 03       		.uleb128 0x3
+ 496 006a 0E       		.uleb128 0xe
+ 497 006b 3A       		.uleb128 0x3a
+ 498 006c 0B       		.uleb128 0xb
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccYzcSme.s 			page 12
+
+
+ 499 006d 3B       		.uleb128 0x3b
+ 500 006e 0B       		.uleb128 0xb
+ 501 006f 27       		.uleb128 0x27
+ 502 0070 19       		.uleb128 0x19
+ 503 0071 11       		.uleb128 0x11
+ 504 0072 01       		.uleb128 0x1
+ 505 0073 12       		.uleb128 0x12
+ 506 0074 06       		.uleb128 0x6
+ 507 0075 40       		.uleb128 0x40
+ 508 0076 18       		.uleb128 0x18
+ 509 0077 9742     		.uleb128 0x2117
+ 510 0079 19       		.uleb128 0x19
+ 511 007a 01       		.uleb128 0x1
+ 512 007b 13       		.uleb128 0x13
+ 513 007c 00       		.byte	0
+ 514 007d 00       		.byte	0
+ 515 007e 09       		.uleb128 0x9
+ 516 007f 34       		.uleb128 0x34
+ 517 0080 00       		.byte	0
+ 518 0081 03       		.uleb128 0x3
+ 519 0082 0E       		.uleb128 0xe
+ 520 0083 3A       		.uleb128 0x3a
+ 521 0084 0B       		.uleb128 0xb
+ 522 0085 3B       		.uleb128 0x3b
+ 523 0086 0B       		.uleb128 0xb
+ 524 0087 49       		.uleb128 0x49
+ 525 0088 13       		.uleb128 0x13
+ 526 0089 02       		.uleb128 0x2
+ 527 008a 17       		.uleb128 0x17
+ 528 008b 00       		.byte	0
+ 529 008c 00       		.byte	0
+ 530 008d 0A       		.uleb128 0xa
+ 531 008e 898201   		.uleb128 0x4109
+ 532 0091 00       		.byte	0
+ 533 0092 11       		.uleb128 0x11
+ 534 0093 01       		.uleb128 0x1
+ 535 0094 31       		.uleb128 0x31
+ 536 0095 13       		.uleb128 0x13
+ 537 0096 00       		.byte	0
+ 538 0097 00       		.byte	0
+ 539 0098 0B       		.uleb128 0xb
+ 540 0099 05       		.uleb128 0x5
+ 541 009a 00       		.byte	0
+ 542 009b 03       		.uleb128 0x3
+ 543 009c 0E       		.uleb128 0xe
+ 544 009d 3A       		.uleb128 0x3a
+ 545 009e 0B       		.uleb128 0xb
+ 546 009f 3B       		.uleb128 0x3b
+ 547 00a0 0B       		.uleb128 0xb
+ 548 00a1 49       		.uleb128 0x49
+ 549 00a2 13       		.uleb128 0x13
+ 550 00a3 02       		.uleb128 0x2
+ 551 00a4 17       		.uleb128 0x17
+ 552 00a5 00       		.byte	0
+ 553 00a6 00       		.byte	0
+ 554 00a7 0C       		.uleb128 0xc
+ 555 00a8 34       		.uleb128 0x34
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccYzcSme.s 			page 13
+
+
+ 556 00a9 00       		.byte	0
+ 557 00aa 03       		.uleb128 0x3
+ 558 00ab 0E       		.uleb128 0xe
+ 559 00ac 3A       		.uleb128 0x3a
+ 560 00ad 0B       		.uleb128 0xb
+ 561 00ae 3B       		.uleb128 0x3b
+ 562 00af 05       		.uleb128 0x5
+ 563 00b0 49       		.uleb128 0x49
+ 564 00b1 13       		.uleb128 0x13
+ 565 00b2 3F       		.uleb128 0x3f
+ 566 00b3 19       		.uleb128 0x19
+ 567 00b4 3C       		.uleb128 0x3c
+ 568 00b5 19       		.uleb128 0x19
+ 569 00b6 00       		.byte	0
+ 570 00b7 00       		.byte	0
+ 571 00b8 0D       		.uleb128 0xd
+ 572 00b9 2E       		.uleb128 0x2e
+ 573 00ba 00       		.byte	0
+ 574 00bb 3F       		.uleb128 0x3f
+ 575 00bc 19       		.uleb128 0x19
+ 576 00bd 3C       		.uleb128 0x3c
+ 577 00be 19       		.uleb128 0x19
+ 578 00bf 6E       		.uleb128 0x6e
+ 579 00c0 0E       		.uleb128 0xe
+ 580 00c1 03       		.uleb128 0x3
+ 581 00c2 0E       		.uleb128 0xe
+ 582 00c3 3A       		.uleb128 0x3a
+ 583 00c4 0B       		.uleb128 0xb
+ 584 00c5 3B       		.uleb128 0x3b
+ 585 00c6 05       		.uleb128 0x5
+ 586 00c7 00       		.byte	0
+ 587 00c8 00       		.byte	0
+ 588 00c9 00       		.byte	0
+ 589              		.section	.debug_loc,"",%progbits
+ 590              	.Ldebug_loc0:
+ 591              	.LLST0:
+ 592 0000 06000000 		.4byte	.LVL0
+ 593 0004 15000000 		.4byte	.LVL1-1
+ 594 0008 0100     		.2byte	0x1
+ 595 000a 50       		.byte	0x50
+ 596 000b 00000000 		.4byte	0
+ 597 000f 00000000 		.4byte	0
+ 598              	.LLST1:
+ 599 0013 06000000 		.4byte	.LVL2
+ 600 0017 15000000 		.4byte	.LVL3-1
+ 601 001b 0100     		.2byte	0x1
+ 602 001d 50       		.byte	0x50
+ 603 001e 00000000 		.4byte	0
+ 604 0022 00000000 		.4byte	0
+ 605              	.LLST2:
+ 606 0026 00000000 		.4byte	.LVL4
+ 607 002a 04000000 		.4byte	.LVL5
+ 608 002e 0100     		.2byte	0x1
+ 609 0030 50       		.byte	0x50
+ 610 0031 04000000 		.4byte	.LVL5
+ 611 0035 10000000 		.4byte	.LFE135
+ 612 0039 0100     		.2byte	0x1
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccYzcSme.s 			page 14
+
+
+ 613 003b 50       		.byte	0x50
+ 614 003c 00000000 		.4byte	0
+ 615 0040 00000000 		.4byte	0
+ 616              		.section	.debug_aranges,"",%progbits
+ 617 0000 3C000000 		.4byte	0x3c
+ 618 0004 0200     		.2byte	0x2
+ 619 0006 00000000 		.4byte	.Ldebug_info0
+ 620 000a 04       		.byte	0x4
+ 621 000b 00       		.byte	0
+ 622 000c 0000     		.2byte	0
+ 623 000e 0000     		.2byte	0
+ 624 0010 00000000 		.4byte	.LFB132
+ 625 0014 0C000000 		.4byte	.LFE132-.LFB132
+ 626 0018 00000000 		.4byte	.LFB133
+ 627 001c 1C000000 		.4byte	.LFE133-.LFB133
+ 628 0020 00000000 		.4byte	.LFB134
+ 629 0024 1C000000 		.4byte	.LFE134-.LFB134
+ 630 0028 00000000 		.4byte	.LFB135
+ 631 002c 10000000 		.4byte	.LFE135-.LFB135
+ 632 0030 00000000 		.4byte	.LFB136
+ 633 0034 0C000000 		.4byte	.LFE136-.LFB136
+ 634 0038 00000000 		.4byte	0
+ 635 003c 00000000 		.4byte	0
+ 636              		.section	.debug_ranges,"",%progbits
+ 637              	.Ldebug_ranges0:
+ 638 0000 00000000 		.4byte	.LFB132
+ 639 0004 0C000000 		.4byte	.LFE132
+ 640 0008 00000000 		.4byte	.LFB133
+ 641 000c 1C000000 		.4byte	.LFE133
+ 642 0010 00000000 		.4byte	.LFB134
+ 643 0014 1C000000 		.4byte	.LFE134
+ 644 0018 00000000 		.4byte	.LFB135
+ 645 001c 10000000 		.4byte	.LFE135
+ 646 0020 00000000 		.4byte	.LFB136
+ 647 0024 0C000000 		.4byte	.LFE136
+ 648 0028 00000000 		.4byte	0
+ 649 002c 00000000 		.4byte	0
+ 650              		.section	.debug_line,"",%progbits
+ 651              	.Ldebug_line0:
+ 652 0000 12020000 		.section	.debug_str,"MS",%progbits,1
+ 652      0200B201 
+ 652      00000201 
+ 652      FB0E0D00 
+ 652      01010101 
+ 653              	.LASF4:
+ 654 0000 5F5F7569 		.ascii	"__uint8_t\000"
+ 654      6E74385F 
+ 654      7400
+ 655              	.LASF5:
+ 656 000a 5F5F696E 		.ascii	"__int32_t\000"
+ 656      7433325F 
+ 656      7400
+ 657              	.LASF29:
+ 658 0014 43795F53 		.ascii	"Cy_SysLib_ExitCriticalSection\000"
+ 658      79734C69 
+ 658      625F4578 
+ 658      69744372 
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccYzcSme.s 			page 15
+
+
+ 658      69746963 
+ 659              	.LASF3:
+ 660 0032 73686F72 		.ascii	"short unsigned int\000"
+ 660      7420756E 
+ 660      7369676E 
+ 660      65642069 
+ 660      6E7400
+ 661              	.LASF11:
+ 662 0045 756E7369 		.ascii	"unsigned int\000"
+ 662      676E6564 
+ 662      20696E74 
+ 662      00
+ 663              	.LASF18:
+ 664 0052 666C6F61 		.ascii	"float\000"
+ 664      7400
+ 665              	.LASF2:
+ 666 0058 756E7369 		.ascii	"unsigned char\000"
+ 666      676E6564 
+ 666      20636861 
+ 666      7200
+ 667              	.LASF21:
+ 668 0066 72656738 		.ascii	"reg8\000"
+ 668      00
+ 669              	.LASF24:
+ 670 006b 696E7465 		.ascii	"interruptState\000"
+ 670      72727570 
+ 670      74537461 
+ 670      746500
+ 671              	.LASF8:
+ 672 007a 6C6F6E67 		.ascii	"long unsigned int\000"
+ 672      20756E73 
+ 672      69676E65 
+ 672      6420696E 
+ 672      7400
+ 673              	.LASF20:
+ 674 008c 75696E74 		.ascii	"uint8\000"
+ 674      3800
+ 675              	.LASF34:
+ 676 0092 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 676      52784275 
+ 676      66666572 
+ 676      00
+ 677              	.LASF27:
+ 678 009f 53746174 		.ascii	"Status_SW1_ReadMask\000"
+ 678      75735F53 
+ 678      57315F52 
+ 678      6561644D 
+ 678      61736B00 
+ 679              	.LASF19:
+ 680 00b3 646F7562 		.ascii	"double\000"
+ 680      6C6500
+ 681              	.LASF7:
+ 682 00ba 5F5F7569 		.ascii	"__uint32_t\000"
+ 682      6E743332 
+ 682      5F7400
+ 683              	.LASF23:
+ 684 00c5 53746174 		.ascii	"Status_SW1_InterruptDisable\000"
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccYzcSme.s 			page 16
+
+
+ 684      75735F53 
+ 684      57315F49 
+ 684      6E746572 
+ 684      72757074 
+ 685              	.LASF28:
+ 686 00e1 43795F53 		.ascii	"Cy_SysLib_EnterCriticalSection\000"
+ 686      79734C69 
+ 686      625F456E 
+ 686      74657243 
+ 686      72697469 
+ 687              	.LASF22:
+ 688 0100 53746174 		.ascii	"Status_SW1_InterruptEnable\000"
+ 688      75735F53 
+ 688      57315F49 
+ 688      6E746572 
+ 688      72757074 
+ 689              	.LASF10:
+ 690 011b 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 690      206C6F6E 
+ 690      6720756E 
+ 690      7369676E 
+ 690      65642069 
+ 691              	.LASF12:
+ 692 0132 75696E74 		.ascii	"uint8_t\000"
+ 692      385F7400 
+ 693              	.LASF32:
+ 694 013a 443A5C44 		.ascii	"D:\\DOWNLOADS\\PSoC6-101-Video-Projects-master\\PSo"
+ 694      4F574E4C 
+ 694      4F414453 
+ 694      5C50536F 
+ 694      43362D31 
+ 695 016a 43362D31 		.ascii	"C6-101-Video-Projects-master\\PSoC 6_101\\proj.cyds"
+ 695      30312D56 
+ 695      6964656F 
+ 695      2D50726F 
+ 695      6A656374 
+ 696 019b 6E00     		.ascii	"n\000"
+ 697              	.LASF13:
+ 698 019d 696E7433 		.ascii	"int32_t\000"
+ 698      325F7400 
+ 699              	.LASF15:
+ 700 01a5 73697A65 		.ascii	"sizetype\000"
+ 700      74797065 
+ 700      00
+ 701              	.LASF9:
+ 702 01ae 6C6F6E67 		.ascii	"long long int\000"
+ 702      206C6F6E 
+ 702      6720696E 
+ 702      7400
+ 703              	.LASF33:
+ 704 01bc 6D61736B 		.ascii	"mask\000"
+ 704      00
+ 705              	.LASF0:
+ 706 01c1 73686F72 		.ascii	"short int\000"
+ 706      7420696E 
+ 706      7400
+ 707              	.LASF30:
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccYzcSme.s 			page 17
+
+
+ 708 01cb 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 708      43313120 
+ 708      352E342E 
+ 708      31203230 
+ 708      31363036 
+ 709 01fe 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m4 -mfloat-abi=s"
+ 709      20726576 
+ 709      6973696F 
+ 709      6E203233 
+ 709      37373135 
+ 710 0231 6F667466 		.ascii	"oftfp -mfpu=fpv4-sp-d16 -mthumb -g -Og -ffunction-s"
+ 710      70202D6D 
+ 710      6670753D 
+ 710      66707634 
+ 710      2D73702D 
+ 711 0264 65637469 		.ascii	"ections -ffat-lto-objects\000"
+ 711      6F6E7320 
+ 711      2D666661 
+ 711      742D6C74 
+ 711      6F2D6F62 
+ 712              	.LASF14:
+ 713 027e 75696E74 		.ascii	"uint32_t\000"
+ 713      33325F74 
+ 713      00
+ 714              	.LASF6:
+ 715 0287 6C6F6E67 		.ascii	"long int\000"
+ 715      20696E74 
+ 715      00
+ 716              	.LASF17:
+ 717 0290 63686172 		.ascii	"char\000"
+ 717      00
+ 718              	.LASF16:
+ 719 0295 6C6F6E67 		.ascii	"long double\000"
+ 719      20646F75 
+ 719      626C6500 
+ 720              	.LASF31:
+ 721 02a1 47656E65 		.ascii	"Generated_Source\\PSoC6\\Status_SW1.c\000"
+ 721      72617465 
+ 721      645F536F 
+ 721      75726365 
+ 721      5C50536F 
+ 722              	.LASF1:
+ 723 02c5 7369676E 		.ascii	"signed char\000"
+ 723      65642063 
+ 723      68617200 
+ 724              	.LASF25:
+ 725 02d1 53746174 		.ascii	"Status_SW1_WriteMask\000"
+ 725      75735F53 
+ 725      57315F57 
+ 725      72697465 
+ 725      4D61736B 
+ 726              	.LASF26:
+ 727 02e6 53746174 		.ascii	"Status_SW1_Read\000"
+ 727      75735F53 
+ 727      57315F52 
+ 727      65616400 
+ 728              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ARM GAS  C:\Users\louis\AppData\Local\Temp\ccYzcSme.s 			page 18
+
+

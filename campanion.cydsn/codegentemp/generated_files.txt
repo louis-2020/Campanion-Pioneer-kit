@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="us-ascii"?>
+
+<fileSet version="1" anchorPath="D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\proj.cydsn\codegentemp" xsi:schemaLocation="http://cypress.com/xsd/cypathdictionary cypathdictionary.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://cypress.com/xsd/cypathdictionary">
+  <file name="D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\proj.cydsn\codegentemp\cyfitter_cfg.h" value="HEADER;;;;;" />
+  <file name="D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\proj.cydsn\codegentemp\cyfitter_sysint_cfg.h" value="HEADER;;;;;Pins and Interrupts" />
+  <file name="D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\proj.cydsn\codegentemp\cyfitter_sysint_cfg.c" value="SOURCE_C;CortexM0p,CortexM4;;;;Pins and Interrupts" />
+  <file name="D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\proj.cydsn\codegentemp\cyfitter_cfg.c" value="SOURCE_C;CortexM0p;;;;" />
+  <file name="D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\proj.cydsn\codegentemp\cymetadata.c" value="SOURCE_C;CortexM0p,CortexM4;;;;" />
+  <file name="D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\proj.cydsn\codegentemp\cydevice_trm.h" value="HEADER;;;;;" />
+  <file name="D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\proj.cydsn\codegentemp\cydevicegnu_trm.inc" value="HEADER;;;;;" />
+  <file name="D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\proj.cydsn\codegentemp\cydevicerv_trm.inc" value="HEADER;;;;;" />
+  <file name="D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\proj.cydsn\codegentemp\cydeviceiar_trm.inc" value="HEADER;;;;;" />
+  <file name="D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\proj.cydsn\codegentemp\cyfitter.h" value="HEADER;;;;;" />
+  <file name="D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\proj.cydsn\codegentemp\cyfitter_gpio.h" value="HEADER;;;;;Pins and Interrupts" />
+  <file name="D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\proj.cydsn\codegentemp\cyfitter_sysint.h" value="HEADER;;;;;Pins and Interrupts" />
+  <file name="D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\proj.cydsn\codegentemp\cydisabledsheets.h" value="HEADER;;;;;" />
+  <file name="D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\proj.cydsn\codegentemp\CY_EINK_SPIM.c" value="SOURCE_C;CortexM0p,CortexM4;;;;CY_EINK_SPIM" />
+  <file name="D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\proj.cydsn\codegentemp\CY_EINK_SPIM.h" value="HEADER;;;;;CY_EINK_SPIM" />
+  <file name="D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\proj.cydsn\codegentemp\EINK_Clock.h" value="HEADER;;;;;EINK_Clock" />
+  <file name="D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\proj.cydsn\codegentemp\CY_EINK_Timer.c" value="SOURCE_C;CortexM0p,CortexM4;;;;CY_EINK_Timer" />
+  <file name="D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\proj.cydsn\codegentemp\CY_EINK_Timer.h" value="HEADER;;;;;CY_EINK_Timer" />
+  <file name="D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\proj.cydsn\codegentemp\Status_SW2.c" value="SOURCE_C;CortexM0p,CortexM4;;;;Status_SW2" />
+  <file name="D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\proj.cydsn\codegentemp\Status_SW2.h" value="HEADER;;;;;Status_SW2" />
+  <file name="D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\proj.cydsn\codegentemp\Clock_2.h" value="HEADER;;;;;Clock_2" />
+  <file name="D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\proj.cydsn\codegentemp\UART_1.c" value="SOURCE_C;CortexM0p,CortexM4;;;;UART_1" />
+  <file name="D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\proj.cydsn\codegentemp\UART_1.h" value="HEADER;;;;;UART_1" />
+  <file name="D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\proj.cydsn\codegentemp\ADC_1.c" value="SOURCE_C;CortexM0p,CortexM4;;;;ADC_1" />
+  <file name="D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\proj.cydsn\codegentemp\ADC_1.h" value="HEADER;;;;;ADC_1" />
+  <file name="D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\proj.cydsn\codegentemp\ADC_1_INT.c" value="SOURCE_C;CortexM0p,CortexM4;;;;ADC_1" />
+  <file name="D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\proj.cydsn\codegentemp\ADC_1_INIT.c" value="SOURCE_C;CortexM0p,CortexM4;;;;ADC_1" />
+  <file name="D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\proj.cydsn\codegentemp\ADC_1_PM.c" value="SOURCE_C;CortexM0p,CortexM4;;;;ADC_1" />
+  <file name="D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\proj.cydsn\codegentemp\PWM.c" value="SOURCE_C;CortexM0p,CortexM4;;;;PWM" />
+  <file name="D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\proj.cydsn\codegentemp\PWM.h" value="HEADER;;;;;PWM" />
+  <file name="D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\proj.cydsn\codegentemp\Clock_1.h" value="HEADER;;;;;Clock_1" />
+  <file name="D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\proj.cydsn\codegentemp\CY_EINK_SPIM_SCBCLK.h" value="HEADER;;;;;CY_EINK_SPIM_SCBCLK" />
+  <file name="D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\proj.cydsn\codegentemp\UART_1_SCBCLK.h" value="HEADER;;;;;UART_1_SCBCLK" />
+  <file name="D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\proj.cydsn\codegentemp\ADC_1_intSarClock.h" value="HEADER;;;;;ADC_1_intSarClock" />
+  <file name="D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\proj.cydsn\codegentemp\project.h" value="OTHER;;;;;" />
+  <file name="D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\proj.cydsn\codegentemp\cycodeshareimport.ld" value="OTHER;;;;;" />
+  <file name="D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\proj.cydsn\codegentemp\cycodeshareexport.ld" value="OTHER;;;;;" />
+  <file name="D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\proj.cydsn\codegentemp\cycodeshareimport.scat" value="OTHER;;;;;" />
+</fileSet>

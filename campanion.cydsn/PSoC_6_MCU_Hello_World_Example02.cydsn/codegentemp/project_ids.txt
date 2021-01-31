@@ -1,0 +1,10 @@
+D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\proj.cydsn\proj.cyprj|d09b1733-338a-4c14-b150-906ea4baea28
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|ad837725-fe49-4cd4-813a-cc05a872f590
+C:\Users\louis\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|4f0da998-cb35-44c3-a6e7-fcee99678649
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|c2ab2b20-ac88-4c4e-befb-6365a6913187
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|608b7ba3-84b9-474f-ad27-b5b845141104
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|d1083fb5-e2e5-4b87-97ff-4f5e75b80d22
+D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\proj.cydsn\CE218138_BLE_Thermometer_RTOS01.cydsn\CE218138_BLE_Thermometer_RTOS01.cyprj|06c4e25c-4687-44f8-9133-b925f9852438
+D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\proj.cydsn\CE218136_EINK_CapSense_RTOS01.cydsn\CE218136_EINK_CapSense_RTOS01.cyprj|3cd36121-d320-4c4c-945d-859d4bba7cd7
+D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\proj.cydsn\PSoC_6_MCU_Hello_World_Example01.cydsn\PSoC_6_MCU_Hello_World_Example01.cyprj|08e94600-ce63-42cd-9e84-9088cffe4c39
+D:\DOWNLOADS\PSoC6-101-Video-Projects-master\PSoC6-101-Video-Projects-master\PSoC 6_101\proj.cydsn\PSoC_6_MCU_Hello_World_Example02.cydsn\PSoC_6_MCU_Hello_World_Example02.cyprj|a2ff5eb7-96ba-4c75-9427-82920d8c3548

@@ -1,0 +1,18 @@
+D:/DOWNLOADS/PSoC6-101-Video-Projects-master/PSoC6-101-Video-Projects-master/PSoC\ 6_101/proj.cydsn/CortexM4/ARM_GCC_541/Debug/Cypress\ Logo\ Full\ Color_PNG_1bpp.o : D:/DOWNLOADS/PSoC6-101-Video-Projects-master/PSoC6-101-Video-Projects-master/PSoC\ 6_101/proj.cydsn/Generated_Source/PSoC6/pdl/middleware/emWin/code/include/GUI.h D:/DOWNLOADS/PSoC6-101-Video-Projects-master/PSoC6-101-Video-Projects-master/PSoC\ 6_101/proj.cydsn/Generated_Source/PSoC6/pdl/middleware/emWin/code/include/GUI_ConfDefaults.h D:/DOWNLOADS/PSoC6-101-Video-Projects-master/PSoC6-101-Video-Projects-master/PSoC\ 6_101/proj.cydsn/Generated_Source/PSoC6/pdl/middleware/emWin/code/include/GUI_Type.h D:/DOWNLOADS/PSoC6-101-Video-Projects-master/PSoC6-101-Video-Projects-master/PSoC\ 6_101/proj.cydsn/Generated_Source/PSoC6/pdl/middleware/emWin/code/include/GUI_Version.h D:/DOWNLOADS/PSoC6-101-Video-Projects-master/PSoC6-101-Video-Projects-master/PSoC\ 6_101/proj.cydsn/Generated_Source/PSoC6/pdl/middleware/emWin/code/include/Global.h D:/DOWNLOADS/PSoC6-101-Video-Projects-master/PSoC6-101-Video-Projects-master/PSoC\ 6_101/proj.cydsn/Generated_Source/PSoC6/pdl/middleware/emWin/code/include/LCD.h D:/DOWNLOADS/PSoC6-101-Video-Projects-master/PSoC6-101-Video-Projects-master/PSoC\ 6_101/proj.cydsn/GUIConf.h D:/DOWNLOADS/PSoC6-101-Video-Projects-master/PSoC6-101-Video-Projects-master/PSoC\ 6_101/proj.cydsn/Images/Cypress\ Logo\ Full\ Color_PNG_1bpp.c 
+
+D:/DOWNLOADS/PSoC6-101-Video-Projects-master/PSoC6-101-Video-Projects-master/PSoC\ 6_101/proj.cydsn/Generated_Source/PSoC6/pdl/middleware/emWin/code/include/GUI.h : 
+
+D:/DOWNLOADS/PSoC6-101-Video-Projects-master/PSoC6-101-Video-Projects-master/PSoC\ 6_101/proj.cydsn/Generated_Source/PSoC6/pdl/middleware/emWin/code/include/GUI_ConfDefaults.h : 
+
+D:/DOWNLOADS/PSoC6-101-Video-Projects-master/PSoC6-101-Video-Projects-master/PSoC\ 6_101/proj.cydsn/Generated_Source/PSoC6/pdl/middleware/emWin/code/include/GUI_Type.h : 
+
+D:/DOWNLOADS/PSoC6-101-Video-Projects-master/PSoC6-101-Video-Projects-master/PSoC\ 6_101/proj.cydsn/Generated_Source/PSoC6/pdl/middleware/emWin/code/include/GUI_Version.h : 
+
+D:/DOWNLOADS/PSoC6-101-Video-Projects-master/PSoC6-101-Video-Projects-master/PSoC\ 6_101/proj.cydsn/Generated_Source/PSoC6/pdl/middleware/emWin/code/include/Global.h : 
+
+D:/DOWNLOADS/PSoC6-101-Video-Projects-master/PSoC6-101-Video-Projects-master/PSoC\ 6_101/proj.cydsn/Generated_Source/PSoC6/pdl/middleware/emWin/code/include/LCD.h : 
+
+D:/DOWNLOADS/PSoC6-101-Video-Projects-master/PSoC6-101-Video-Projects-master/PSoC\ 6_101/proj.cydsn/GUIConf.h : 
+
+D:/DOWNLOADS/PSoC6-101-Video-Projects-master/PSoC6-101-Video-Projects-master/PSoC\ 6_101/proj.cydsn/Images/Cypress\ Logo\ Full\ Color_PNG_1bpp.c : 
+
