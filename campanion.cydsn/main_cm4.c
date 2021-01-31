@@ -377,7 +377,7 @@ void GasSensor(void)
         UpdateDisplay(CY_EINK_FULL_4STAGE, true);
         
         
-        if (calc > 0.3) { // If the reading is greater than a number, start the buzzer and keep it on for 10 seconds
+        if (calc > 3) { // If the reading is greater than a number, start the buzzer and keep it on for 10 seconds
             PWM_Start(); //Start the buzzer
                CyDelay(10000); //Wait 10 seconds
                PWM_Disable();  //Stop the buzzer
